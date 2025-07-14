@@ -4,7 +4,14 @@ main {
 
 body {
   margin: 0;
-  font-family: "Red Hat Display" !important;
+  /* font-family: "Red Hat Display"; */
+  font-family: "Montserrat";
+  background-color: var(--Black);
+}
+
+:root {
+  --Orange: #eb670f;
+  --Black: #050403;
 }
 
 .container {
@@ -20,6 +27,7 @@ h5,
 h6,
 p {
   margin: 0;
+  color: #fff;
 }
 
 .h1-style {
