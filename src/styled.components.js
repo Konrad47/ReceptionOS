@@ -1,3 +1,5 @@
+import styled from "styled-components"
+
 export const Tile16 = styled.div`
   display: flex;
   padding: 16px;
@@ -13,7 +15,6 @@ export const SmallSquareTile = styled.div`
   display: flex;
   width: 44px;
   height: 44px;
-  padding: 8px 16px;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +43,7 @@ export const SmallSquareTile = styled.div`
 `
 
 export const SmallSquareTileSvg = styled(SmallSquareTile)`
-  padding: 8px;
-
+  border-radius: 8px;
   svg {
     width: 24px;
     height: 24px;
