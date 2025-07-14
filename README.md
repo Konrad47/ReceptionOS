@@ -1,7 +1,7 @@
-## 🚀 WARSAW PASSIVE INVESTMENT APP 🚀
+## 🚀 --
 
 ### Connecting with Contentful CMS and hosting on Netlify
 
-#### DEVELOPMENT: https://gpw-warsaw-passive-investment.netlify.app/
+#### DEVELOPMENT: --
 
-#### PRODUCTION: https://wpic-gpw.pl/
+#### PRODUCTION: --
