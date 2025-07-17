@@ -4,6 +4,7 @@ const Menu = ({t}) => {
 
   return (
     <>
+    <h1>Menu</h1>
     </>
   )
 }
