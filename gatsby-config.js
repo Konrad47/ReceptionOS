@@ -17,13 +17,13 @@ module.exports = {
     siteUrl: `http://ReceptionOS.pl`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.SPACE_ID,
-        accessToken: process.env.ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.SPACE_ID,
+    //     accessToken: process.env.ACCESS_TOKEN,
+    //   },
+    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
