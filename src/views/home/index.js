@@ -11,6 +11,8 @@ import Solution from "./components/Solution/Solution"
 import ReadyFor from "./components/ReadyFor/ReadyFor"
 import Problems from "./components/Problems/Problems"
 import Progress from "./components/Progress/Progress"
+import FindOut from "./components/FindOut/FindOut"
+import WriteUs from "./components/WriteUs/WriteUs"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -29,6 +31,8 @@ const Home = () => {
         <ReadyFor t={t} />
         <Problems t={t} />
         <Progress t={t} />
+        <FindOut t={t} />
+        <WriteUs t={t} />
       </div>
     </>
   )
