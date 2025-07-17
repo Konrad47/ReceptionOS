@@ -16,7 +16,7 @@
   "home.AIWave.tile-title-2": "Audyt jakości recepcji",
   "home.AIWave.tile-description-2": "Analizy rozmów, feedback i gotowe skrypty utrzymają wysoki standard obsługi.",
   "home.AIWave.tile-title-3": "Inteligentne   e-maile i SMSy",
-  "home.AIWave.tile-description-3": "Zapytania od pacjentów w jednym miejscu, obsługujemy automatycznie lub przekazujemy do recepcji. ",
+  "home.AIWave.tile-description-3": "Zapytania od pacjentów w jednym miejscu, obsługujemy automatycznie lub przekazujemy do recepcji.",
   "home.AIWave.tile-title-4": "Maksymalizacja zysku",
   "home.AIWave.tile-description-4": "Wypełniamy grafik, redukujemy no-shows o 69%, zatrzymujemy u Ciebie pacjenta.",
 
@@ -49,5 +49,13 @@
   "home.Problems.tile-title-2": "Nieobecni pacjenci",
   "home.Problems.tile-description-2": "na umówionych wizytach blokujący grafik",
   "home.Problems.tile-title-3": "Zajęta linia",
-  "home.Problems.tile-description-3": "i za późno oddzwonione telefony"
+  "home.Problems.tile-description-3": "i za późno oddzwonione telefony",
+
+  "home.Progress.title": "Prawdziwy postęp z ReceptionOS",
+  "home.Progress.with-rOS": "z rOS",
+  "home.Progress.without-rOS": "bez rOS",
+  "home.Progress.with-rOS-title": "69% mniej opuszczonych wizyt",
+  "home.Progress.with-rOS-description": "maksymalizuj zyski dzięki automatycznym depozytom i sprawnym uzupełnianiu luk w grafiku",
+  "home.Progress.without-rOS-title": "1 z 3 utraconych spotkań",
+  "home.Progress.without-rOS-description": "pacjenci zapominający o odwołaniu wizyt kosztują Twoją klinikę czas i pieniądze – ale nie powinno to być Twoim problemem"
 }
