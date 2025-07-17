@@ -1,4 +1,53 @@
 {
   "home.seo.title": "",
-  "home.seo.description": ""
+  "home.seo.description": "",
+
+  "home.Autopilot.title": "<span>Autopilot</span> dla kliniki przyszłości",
+  "home.Autopilot.description": "Zautomatyzuj codzienne zadania, byś mógł skupić się na tym, co najważniejsze – leczeniu pacjentów.",
+  "home.Autopilot.question": "Masz pytanie? Kliknij i mów",
+  "home.Autopilot.saved-data": "Twoje dane są bezpieczne",
+
+  "home.OurPartners.title": "Nasi partnerzy",
+
+  "home.AIWave.title": "ReceptionOS - nie przegap fali innowacji AI",
+  "home.AIWave.description": "Automatyzujemy rutynowe zadania, byś mógł podnieść jakość opieki nad pacjentami",
+  "home.AIWave.tile-title-1": "Autopilot 24/7",
+  "home.AIWave.tile-description-1": "Pacjent dodzwoni się zawsze – system umawia wizyty, nawet gdy recepcja śpi.",
+  "home.AIWave.tile-title-2": "Audyt jakości recepcji",
+  "home.AIWave.tile-description-2": "Analizy rozmów, feedback i gotowe skrypty utrzymają wysoki standard obsługi.",
+  "home.AIWave.tile-title-3": "Inteligentne   e-maile i SMSy",
+  "home.AIWave.tile-description-3": "Zapytania od pacjentów w jednym miejscu, obsługujemy automatycznie lub przekazujemy do recepcji. ",
+  "home.AIWave.tile-title-4": "Maksymalizacja zysku",
+  "home.AIWave.tile-description-4": "Wypełniamy grafik, redukujemy no-shows o 69%, zatrzymujemy u Ciebie pacjenta.",
+
+  "home.ClinicsProblems.subtitle": "Jesteś w dobrych rękach",
+  "home.ClinicsProblems.title": "Znamy problemy klinik – to nasza codzienność",
+  "home.ClinicsProblems.description": "Pasja do stomatologii płynie w naszej krwi – wywodzimy się z rodzinnej kliniki stomatologicznej <b>z ponad 35 letnim doświadczeniem w implantologii.</b> Rozwiązaliśmy prawdziwe problemy, które znamy od podszewki. Pozwól nam pomóc także Tobie.",
+
+  "home.StepByStep.subtitle": "Jak to działa",
+  "home.StepByStep.title": "Krok po kroku",
+  "home.StepByStep.tile-title-1": "Podłączenie systemów",
+  "home.StepByStep.tile-description-1": "Podłączamy ReceptionOS do telefonu i kalendarza kliniki. Ty ustawiasz godziny pracy i oferowane usługi.",
+  "home.StepByStep.tile-title-2": "Trenowanie i dostosowanie",
+  "home.StepByStep.tile-description-2": "ReceptionOS uczy się stylu Twojej kliniki i potrzeb pacjentów – rezerwacje, anulacje i częste pytania.",
+  "home.StepByStep.tile-title-3": "Start i optymalizacja",
+  "home.StepByStep.tile-description-3": "ReceptionOS odbiera połączenia, umawia wizyty i pomaga recepcji 24/7. Sprawdzaj wyniki, ulepszaj obsługę i zwiększaj swój dochód.",
+
+  "home.Solution.subtitle": "Partnerzy o nas",
+  "home.Solution.title": "Rozwiązanie, które faktycznie działa",
+
+  "home.ReadyFor.title-1": "Gotowy na receptionOS?",
+  "home.ReadyFor.description-1": "Sprawdź nasze ceny",
+  "home.ReadyFor.title-2": "Dołącz do klinik przyszłości",
+  "home.ReadyFor.description-2": "Dowiedz się gdzie Twoja klinika traci",
+
+  "home.Problems.subtitle": "Problemy, które rozwiązujemy",
+  "home.Problems.title": "Chaos na recepcji i niedokładna obsługa – brzmi znajomo?",
+  "home.Problems.description": "Zobacz, jak ReceptionOS rozwiązuje codzienne problemy klinik stomatologicznych",
+  "home.Problems.tile-title-1": "Chaos",
+  "home.Problems.tile-description-1": "na recepcji i nieoptymalny kalendarz",
+  "home.Problems.tile-title-2": "Nieobecni pacjenci",
+  "home.Problems.tile-description-2": "na umówionych wizytach blokujący grafik",
+  "home.Problems.tile-title-3": "Zajęta linia",
+  "home.Problems.tile-description-3": "i za późno oddzwonione telefony"
 }
