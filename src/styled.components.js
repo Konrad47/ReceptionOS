@@ -11,7 +11,7 @@ export const Tile16 = styled.div`
   background: #261f17;
 `
 
-export const SmallSquareTile = styled.div`
+export const SmallSquareOrangeTile = styled.div`
   display: flex;
   width: 44px;
   height: 44px;
@@ -42,7 +42,7 @@ export const SmallSquareTile = styled.div`
   }
 `
 
-export const SmallSquareTileSvg = styled(SmallSquareTile)`
+export const SmallSquareOrangeTileSvg = styled(SmallSquareTile)`
   border-radius: 8px;
   svg {
     width: 24px;

@@ -20,20 +20,20 @@ const Home = () => {
   return (
     <>
       <Seo title={t`home.seo.title`} description={t`home.seo.description`} />
-      <div className="container">
-        <Menu t={t} />
-        <Autopilot t={t} />
-        <OurPartners t={t} />
-        <AIWave t={t} />
-        <ClinicsProblems t={t} />
-        <StepByStep t={t} />
-        <Solution t={t} />
-        <ReadyFor t={t} />
-        <Problems t={t} />
-        <Progress t={t} />
-        <FindOut t={t} />
-        <WriteUs t={t} />
-      </div>
+      {/* <div className="container"> */}
+      <Menu t={t} />
+      <Autopilot t={t} />
+      <OurPartners t={t} />
+      <AIWave t={t} />
+      <ClinicsProblems t={t} />
+      <StepByStep t={t} />
+      <Solution t={t} />
+      <ReadyFor t={t} />
+      <Problems t={t} />
+      <Progress t={t} />
+      <FindOut t={t} />
+      <WriteUs t={t} />
+      {/* </div> */}
     </>
   )
 }

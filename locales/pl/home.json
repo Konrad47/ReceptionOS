@@ -2,6 +2,12 @@
   "home.seo.title": "",
   "home.seo.description": "",
 
+  "home.Menu.solution": "Solution",
+  "home.Menu.story-behind": "Story behind",
+  "home.Menu.problem": "Problem",
+  "home.Menu.testimonials": "Testimonials",
+  "home.Menu.contact": "Contact",
+
   "home.Autopilot.title": "<span>Autopilot</span> dla kliniki przyszłości",
   "home.Autopilot.description": "Zautomatyzuj codzienne zadania, byś mógł skupić się na tym, co najważniejsze – leczeniu pacjentów.",
   "home.Autopilot.question": "Masz pytanie? Kliknij i mów",
