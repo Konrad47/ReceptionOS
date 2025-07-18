@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { SmallSquareTile } from "../../styled.components"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 const Menu = ({ t }) => {
-  const { language, languages, originalPath } = useI18next()
+  const { language, originalPath } = useI18next()
   const alternateLanguage = language === 'pl' ? 'en' : 'pl'
 
   return (
