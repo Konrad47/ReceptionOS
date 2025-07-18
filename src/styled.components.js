@@ -81,6 +81,15 @@ export const SmallSquareTile = styled(SmallSquareOrangeTile)`
       rgba(255, 255, 255, 0.3) 90.62%
     );
     box-shadow: -2px -2px 8px 0px rgba(255, 255, 255, 0.4) inset;
-    backdrop-filter: blur(5px);
+
+    @media only screen and (max-width: 1020px) {
+      border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
+      background: linear-gradient(
+        99deg,
+        rgba(5, 4, 3, 0.05) 9.46%,
+        rgba(5, 4, 3, 0.3) 90.62%
+      );
+      box-shadow: -2px -2px 8px 0px rgba(255, 255, 255, 0.4) inset;
+    }
   }
 `

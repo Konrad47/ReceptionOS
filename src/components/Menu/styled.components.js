@@ -18,8 +18,8 @@ export const MenuComponent = styled.div`
 
     .ros-image,
     img {
-      width: 138px;
-      /* flex-shrink: 0; */
+      width: 138px !important;
+      flex-shrink: 0;
     }
 
     .links {
@@ -38,6 +38,7 @@ export const MenuComponent = styled.div`
         transition: all 0.3s ease-in-out;
         border-radius: 12px;
         cursor: pointer;
+        white-space: nowrap;
         /* box-shadow: -2px -2px 8px 0px rgba(255, 255, 255, 0.4) inset; */
         /* backdrop-filter: blur(5px); */
 
@@ -107,8 +108,42 @@ export const MenuComponent = styled.div`
             rgba(235, 103, 15, 0.3) 90.62%
           );
           box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.15) inset;
-          backdrop-filter: blur(5px);
+
+          @media only screen and (max-width: 1020px) {
+            background: linear-gradient(
+              99deg,
+              rgba(5, 4, 3, 0.05) 9.46%,
+              rgba(5, 4, 3, 0.3) 90.62%
+            );
+            box-shadow: -2px -2px 8px 0px rgba(255, 255, 255, 0.4) inset;
+          }
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .navigation-component {
+      gap: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1320px) {
+    padding: 16px;
+  }
+
+  @media only screen and (max-width: 1070px) {
+    .navigation-component {
+      .links {
+        gap: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .navigation-component {
+      .links {
+        display: none;
       }
     }
   }
