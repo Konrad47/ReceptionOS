@@ -1,10 +1,17 @@
 import React from "react"
+import { AutopilotComponent } from "./styled.components"
 
-const Autopilot = ({t}) => {
+const Autopilot = ({ t }) => {
 
   return (
     <>
-    <h1>Autopilot</h1>
+      <AutopilotComponent>
+        <div className="container">
+          <div className="text-container">
+            <h1>Autopilot</h1>
+          </div>
+        </div>
+      </AutopilotComponent>
     </>
   )
 }
