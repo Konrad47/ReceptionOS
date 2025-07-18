@@ -22,10 +22,21 @@ export const MenuComponent = styled.div`
     width: 100%;
     box-sizing: border-box;
 
-    .ros-image,
-    img {
+    .ros-image {
       width: 138px !important;
-      flex-shrink: 0;
+      img {
+        width: 138px !important;
+        flex-shrink: 0;
+      }
+    }
+
+    .ros-image-small {
+      display: none;
+      width: 44px !important;
+      img {
+        width: 44px !important;
+        flex-shrink: 0;
+      }
     }
 
     .links {
@@ -150,6 +161,14 @@ export const MenuComponent = styled.div`
     .navigation-component {
       .links {
         display: none;
+      }
+
+      .ros-image {
+        display: none;
+      }
+
+      .ros-image-small {
+        display: flex;
       }
     }
   }

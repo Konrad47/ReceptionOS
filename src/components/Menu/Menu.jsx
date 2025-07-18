@@ -19,6 +19,13 @@ const Menu = ({ t }) => {
             placeholder="ros-image"
             loading="lazy"
           />
+          <StaticImage
+            className="ros-image-small"
+            src="../../images/menu/ros-image-small.webp"
+            alt="ros-image"
+            placeholder="ros-image"
+            loading="lazy"
+          />
           <div className="links">
             {['solution', 'story-behind', 'problem', 'testimonials', 'contact'].map(key => (
               <div key={key} className="link">
