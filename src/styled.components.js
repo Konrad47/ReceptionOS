@@ -66,6 +66,7 @@ export const SmallSquareTile = styled(SmallSquareOrangeTile)`
   cursor: pointer;
 
   p {
+    text-decoration: none;
     color: #f5f5f5;
     font-size: 16px;
     font-style: normal;

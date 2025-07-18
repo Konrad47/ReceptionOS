@@ -3,7 +3,11 @@ import { MenuComponent } from "./styled.components"
 import "../../images/menu/ros-image.webp"
 import { StaticImage } from "gatsby-plugin-image"
 import { SmallSquareTile } from "../../styled.components"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 const Menu = ({ t }) => {
+  const { language, languages, originalPath } = useI18next()
+  const alternateLanguage = language === 'pl' ? 'en' : 'pl'
+
   return (
     <>
       <MenuComponent>
@@ -16,29 +20,21 @@ const Menu = ({ t }) => {
             loading="lazy"
           />
           <div className="links">
-            <div className="link">
-              <a href="#solution">{t(`home.Menu.solution`)}</a>
-            </div>
-            <div className="link">
-              <a href="#story-behind">{t(`home.Menu.story-behind`)}</a>
-            </div>
-            <div className="link">
-              <a href="#problem">{t(`home.Menu.problem`)}</a>
-            </div>
-            <div className="link">
-              <a href="#testimonials">{t(`home.Menu.testimonials`)}</a>
-            </div>
-            <div className="link">
-              <a href="#contact">{t(`home.Menu.contact`)}</a>
-            </div>
+            {['solution', 'story-behind', 'problem', 'testimonials', 'contact'].map(key => (
+              <div key={key} className="link">
+                <a href={`#${key}`}>{t(`home.Menu.${key}`)}</a>
+              </div>
+            ))}
           </div>
           <div className="buttons">
-              <SmallSquareTile>
-                <p>PL</p>
-              </SmallSquareTile>
-              <div className="order-button">
-                <p>{t(`home.Menu.order-button`)}</p>
-              </div>
+            <SmallSquareTile as={Link} to={originalPath} language={alternateLanguage}>
+              <p>
+                {language.toUpperCase()}
+              </p>
+            </SmallSquareTile>
+            <div className="order-button">
+              <p>{t(`home.Menu.order-button`)}</p>
+            </div>
           </div>
         </div>
       </MenuComponent>
