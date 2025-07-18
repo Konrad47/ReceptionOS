@@ -2,6 +2,7 @@ import React from "react"
 import { MenuComponent } from "./styled.components"
 import "../../images/menu/ros-image.webp"
 import { StaticImage } from "gatsby-plugin-image"
+import { SmallSquareTile } from "../../styled.components"
 const Menu = ({ t }) => {
   return (
     <>
@@ -30,6 +31,14 @@ const Menu = ({ t }) => {
             <div className="link">
               <a href="#contact">{t(`home.Menu.contact`)}</a>
             </div>
+          </div>
+          <div className="buttons">
+              <SmallSquareTile>
+                <p>PL</p>
+              </SmallSquareTile>
+              <div className="order-button">
+                <p>{t(`home.Menu.order-button`)}</p>
+              </div>
           </div>
         </div>
       </MenuComponent>
