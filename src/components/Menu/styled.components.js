@@ -7,7 +7,13 @@ export const MenuComponent = styled.div`
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
 
   .navigation-component {
     display: flex;
