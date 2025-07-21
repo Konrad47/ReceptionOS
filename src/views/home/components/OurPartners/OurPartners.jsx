@@ -1,11 +1,83 @@
-import React from "react"
+import React from 'react';
+import { OurPartnersContainer } from './styled.components';
+import { StaticImage } from 'gatsby-plugin-image';
+import SliderComponent from './Slider';
 
-const OurPartners = ({t}) => {
+const TrustUsSection = ({ t }) => {
+
+  const items = [
+    {
+      link: 'https://www.gpw.pl/',
+      img: (
+        <StaticImage
+          className="image"
+          src="../../../../images/autopilot/phone_circle.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      )
+    },
+    {
+      link: 'https://www.gpw.pl/',
+      img: (
+        <StaticImage
+          className="image"
+          src="../../../../images/autopilot/phone_circle.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      )
+    },
+    {
+      link: 'https://www.gpw.pl/',
+      img: (
+        <StaticImage
+          className="image"
+          src="../../../../images/autopilot/phone_circle.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      )
+    },
+    {
+      link: 'https://www.gpw.pl/',
+      img: (
+        <StaticImage
+          className="image"
+          src="../../../../images/autopilot/phone_circle.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      )
+    },
+    {
+      link: 'https://www.gpw.pl/',
+      img: (
+        <StaticImage
+          className="image"
+          src="../../../../images/autopilot/phone_circle.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      )
+    },
+  ];
 
   return (
     <>
-    <h1>OurPartners</h1>
+      <OurPartnersContainer>
+        <div className="container">
+          <h3 >{t`home.OurPartners.title`}</h3>
+          {items && <SliderComponent items={items} />}
+        </div>
+      </OurPartnersContainer>
     </>
-  )
-}
-export default OurPartners
+  );
+};
+
+export default TrustUsSection;
