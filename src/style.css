@@ -16,7 +16,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 h1,
@@ -74,7 +74,7 @@ h2 {
 @media only screen and (min-width: 568px) and (max-width: 1123px) {
   .container {
     margin: 0 5%;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 

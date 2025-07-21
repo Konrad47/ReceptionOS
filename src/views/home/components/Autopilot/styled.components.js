@@ -9,10 +9,15 @@ export const AutopilotComponent = styled.div`
   background-image: url(${AutopilotImage});
   display: block;
   background-attachment: scroll;
+  justify-content: center;
+
+  .container {
+    text-align: center;
+  }
 
   .text-container {
     display: flex;
-    padding: 60px 16px;
+    padding: 60px 16px 30px 16px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -30,6 +35,31 @@ export const AutopilotComponent = styled.div`
 
     p {
       width: 700px;
+    }
+  }
+
+  .phone-circle {
+    width: 315px;
+    img {
+      width: 315px;
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .text-container {
+      h1 {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      span {
+        padding: 0;
+      }
+
+      p {
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
   }
 `
