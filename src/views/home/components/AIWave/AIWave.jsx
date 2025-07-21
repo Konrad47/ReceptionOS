@@ -1,10 +1,18 @@
 import React from "react"
+import { AIWaveContainer } from "./styled.components"
 
-const AIWave = ({t}) => {
+const AIWave = ({ t }) => {
 
   return (
     <>
-    <h1>AIWave</h1>
+      <div className="container">
+        <AIWaveContainer>
+          <div className="text-container">
+            <h2>{t(`home.AIWave.title`)}</h2>
+            <p className="p-body-large">{t(`home.AIWave.description`)}</p>
+          </div>
+        </AIWaveContainer>
+      </div>
     </>
   )
 }
