@@ -71,10 +71,8 @@ const TrustUsSection = ({ t }) => {
   return (
     <>
       <OurPartnersContainer>
-        <div className="container">
-          <h3 >{t`home.OurPartners.title`}</h3>
-          {items && <SliderComponent items={items} />}
-        </div>
+        <p className='p-body-medium'>{t`home.OurPartners.title`}</p>
+        {items && <SliderComponent items={items} />}
       </OurPartnersContainer>
     </>
   );

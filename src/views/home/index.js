@@ -3,7 +3,6 @@ import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
 import Autopilot from "./components/Autopilot/Autopilot"
-import OurPartners from "./components/OurPartners/OurPartners"
 import AIWave from "./components/AIWave/AIWave"
 import ClinicsProblems from "./components/ClinicsProblems/ClinicsProblems"
 import StepByStep from "./components/StepByStep/StepByStep"
@@ -23,7 +22,6 @@ const Home = () => {
       {/* <div className="container"> */}
       <Menu t={t} />
       <Autopilot t={t} />
-      <OurPartners t={t} />
       <AIWave t={t} />
       <ClinicsProblems t={t} />
       <StepByStep t={t} />

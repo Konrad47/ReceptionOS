@@ -3,6 +3,8 @@ import { AutopilotComponent } from "./styled.components"
 import { Trans } from 'react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
 import '../../../../images/autopilot/phone_circle.webp'
+import OurPartners from "../../../home/components/OurPartners/OurPartners"
+
 const Autopilot = ({ t }) => {
 
   return (
@@ -38,6 +40,7 @@ const Autopilot = ({ t }) => {
             </svg>
             <p className="p-body-small">{t(`home.Autopilot.data`)}</p>
           </div>
+          <OurPartners t={t} />
         </div>
       </AutopilotComponent>
     </>

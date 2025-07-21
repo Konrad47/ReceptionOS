@@ -8,7 +8,7 @@ const SliderComponent = ({ items }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,

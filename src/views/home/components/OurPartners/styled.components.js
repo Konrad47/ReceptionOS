@@ -1,13 +1,10 @@
 import styled from "styled-components"
 
 export const OurPartnersContainer = styled.div`
-  .container {
-    display: flex;
-    padding: 40px 0px;
-    flex-direction: column;
-    align-items: center;
-    /* gap: 16px; */
-  }
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
 
   .image {
     width: 135px;
