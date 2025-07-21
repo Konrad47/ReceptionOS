@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const OurPartnersContainer = styled.div`
   display: flex;
-  padding-top: 80px;
+  padding-top: 120px;
   flex-direction: column;
   align-items: center;
 

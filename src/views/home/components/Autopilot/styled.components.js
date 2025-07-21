@@ -2,7 +2,7 @@ import styled from "styled-components"
 import AutopilotImage from "../../../../images/autopilot/autopilot-background.webp"
 
 export const AutopilotComponent = styled.div`
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   overflow: hidden;
   background-size: cover !important;
   background-position: center;
@@ -93,7 +93,7 @@ export const AutopilotComponent = styled.div`
 
   @media only screen and (max-width: 1020px) {
     .text-container {
-      padding: 60px 16px 70px 16px;
+      padding: 60px 16px 90px 16px;
       h1 {
         width: 100%;
         box-sizing: border-box;
@@ -110,7 +110,15 @@ export const AutopilotComponent = styled.div`
     }
 
     .tooltip {
+      top: -45px;
       opacity: 1;
+    }
+
+    .phone-circle {
+      width: 200px;
+      img {
+        width: 200px;
+      }
     }
   }
 `
