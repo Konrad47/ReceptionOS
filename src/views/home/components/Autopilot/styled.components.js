@@ -2,7 +2,7 @@ import styled from "styled-components"
 import AutopilotImage from "../../../../images/autopilot/autopilot-background.webp"
 
 export const AutopilotComponent = styled.div`
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   overflow: hidden;
   background-size: cover !important;
   background-position: center;

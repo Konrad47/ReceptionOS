@@ -7,7 +7,7 @@ const TrustUsSection = ({ t }) => {
 
   const items = [
     {
-      link: 'https://www.gpw.pl/',
+      link: '#',
       img: (
         <StaticImage
           className="image"
@@ -19,7 +19,7 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: 'https://www.gpw.pl/',
+      link: '#',
       img: (
         <StaticImage
           className="image"
@@ -31,7 +31,7 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: 'https://www.gpw.pl/',
+      link: '#',
       img: (
         <StaticImage
           className="image"
@@ -43,7 +43,7 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: 'https://www.gpw.pl/',
+      link: '#',
       img: (
         <StaticImage
           className="image"
@@ -55,7 +55,7 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: 'https://www.gpw.pl/',
+      link: '#',
       img: (
         <StaticImage
           className="image"
