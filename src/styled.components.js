@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
-export const Tile16 = styled.div`
+export const TileComponent = styled.div`
   display: flex;
   padding: 16px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: ${props => props.gap || "16px"};
   border-radius: 16px;
   border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
   background: #261f17;
+  flex: 1 1 0;
 `
 
 export const SmallSquareOrangeTile = styled.div`
