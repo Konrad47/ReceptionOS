@@ -1,6 +1,7 @@
 import React from "react"
 import { ClinicsProblemsComponent } from "./styled.components"
 import { Trans } from 'react-i18next';
+import { Subtitle } from "../../../../styled.components";
 
 const ClinicsProblems = ({ t }) => {
 
@@ -10,6 +11,7 @@ const ClinicsProblems = ({ t }) => {
         <div className="container">
           <div className="text-container">
             <div className="text-up">
+              <Subtitle>{t(`home.ClinicsProblems.subtitle`)}</Subtitle>
               <h2>{t(`home.ClinicsProblems.title`)}</h2>
             </div>
             <p className="p-body-large">

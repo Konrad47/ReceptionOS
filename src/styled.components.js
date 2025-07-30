@@ -95,3 +95,16 @@ export const SmallSquareTile = styled(SmallSquareOrangeTile)`
     }
   }
 `
+
+export const Subtitle = styled.p`
+  color: var(--Orange, #eb670f);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  @media only screen and (max-width: 1020px) {
+    font-size: 18px;
+  }
+`
