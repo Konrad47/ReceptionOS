@@ -31,7 +31,7 @@ export const AutopilotComponent = styled.div`
 
     span {
       color: var(--Orange);
-      padding: 0 115px;
+      /* padding: 0 115px; */
     }
 
     p {
