@@ -6,7 +6,14 @@ const ClinicsProblems = ({ t }) => {
   return (
     <>
       <ClinicsProblemsComponent>
-        <h1>ClinicsProblems</h1>
+        <div className="container">
+          <div className="text-container">
+            <div className="text-up">
+              <h2>{t(`home.ClinicsProblems.title`)}</h2>
+            </div>
+            <p className="p-body-large">{t(`home.ClinicsProblems.description`)}</p>
+          </div>
+        </div>
       </ClinicsProblemsComponent>
     </>
   )
