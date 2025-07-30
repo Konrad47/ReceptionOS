@@ -13,6 +13,7 @@ export const AIWaveContainer = styled.div`
     gap: 16px;
     align-self: stretch;
     width: 652px;
+    box-sizing: border-box;
   }
 
   .tile-container {
@@ -28,15 +29,11 @@ export const AIWaveContainer = styled.div`
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
-  }
 
-  .p-body-large {
-    color: #f5f5f5;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
+    .p-body-large {
+      font-weight: 600;
+      line-height: 120%;
+    }
   }
 
   .p-body-medium {
@@ -46,6 +43,24 @@ export const AIWaveContainer = styled.div`
   @media only screen and (max-width: 1020px) {
     .tile-container {
       flex-direction: column;
+    }
+
+    .text-container {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .text-container {
+      .p-body-large {
+        font-size: 16px;
+      }
+    }
+
+    .text-tile {
+      .p-body-large {
+        font-size: 18px;
+      }
     }
   }
 `
