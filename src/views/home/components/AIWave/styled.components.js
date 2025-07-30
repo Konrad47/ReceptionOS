@@ -21,6 +21,10 @@ export const AIWaveContainer = styled.div`
     gap: 16px;
     /* align-self: stretch; */
     /* flex-wrap: wrap; */
+
+    .image {
+      flex-shrink: 0;
+    }
   }
 
   .text-tile {
@@ -60,6 +64,24 @@ export const AIWaveContainer = styled.div`
     .text-tile {
       .p-body-large {
         font-size: 18px;
+      }
+      .p-body-medium {
+        font-size: 16px;
+      }
+    }
+
+    .ai-wave-tile {
+      flex-direction: row;
+    }
+
+    .tile-container {
+      .image {
+        width: 32px;
+        height: 32px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
       }
     }
   }

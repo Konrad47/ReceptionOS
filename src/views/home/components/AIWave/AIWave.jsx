@@ -14,12 +14,12 @@ const AIWave = ({ t }) => {
             <p className="p-body-large">{t(`home.AIWave.description`)}</p>
           </div>
           <div className="tile-container">
-            <TileComponent gap="24px">
+            <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
-                className="phone-circle"
+                className="image"
                 src="../../../../images/aiwave/time.svg"
-                alt="phone-circle"
-                placeholder="phone-circle"
+                alt="image"
+                placeholder="image"
                 loading="lazy"
               />
               <div className="text-tile">
@@ -27,12 +27,12 @@ const AIWave = ({ t }) => {
                 <p className="p-body-medium">{t(`home.AIWave.tile-description-1`)}</p>
               </div>
             </TileComponent>
-            <TileComponent gap="24px">
+            <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
-                className="phone-circle"
+                className="image"
                 src="../../../../images/aiwave/time.svg"
-                alt="phone-circle"
-                placeholder="phone-circle"
+                alt="image"
+                placeholder="image"
                 loading="lazy"
               />
               <div className="text-tile">
@@ -40,12 +40,12 @@ const AIWave = ({ t }) => {
                 <p className="p-body-medium">{t(`home.AIWave.tile-description-2`)}</p>
               </div>
             </TileComponent>
-            <TileComponent gap="24px">
+            <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
-                className="phone-circle"
+                className="image"
                 src="../../../../images/aiwave/time.svg"
-                alt="phone-circle"
-                placeholder="phone-circle"
+                alt="image"
+                placeholder="image"
                 loading="lazy"
               />
               <div className="text-tile">
@@ -53,12 +53,12 @@ const AIWave = ({ t }) => {
                 <p className="p-body-medium">{t(`home.AIWave.tile-description-3`)}</p>
               </div>
             </TileComponent>
-            <TileComponent gap="24px">
+            <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
-                className="phone-circle"
+                className="image"
                 src="../../../../images/aiwave/time.svg"
-                alt="phone-circle"
-                placeholder="phone-circle"
+                alt="image"
+                placeholder="image"
                 loading="lazy"
               />
               <div className="text-tile">
