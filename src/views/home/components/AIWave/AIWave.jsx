@@ -30,7 +30,7 @@ const AIWave = ({ t }) => {
             <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
                 className="image"
-                src="../../../../images/aiwave/time.svg"
+                src="../../../../images/aiwave/book.svg"
                 alt="image"
                 placeholder="image"
                 loading="lazy"
@@ -43,7 +43,7 @@ const AIWave = ({ t }) => {
             <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
                 className="image"
-                src="../../../../images/aiwave/time.svg"
+                src="../../../../images/aiwave/message.svg"
                 alt="image"
                 placeholder="image"
                 loading="lazy"
@@ -56,7 +56,7 @@ const AIWave = ({ t }) => {
             <TileComponent gap="24px" className="ai-wave-tile">
               <StaticImage
                 className="image"
-                src="../../../../images/aiwave/time.svg"
+                src="../../../../images/aiwave/chart.svg"
                 alt="image"
                 placeholder="image"
                 loading="lazy"

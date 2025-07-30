@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const AIWaveContainer = styled.div`
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -55,6 +56,8 @@ export const AIWaveContainer = styled.div`
   }
 
   @media only screen and (max-width: 700px) {
+    padding: 40px 0;
+
     .text-container {
       .p-body-large {
         font-size: 16px;
@@ -72,9 +75,11 @@ export const AIWaveContainer = styled.div`
 
     .ai-wave-tile {
       flex-direction: row;
+      gap: 16px !important;
     }
 
     .tile-container {
+      gap: 8px;
       .image {
         width: 32px;
         height: 32px;
