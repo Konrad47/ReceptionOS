@@ -1,10 +1,13 @@
 import React from "react"
+import { ClinicsProblemsComponent } from "./styled.components"
 
-const ClinicsProblems = ({t}) => {
+const ClinicsProblems = ({ t }) => {
 
   return (
     <>
-    <h1>ClinicsProblems</h1>
+      <ClinicsProblemsComponent>
+        <h1>ClinicsProblems</h1>
+      </ClinicsProblemsComponent>
     </>
   )
 }
