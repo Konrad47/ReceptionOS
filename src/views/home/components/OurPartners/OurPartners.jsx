@@ -71,7 +71,7 @@ const TrustUsSection = ({ t }) => {
   return (
     <>
       <OurPartnersContainer>
-        <p className='p-body-medium'>{t`home.OurPartners.title`}</p>
+        <p>{t`home.OurPartners.title`}</p>
         {items && <SliderComponent items={items} />}
       </OurPartnersContainer>
     </>

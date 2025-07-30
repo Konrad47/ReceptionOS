@@ -6,6 +6,13 @@ export const OurPartnersContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
   .image {
     width: 135px;
     box-sizing: border-box;
