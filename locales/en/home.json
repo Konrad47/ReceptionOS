@@ -66,5 +66,12 @@
   "home.Progress.with-rOS-title": "69% less no-shows",
   "home.Progress.with-rOS-description": "automatic confirmations and adding new bookings in place of cancelled appointments, lets your maximize your profit",
   "home.Progress.without-rOS-title": "1 out of 3 appointments lost",
-  "home.Progress.without-rOS-description": "patients forgetting to cancel appointments cost your clinic time and money - but it should not be your problem"
+  "home.Progress.without-rOS-description": "patients forgetting to cancel appointments cost your clinic time and money - but it should not be your problem",
+
+  "home.Footer.contact": "contact us",
+  "home.Footer.media": "social media",
+  "home.Footer.resources": "resources",
+  "home.Footer.policy": "Privacy Policy",
+  "home.Footer.terms": "Terms & Conditions",
+  "home.Footer.place": "Warsaw, Poland c 2025"
 }

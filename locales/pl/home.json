@@ -66,5 +66,12 @@
   "home.Progress.with-rOS-title": "69% mniej opuszczonych wizyt",
   "home.Progress.with-rOS-description": "maksymalizuj zyski dzięki automatycznym depozytom i sprawnym uzupełnianiu luk w grafiku",
   "home.Progress.without-rOS-title": "1 z 3 utraconych spotkań",
-  "home.Progress.without-rOS-description": "pacjenci zapominający o odwołaniu wizyt kosztują Twoją klinikę czas i pieniądze – ale nie powinno to być Twoim problemem"
+  "home.Progress.without-rOS-description": "pacjenci zapominający o odwołaniu wizyt kosztują Twoją klinikę czas i pieniądze – ale nie powinno to być Twoim problemem",
+
+  "home.Footer.contact": "Skontaktuj się z nami",
+  "home.Footer.media": "social media",
+  "home.Footer.resources": "zasoby",
+  "home.Footer.policy": "Polityka Prywatności",
+  "home.Footer.terms": "Warunki i Zasady",
+  "home.Footer.place": "Warszawa, Polska c 2025"
 }

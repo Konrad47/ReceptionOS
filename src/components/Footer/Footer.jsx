@@ -47,7 +47,7 @@ const Footer = ({ t }) => {
               <a href="#" target='_blank' rel='noreferrer'>{t(`home.Footer.terms`)}</a>
             </div>
           </div>
-          <p className="footer-down">Warsaw, Poland c 2025</p>
+          <p className="footer-down">{t(`home.Footer.place`)}</p>
         </FooterComponent>
       </div>
     </>
