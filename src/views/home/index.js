@@ -12,6 +12,7 @@ import Problems from "./components/Problems/Problems"
 import Progress from "./components/Progress/Progress"
 import FindOut from "./components/FindOut/FindOut"
 import WriteUs from "./components/WriteUs/WriteUs"
+import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -31,6 +32,7 @@ const Home = () => {
       <Progress t={t} />
       <FindOut t={t} />
       <WriteUs t={t} />
+      <Footer t={t} />
       {/* </div> */}
     </>
   )
