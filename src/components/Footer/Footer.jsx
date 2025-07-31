@@ -17,7 +17,7 @@ const Footer = ({ t }) => {
             />
             <div className="text">
               <p>{t(`home.Footer.contact`)}</p>
-              <a href='mailto:contact@receptionos.com'>contact@receptionos.com</a>
+              <a href='mailto:contact@receptionos.com'>r@receptionos.com</a>
             </div>
           </div>
           <div className="footer-2">
@@ -47,6 +47,7 @@ const Footer = ({ t }) => {
               <a href="#" target='_blank' rel='noreferrer'>{t(`home.Footer.terms`)}</a>
             </div>
           </div>
+          <p className="footer-down">Warsaw, Poland c 2025</p>
         </FooterComponent>
       </div>
     </>

@@ -21,9 +21,18 @@ export const FooterComponent = styled.div`
     color: #f5f5f5;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     text-decoration: none;
+  }
+
+  .footer-down {
+    display: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 
   .footer-1 {
@@ -34,9 +43,10 @@ export const FooterComponent = styled.div`
 
     .ros-image-small {
       width: 44px !important;
+      flex-shrink: 0;
+
       img {
         width: 44px !important;
-        flex-shrink: 0;
       }
     }
 
@@ -106,6 +116,32 @@ export const FooterComponent = styled.div`
       a {
         text-decoration: underline;
       }
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    .footer-1 {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .footer-3 {
+      p {
+        display: none;
+      }
+
+      .text {
+        flex-direction: row;
+        gap: 24px;
+      }
+    }
+
+    .footer-down {
+      display: block;
     }
   }
 `
