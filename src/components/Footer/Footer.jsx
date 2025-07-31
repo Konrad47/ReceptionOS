@@ -40,6 +40,13 @@ const Footer = ({ t }) => {
               </a>
             </div>
           </div>
+          <div className="footer-3">
+            <p>{t(`home.Footer.resources`)}</p>
+            <div className="text">
+              <a href="#" target='_blank' rel='noreferrer'>{t(`home.Footer.policy`)}</a>
+              <a href="#" target='_blank' rel='noreferrer'>{t(`home.Footer.terms`)}</a>
+            </div>
+          </div>
         </FooterComponent>
       </div>
     </>
