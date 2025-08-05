@@ -154,3 +154,28 @@ export const ButtonDarkBorder = styled.button`
     }
   }
 `
+
+export const ButtonOrangeBorder = styled(ButtonDarkBorder)`
+  border: 1px solid var(--Orange, #eb670f);
+  box-shadow: -2px -2px 8px 0 rgba(255, 255, 255, 0.4) inset;
+
+  &:hover {
+    background: linear-gradient(
+      99deg,
+      rgba(235, 103, 15, 0.05) 9.46%,
+      rgba(235, 103, 15, 0.3) 90.62%
+    );
+    box-shadow: 2px 2px 8px 0 rgba(255, 255, 255, 0.15) inset;
+  }
+
+  @media only screen and (max-width: 1020px) {
+    &:hover {
+      background: linear-gradient(
+        99deg,
+        rgba(5, 4, 3, 0.05) 9.46%,
+        rgba(5, 4, 3, 0.3) 90.62%
+      );
+      box-shadow: -2px -2px 8px 0 rgba(255, 255, 255, 0.4) inset;
+    }
+  }
+`
