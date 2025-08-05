@@ -68,6 +68,10 @@
   "home.Progress.without-rOS-title": "1 out of 3 appointments lost",
   "home.Progress.without-rOS-description": "patients forgetting to cancel appointments cost your clinic time and money - but it should not be your problem",
 
+  "home.WriteUs.title": "Have questions? Contact us",
+  "home.WriteUs.description": "We will get back to you",
+  "home.WriteUs.button": "Send mail",
+
   "home.Footer.contact": "contact us",
   "home.Footer.media": "social media",
   "home.Footer.resources": "resources",
