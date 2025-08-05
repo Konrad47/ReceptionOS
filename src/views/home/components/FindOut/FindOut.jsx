@@ -1,10 +1,13 @@
 import React from "react"
+import { FindOutComponent } from "./styled.components"
 
-const FindOut = ({t}) => {
+const FindOut = ({ t }) => {
 
   return (
     <>
-    <h1>FindOut</h1>
+      <FindOutComponent>
+        <div className="container"></div>
+      </FindOutComponent>
     </>
   )
 }
