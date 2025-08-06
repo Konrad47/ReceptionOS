@@ -179,3 +179,27 @@ export const ButtonOrangeBorder = styled(ButtonDarkBorder)`
     }
   }
 `
+
+export const WhiteButton = styled.button`
+  color: #242424;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  cursor: pointer;
+
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease-in-out;
+
+  /* &:hover {
+
+  @media only screen and (max-width: 1020px) {
+    
+  }
+  } */
+`

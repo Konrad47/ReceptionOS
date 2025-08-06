@@ -1,6 +1,6 @@
 import React from "react"
 import { FindOutComponent } from "./styled.components"
-import { Subtitle } from "../../../../styled.components"
+import { ButtonOrangeBorder, Subtitle, WhiteButton } from "../../../../styled.components"
 
 const FindOut = ({ t }) => {
 
@@ -24,6 +24,10 @@ const FindOut = ({ t }) => {
                   </div>
                 ))
               }
+            </div>
+            <div className="bottom">
+              <ButtonOrangeBorder>{t(`home.FindOut.button-order`)}</ButtonOrangeBorder>
+              <WhiteButton>{t(`home.FindOut.button-price`)}</WhiteButton>
             </div>
           </div>
         </div>

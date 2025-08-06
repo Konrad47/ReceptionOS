@@ -68,6 +68,14 @@
   "home.Progress.without-rOS-title": "1 out of 3 appointments lost",
   "home.Progress.without-rOS-description": "patients forgetting to cancel appointments cost your clinic time and money - but it should not be your problem",
 
+  "home.FindOut.subtitle": "Order audit report",
+  "home.FindOut.title": "Check if your dental clinic is future-ready",
+  "home.FindOut.point1": "“Secret patient” audit of appointment scheduling in your clinic",
+  "home.FindOut.point2": "Performed by a qualified employee with experience in dental clinics",
+  "home.FindOut.point3": "Full report of weak & strong points",
+  "home.FindOut.button-order": "Order Audit",
+  "home.FindOut.button-price": "FROM 60PLN",
+
   "home.WriteUs.title": "Have questions? Contact us",
   "home.WriteUs.description": "We will get back to you",
   "home.WriteUs.button": "Send mail",
