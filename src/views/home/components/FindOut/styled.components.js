@@ -21,6 +21,13 @@ export const FindOutComponent = styled.div`
     gap: 60px;
   }
 
+  .sub {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
   .left-container {
     display: flex;
     max-width: 666px;
@@ -80,12 +87,6 @@ export const FindOutComponent = styled.div`
     background: #261f17;
     margin: auto;
 
-    .top {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-
     .image {
       img {
         height: 60px;
@@ -136,6 +137,15 @@ export const FindOutComponent = styled.div`
     .container {
       flex-direction: column-reverse;
       gap: 32px;
+    }
+
+    .left-container {
+      padding: 32px 0;
+
+      .bottom,
+      .button-order {
+        width: 100%;
+      }
     }
 
     .right-container {

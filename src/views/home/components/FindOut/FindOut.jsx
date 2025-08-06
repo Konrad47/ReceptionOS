@@ -12,7 +12,10 @@ const FindOut = ({ t }) => {
         <div className="container">
           <div className="left-container">
             <div className="top">
-              <Subtitle>{t`home.FindOut.subtitle`}</Subtitle>
+              <div className="sub">
+                <Subtitle>{t`home.FindOut.subtitle`}</Subtitle>
+                <WhiteButton className="mobile">{t(`home.FindOut.button-price`)}</WhiteButton>
+              </div>
               <h2>{t`home.FindOut.title`}</h2>
             </div>
             <div className="middle">
@@ -28,12 +31,12 @@ const FindOut = ({ t }) => {
               }
             </div>
             <div className="bottom">
-              <ButtonOrangeBorder>{t(`home.FindOut.button-order`)}</ButtonOrangeBorder>
-              <WhiteButton>{t(`home.FindOut.button-price`)}</WhiteButton>
+              <ButtonOrangeBorder className="button-order">{t(`home.FindOut.button-order`)}</ButtonOrangeBorder>
+              <WhiteButton className="desktop">{t(`home.FindOut.button-price`)}</WhiteButton>
             </div>
           </div>
           <div className="right-container">
-            <div className="top">
+            <div className="sub">
               <StaticImage
                 className="image"
                 src="../../../../images/find-out/apolonia-logo.webp"
