@@ -102,7 +102,7 @@ export const FindOutComponent = styled.div`
 
       .text-p {
         color: #f5f5f5;
-        /* font-family: Inter; */
+        font-family: Inter;
         font-size: 32px;
         font-style: normal;
         font-weight: 400;
