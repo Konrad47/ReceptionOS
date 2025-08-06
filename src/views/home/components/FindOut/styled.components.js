@@ -12,6 +12,10 @@ export const FindOutComponent = styled.div`
   background-attachment: scroll;
   justify-content: center;
 
+  .mobile {
+    display: none;
+  }
+
   .container {
     display: flex;
     gap: 60px;
@@ -65,6 +69,7 @@ export const FindOutComponent = styled.div`
     display: flex;
     max-width: 373px;
     height: 409px;
+    box-sizing: border-box;
     padding: 16px;
     flex-direction: column;
     align-items: flex-start;
@@ -74,6 +79,12 @@ export const FindOutComponent = styled.div`
     border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
     background: #261f17;
     margin: auto;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
 
     .image {
       img {
@@ -112,5 +123,40 @@ export const FindOutComponent = styled.div`
 
   @media only screen and (max-width: 1230px) {
     background-image: url(${BackgroundImageMobile});
+    padding-top: 32px;
+
+    .mobile {
+      display: flex;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    .container {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
+    .right-container {
+      height: unset;
+      max-width: 100%;
+      .image {
+        img {
+          height: 48px;
+        }
+      }
+
+      .text-p {
+        font-size: 20px;
+      }
+
+      b {
+        white-space: nowrap;
+      }
+    }
   }
+
+  /* @media only screen and (max-width: 1020px) {
+  } */
 `

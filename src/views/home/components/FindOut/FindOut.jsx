@@ -33,13 +33,16 @@ const FindOut = ({ t }) => {
             </div>
           </div>
           <div className="right-container">
-            <StaticImage
-              className="image"
-              src="../../../../images/find-out/apolonia-logo.webp"
-              alt="image"
-              placeholder="image"
-              loading="lazy"
-            />
+            <div className="top">
+              <StaticImage
+                className="image"
+                src="../../../../images/find-out/apolonia-logo.webp"
+                alt="image"
+                placeholder="image"
+                loading="lazy"
+              />
+              <ButtonDarkBorder className="mobile">{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
+            </div>
             <div className="text">
               <p className="text-p">
                 <Trans
@@ -58,7 +61,7 @@ const FindOut = ({ t }) => {
                 />
               </div>
             </div>
-            <ButtonDarkBorder>{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
+            <ButtonDarkBorder className="desktop">{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
           </div>
         </div>
       </FindOutComponent>
