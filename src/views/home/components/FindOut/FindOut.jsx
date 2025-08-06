@@ -1,7 +1,9 @@
 import React from "react"
 import { FindOutComponent } from "./styled.components"
-import { ButtonOrangeBorder, Subtitle, WhiteButton } from "../../../../styled.components"
-
+import { ButtonDarkBorder, ButtonOrangeBorder, Subtitle, WhiteButton } from "../../../../styled.components"
+import { StaticImage } from "gatsby-plugin-image"
+import { Trans } from "react-i18next"
+// import '../../../../images/find-out/apolonia-logo.webp'
 const FindOut = ({ t }) => {
 
   return (
@@ -29,6 +31,34 @@ const FindOut = ({ t }) => {
               <ButtonOrangeBorder>{t(`home.FindOut.button-order`)}</ButtonOrangeBorder>
               <WhiteButton>{t(`home.FindOut.button-price`)}</WhiteButton>
             </div>
+          </div>
+          <div className="right-container">
+            <StaticImage
+              className="image"
+              src="../../../../images/find-out/apolonia-logo.webp"
+              alt="image"
+              placeholder="image"
+              loading="lazy"
+            />
+            <div className="text">
+              <p className="text-p">
+                <Trans
+                  i18nKey="home.FindOut.apolonia-title"
+                  components={{
+                    b: <b></b>
+                  }}
+                />
+              </p>
+              <div>
+                <Trans
+                  i18nKey="home.FindOut.apolonia-points"
+                  components={{
+                    p: <p className="p-body-medium"></p>
+                  }}
+                />
+              </div>
+            </div>
+            <ButtonDarkBorder>{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
           </div>
         </div>
       </FindOutComponent>

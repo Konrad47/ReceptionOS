@@ -61,6 +61,55 @@ export const FindOutComponent = styled.div`
     }
   }
 
+  .right-container {
+    display: flex;
+    max-width: 373px;
+    height: 409px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
+    background: #261f17;
+    margin: auto;
+
+    .image {
+      img {
+        height: 60px;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      flex: 1 0 0;
+      align-self: stretch;
+
+      .text-p {
+        color: #f5f5f5;
+        /* font-family: Inter; */
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+
+        b {
+          white-space: pre;
+        }
+      }
+
+      .p-body-medium {
+        span {
+          white-space: pre;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 1230px) {
     background-image: url(${BackgroundImageMobile});
   }
