@@ -68,6 +68,12 @@
   "home.Progress.without-rOS-title": "1 z 3 utraconych spotkań",
   "home.Progress.without-rOS-description": "pacjenci zapominający o odwołaniu wizyt kosztują Twoją klinikę czas i pieniądze – ale nie powinno to być Twoim problemem",
 
+  "home.FindOut.subtitle": "Zamów badanie",
+  "home.FindOut.title": "Dowiedz się gdzie Twoja klinika traci pacjentów",
+  "home.FindOut.point1": "Audyt tajemniczego pacjenta: ocena umawiania wizyt w Twojej klinice",
+  "home.FindOut.point2": "Przetestujemy Twoją recepcję realnymi scenariuszami rozmów.",
+  "home.FindOut.point3": "Pełny raport potencjalnych usprawnień i problemów.",
+
   "home.WriteUs.title": "Dołączasz do top 1%? Napisz do nas",
   "home.WriteUs.description": "Odpowiemy natychmiast",
   "home.WriteUs.button": "Wyślij maila",
