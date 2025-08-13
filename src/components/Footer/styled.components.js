@@ -4,6 +4,10 @@ export const FooterComponent = styled.div`
   position: relative;
   flex-direction: column;
 
+  .mobile {
+    display: none;
+  }
+
   .footer-background {
     position: absolute;
     bottom: 0;
@@ -38,7 +42,7 @@ export const FooterComponent = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 88px;
+      width: 314px;
     }
   }
 
@@ -50,7 +54,7 @@ export const FooterComponent = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 88px;
+      width: 314px;
     }
   }
 
@@ -88,5 +92,11 @@ export const FooterComponent = styled.div`
   }
 
   @media only screen and (max-width: 1020px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+    }
   }
 `
