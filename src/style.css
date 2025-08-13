@@ -83,6 +83,10 @@ h2 {
   line-height: 20px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 568px) {
   .container {
     margin: 0 1rem;
@@ -142,5 +146,12 @@ h2 {
 
   .p-body-medium {
     font-size: 16px;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
   }
 }

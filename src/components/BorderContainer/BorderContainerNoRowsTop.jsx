@@ -4,13 +4,25 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
     return (
         <>
             <svg
-                className="top"
+                className="top desktop"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 962 32"
                 fill="none"
             >
                 <path
                     d="M1 31V17L29 7.00006H86.5L117.5 1.00006V7.00006L932 7.00006L961 17V31"
+                    stroke="#302C29"
+                    stroke-linecap="round"
+                />
+            </svg>
+            <svg
+                className="top mobile"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 376 32"
+                fill="none"
+            >
+                <path
+                    d="M1 31V17L29 7.00006H89.5L120.5 1.00006V7.00006H346L375 17V31"
                     stroke="#302C29"
                     stroke-linecap="round"
                 />
