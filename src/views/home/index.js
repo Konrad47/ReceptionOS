@@ -13,6 +13,7 @@ import Progress from "./components/Progress/Progress"
 import FindOut from "./components/FindOut/FindOut"
 import WriteUs from "./components/WriteUs/WriteUs"
 import Footer from "../../components/Footer/Footer"
+import PriceList from "./components/PriceList/PriceList"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -31,6 +32,7 @@ const Home = () => {
       <Problems t={t} />
       <Progress t={t} />
       <FindOut t={t} />
+      <PriceList t={t} />
       <WriteUs t={t} />
       <Footer t={t} />
       {/* </div> */}

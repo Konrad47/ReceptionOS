@@ -368,17 +368,18 @@ export const RoundedInfoTile = styled.div`
     linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.3) 100%),
     #0f0c0a;
 
-  font-family: "Inter Tight";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 236, 210, 0.8) 0%,
-    rgba(255, 131, 74, 0.8) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 236, 210, 0.8) 0%,
+      rgba(255, 131, 74, 0.8) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `
