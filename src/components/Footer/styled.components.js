@@ -1,16 +1,33 @@
 import styled from "styled-components"
-
 export const FooterComponent = styled.div`
   display: flex;
-  padding: 24px 24px 16px 24px;
+  position: relative;
+  /* padding: 24px 24px 16px 24px;
   margin-bottom: 60px;
   align-items: flex-start;
   gap: 24px;
   border-radius: 16px;
   border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
-  background: #261f17;
+  background: #261f17; */
 
-  p {
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .footer-1 {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* p {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -143,5 +160,5 @@ export const FooterComponent = styled.div`
     .footer-down {
       display: block;
     }
-  }
+  } */
 `
