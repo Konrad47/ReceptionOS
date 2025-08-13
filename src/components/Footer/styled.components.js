@@ -25,6 +25,12 @@ export const FooterComponent = styled.div`
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+
+    .ros-image {
+      img {
+        width: 114px;
+      }
+    }
   }
 
   /* p {
