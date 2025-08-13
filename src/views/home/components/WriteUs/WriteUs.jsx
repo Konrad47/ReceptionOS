@@ -10,9 +10,9 @@ const WriteUs = ({ t }) => {
         <WriteUsComponent>
           <div className="text-container">
             <h2>{t('home.WriteUs.title')}</h2>
-            <p className="p-body-large">{t('home.WriteUs.description')}</p>
+            <p className="p-new-model-16">{t('home.WriteUs.description')}</p>
+            <ButtonDarkBorder>{t('home.WriteUs.button')}</ButtonDarkBorder>
           </div>
-          <ButtonDarkBorder>{t('home.WriteUs.button')}</ButtonDarkBorder>
         </WriteUsComponent>
       </div>
     </>

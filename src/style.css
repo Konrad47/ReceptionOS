@@ -39,10 +39,23 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  /* font-size: 48px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 120%; */
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -0.72px;
+  background: linear-gradient(
+    180deg,
+    #fff8f3 0%,
+    rgba(255, 232, 217, 0.7) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .p-body-large {

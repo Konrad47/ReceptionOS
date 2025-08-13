@@ -1,20 +1,27 @@
 import styled from "styled-components"
+import BackgroundImage from "../../../../images/writeus/writeus-background.webp"
 
 export const WriteUsComponent = styled.div`
-  display: flex;
-  max-width: 510px;
-  padding: 80px 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin: auto;
+  padding: 64px 0;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: bottom;
+  width: 100%;
+  background-image: url(${BackgroundImage});
+  display: block;
+  background-attachment: scroll;
+  justify-content: center;
 
   .text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     align-self: stretch;
     text-align: center;
+
+    button {
+      margin-top: 500px;
+    }
   }
 `
