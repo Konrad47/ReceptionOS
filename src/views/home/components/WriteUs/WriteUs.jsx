@@ -1,6 +1,6 @@
 import React from "react"
 import { WriteUsComponent } from "./styled.components"
-import { ButtonDarkBorder } from "../../../../styled.components"
+import { RoundedButtonOrange } from "../../../../styled.components"
 
 const WriteUs = ({ t }) => {
 
@@ -11,7 +11,7 @@ const WriteUs = ({ t }) => {
           <div className="text-container">
             <h2>{t('home.WriteUs.title')}</h2>
             <p className="p-new-model-16">{t('home.WriteUs.description')}</p>
-            <ButtonDarkBorder>{t('home.WriteUs.button')}</ButtonDarkBorder>
+            <RoundedButtonOrange>{t('home.WriteUs.button')}</RoundedButtonOrange>
           </div>
         </WriteUsComponent>
       </div>
