@@ -42,6 +42,31 @@ export const FooterComponent = styled.div`
     }
   }
 
+  .footer-3 {
+    padding: 19px 0;
+    border-top: none;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 88px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .footer-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+    gap: 20px;
+  }
+
   /* p {
     font-size: 16px;
     font-style: normal;

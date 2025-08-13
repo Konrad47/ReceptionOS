@@ -3,6 +3,7 @@ import { FooterComponent } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../BorderContainer/BorderContainer4Rows"
 import { BorderContainerNoRowsTop } from "../BorderContainer/BorderContainerNoRowsTop"
+import { RoundedButton } from "../../styled.components"
 const Footer = ({ t }) => {
 
   return (
@@ -33,11 +34,29 @@ const Footer = ({ t }) => {
               <p className="p-new-model-16">{t(`home.Footer.language`)}</p>
             </div>
           </BorderContainer4Rows>
-          <BorderContainer4Rows className="footer-container footer-2">
+          <BorderContainer4Rows className="footer-container footer-3">
             <div>
-              <a className="p-new-model-18" href='mailto:contact@receptionos.com'>r@receptionos.com</a>
+              <p
+                className="p-new-model-18"
+                onCopy={(e) => {
+                  e.preventDefault();
+                  e.clipboardData.setData("text/plain", "contact@receptionos.com");
+                }}
+              >
+                r@receptionos.com
+              </p>
+              <RoundedButton as="a" href='mailto:contact@receptionos.com'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M2.92871 9.99995H17.0716M17.0716 9.99995L11.5716 4.5M17.0716 9.99995L11.5716 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+                </svg>
+              </RoundedButton>
             </div>
           </BorderContainer4Rows>
+          <div className="footer-4">
+            <p style={{ marginTop: '20px' }} className="p-new-model-16">{t(`home.Footer.policy`)}</p>
+            <p className="p-new-model-16">{t(`home.Footer.terms`)}</p>
+            <p style={{ marginTop: '40px' }} className="p-new-model-16">{t(`home.Footer.place`)}</p>
+          </div>
           {/* <div className="footer-1">
           </div> */}
           {/* <div className="footer-1">
