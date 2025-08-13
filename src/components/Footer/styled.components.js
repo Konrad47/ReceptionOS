@@ -12,18 +12,33 @@ export const FooterComponent = styled.div`
     z-index: -1;
   }
 
-  .footer-1 {
-    padding-bottom: 32px;
+  .footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+  }
+
+  .footer-1 {
+    padding: 4px 0 32px 0;
 
     .ros-image {
       img {
         width: 114px;
       }
+    }
+  }
+
+  .footer-2 {
+    padding: 32px 0;
+    border-top: none;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 88px;
     }
   }
 

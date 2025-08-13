@@ -18,7 +18,7 @@ const Footer = ({ t }) => {
               </linearGradient>
             </defs>
           </svg>
-          <BorderContainerNoRowsTop className="footer-1">
+          <BorderContainerNoRowsTop className="footer-container footer-1">
             <StaticImage
               className="ros-image"
               src="../../images/ros_white.webp"
@@ -27,14 +27,16 @@ const Footer = ({ t }) => {
               loading="lazy"
             />
           </BorderContainerNoRowsTop>
-          <BorderContainer4Rows className="footer-1">
-            <StaticImage
-              className="ros-image"
-              src="../../images/ros_white.webp"
-              alt="ros-image"
-              placeholder="ros-image"
-              loading="lazy"
-            />
+          <BorderContainer4Rows className="footer-container footer-2">
+            <div>
+              <p className="p-new-model-16">{t(`home.Footer.change-language`)}</p>
+              <p className="p-new-model-16">{t(`home.Footer.language`)}</p>
+            </div>
+          </BorderContainer4Rows>
+          <BorderContainer4Rows className="footer-container footer-2">
+            <div>
+              <a className="p-new-model-18" href='mailto:contact@receptionos.com'>r@receptionos.com</a>
+            </div>
           </BorderContainer4Rows>
           {/* <div className="footer-1">
           </div> */}
