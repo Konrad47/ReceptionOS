@@ -204,7 +204,7 @@ export const WhiteButton = styled.button`
   } */
 `
 
-export const RoundedButton = styled.button`
+export const RoundedButtonSvg = styled.button`
   display: flex;
   width: 48px;
   height: 48px;

@@ -3,7 +3,7 @@ import { FooterComponent } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../BorderContainer/BorderContainer4Rows"
 import { BorderContainerNoRowsTop } from "../BorderContainer/BorderContainerNoRowsTop"
-import { RoundedButton } from "../../styled.components"
+import { RoundedButtonSvg } from "../../styled.components"
 const Footer = ({ t }) => {
 
   return (
@@ -48,11 +48,11 @@ const Footer = ({ t }) => {
               >
                 r@receptionos.com
               </p>
-              <RoundedButton as="a" href='mailto:contact@receptionos.com'>
+              <RoundedButtonSvg as="a" href='mailto:contact@receptionos.com'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M2.92871 9.99995H17.0716M17.0716 9.99995L11.5716 4.5M17.0716 9.99995L11.5716 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
                 </svg>
-              </RoundedButton>
+              </RoundedButtonSvg>
             </div>
           </BorderContainer4Rows>
           <div className="footer-4">
