@@ -1,13 +1,31 @@
-import React from "react"
+import React, { useState } from "react"
 import { FindOutComponent } from "./styled.components"
 import { ButtonDarkBorder, ButtonOrangeBorder, Subtitle, WhiteButton } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Trans } from "react-i18next"
+import BaseModal from "../../../../components/BaseModal/BaseModal"
 // import '../../../../images/find-out/apolonia-logo.webp'
 const FindOut = ({ t }) => {
+  const [isModal, setIsModal] = useState(false);
+
+  const props = {
+    subtitle: t(`home.FindOut.modal.subtitle`),
+    title: t(`home.FindOut.modal.title`),
+    children: <div>HHH</div>,
+    buttonText: t(`home.FindOut.modal.buttonText`),
+  }
+
+  const openModal = () => {
+    setIsModal(true);
+  }
 
   return (
     <>
+      <BaseModal
+        isModal={isModal}
+        setIsModal={setIsModal}
+        props={props}
+      />
       <FindOutComponent>
         <div className="container">
           <div className="left-container">
@@ -64,7 +82,7 @@ const FindOut = ({ t }) => {
                 />
               </div>
             </div>
-            <ButtonDarkBorder className="desktop">{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
+            <ButtonDarkBorder onClick={openModal} className="desktop">{t(`home.FindOut.button-raport`)}</ButtonDarkBorder>
           </div>
         </div>
       </FindOutComponent>
