@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import BackgroundImage from "../../../../images/writeus/writeus-background.webp"
+import BackgroundImageMobile from "../../../../images/writeus/writeus-background_mobile.webp"
 
 export const WriteUsComponent = styled.div`
   padding: 64px 0;
@@ -21,7 +22,17 @@ export const WriteUsComponent = styled.div`
     text-align: center;
 
     button {
-      margin-top: 500px;
+      margin-top: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    background-image: none;
+
+    .text-container {
+      button {
+        margin-top: 20px;
+      }
     }
   }
 `
