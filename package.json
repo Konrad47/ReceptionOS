@@ -6,6 +6,7 @@
   "author": "Konrad Plichta",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.19.4",
+    "@fontsource-variable/inter-tight": "^5.2.6",
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/inter": "^5.2.6",
     "@fontsource/merriweather": "^5.0.8",
