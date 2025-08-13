@@ -2,15 +2,9 @@ import styled from "styled-components"
 export const FooterComponent = styled.div`
   display: flex;
   position: relative;
-  /* padding: 24px 24px 16px 24px;
-  margin-bottom: 60px;
-  align-items: flex-start;
-  gap: 24px;
-  border-radius: 16px;
-  border: 1px solid var(--Border, rgba(253, 240, 231, 0.2));
-  background: #261f17; */
+  flex-direction: column;
 
-  svg {
+  .footer-background {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -19,7 +13,7 @@ export const FooterComponent = styled.div`
   }
 
   .footer-1 {
-    padding: 40px 0;
+    padding-bottom: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
