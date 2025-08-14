@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const CaseStudyComponent = styled.div`
   padding: 30px 0;
+  position: relative;
 
   .container {
     display: flex;
@@ -33,9 +34,58 @@ export const CaseStudyComponent = styled.div`
 
   .background-cs {
     position: absolute;
-    top: 0;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    top: -80px;
+    left: 60px;
     z-index: -1;
+  }
+
+  .image-cs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 966px;
+    /* box-sizing: border-box; */
+    padding: 24px;
+
+    .apolonia-image {
+      max-width: 966px;
+      img {
+        max-width: 966px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .case-study-top {
+      max-width: 284px;
+      p {
+        max-width: 279px;
+      }
+    }
+
+    .background-cs {
+      top: 180px;
+      left: 15%;
+      width: 555px;
+    }
+
+    .image-cs-container {
+      max-width: 350px;
+
+      .apolonia-image {
+        max-width: 350px;
+        img {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .background-cs {
+      top: 180px;
+      left: -42px;
+      width: 555px;
+    }
   }
 `
