@@ -79,6 +79,10 @@
   "home.FindOut.apolonia-points": "<p>+28% dochód po 6 miesiącach</p> <p>+1 etat na recepcji mnie</p> <p>+115 nowych opinii 5☆ na Google w 4 dni</p>",
   "home.FindOut.button-raport": "Zobacz raport",
 
+  "home.AboutUs.about-us": "O Nas",
+  "home.AboutUs.title": "Znamy problemy klinik – to nasza codzienność",
+  "home.AboutUs.description": "",
+
   "home.PriceList.price-list": "Cennik",
   "home.PriceList.title": "Porównaj pakiety",
   "home.PriceList.Starter-info1": "Starter",
@@ -87,7 +91,6 @@
   "home.PriceList.Starter-li2": "Podstawowa analityka",
   "home.PriceList.Starter-li3": "Automatyczna obsługa e-maili",
   "home.PriceList.Starter-li4": "Miesięczne raporty",
-
   "home.PriceList.Optimum-info1": "Optimum",
   "home.PriceList.Optimum-info2": "Wkrótce Dostępne",
   "home.PriceList.Optimum-li1": "",
@@ -95,7 +98,6 @@
   "home.PriceList.Optimum-li3": "",
   "home.PriceList.Optimum-li4": "",
   "home.PriceList.Optimum-list-text": "Wszystko z Starter +",
-
   "home.PriceList.Elite-info1": "Elite",
   "home.PriceList.Elite-info2": "Zapisy na Waitlist",
   "home.PriceList.Elite-li1": "",

@@ -157,6 +157,10 @@ export const PriceListComponent = styled.div`
         gap: 16px;
         align-self: stretch;
 
+        h3 {
+          font-weight: 500;
+        }
+
         span {
           font-size: 24px;
           line-height: 24px;
