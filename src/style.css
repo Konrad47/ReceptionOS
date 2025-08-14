@@ -105,10 +105,10 @@ h3 {
 }
 
 .p-new-model-18 {
-  color: #ffe8d9;
+  color: #a3948b;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -162,11 +162,27 @@ h3 {
 
 @media only screen and (max-width: 1020px) {
   h1 {
-    font-size: 41px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.36px;
   }
 
   h2 {
     font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
   }
 
   .p-body-large {

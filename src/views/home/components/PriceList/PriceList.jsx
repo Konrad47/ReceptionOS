@@ -25,6 +25,7 @@ const PriceList = ({ t }) => {
               <p>{t('home.PriceList.price-list')}</p>
             </RoundedInfoTile>
             <h2>{t('home.PriceList.title')}</h2>
+            <p style={{ marginTop: '20px' }} className="p-new-model-18">{t('home.PriceList.chairs')}</p>
           </div>
           <div className="bottom-container">
             <BorderContainerBottomRowsTop className="top-border-container">

@@ -162,6 +162,12 @@ export const PriceListComponent = styled.div`
           line-height: 24px;
           height: 24px;
           font-weight: 400;
+
+          @media only screen and (max-width: 1020px) {
+            font-size: 16px;
+            line-height: 16px;
+            height: 16px;
+          }
         }
       }
 
