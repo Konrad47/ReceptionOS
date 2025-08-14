@@ -71,6 +71,7 @@ export const CaseStudyComponent = styled.div`
 
     .image-cs-container {
       max-width: 350px;
+      padding: 12px;
 
       .apolonia-image {
         max-width: 350px;
@@ -83,8 +84,8 @@ export const CaseStudyComponent = styled.div`
 
   @media only screen and (max-width: 500px) {
     .background-cs {
-      top: 180px;
-      left: -42px;
+      top: 160px;
+      left: -70px;
       width: 555px;
     }
   }

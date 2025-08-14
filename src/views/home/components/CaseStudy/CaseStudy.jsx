@@ -1,6 +1,6 @@
 import React from "react"
 import { CaseStudyComponent } from "./styled.components"
-import { RoundedInfoTile } from "../../../../styled.components"
+import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 
@@ -50,6 +50,9 @@ const CaseStudy = ({ t }) => {
               loading="lazy"
             />
           </BorderContainer4Rows>
+          <RoundedButtonOrange>
+            {t('home.CaseStudy.button')}
+          </RoundedButtonOrange>
         </div>
       </CaseStudyComponent>
     </>
