@@ -10,7 +10,7 @@ export const PriceListComponent = styled.div`
   .top-border-container {
     width: 100%;
     box-sizing: border-box;
-    height: 50px;
+    height: 30px;
   }
 
   .counter-container {
