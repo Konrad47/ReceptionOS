@@ -10,7 +10,6 @@ const PriceList = ({ t }) => {
   const [counter, setCounter] = useState(1);
   const incrementCounter = () => {
     setCounter(prev => (prev < 99 ? prev + 1 : 99));
-    console.log(counter)
   };
   const decrementCounter = () => {
     setCounter(prev => (prev > 1 ? prev - 1 : 1));
