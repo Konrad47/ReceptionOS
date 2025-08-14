@@ -187,6 +187,19 @@ export const PriceListComponent = styled.div`
       }
     }
   }
+
+  .bottom-border-container {
+    width: 100%;
+    box-sizing: border-box;
+    height: 0px;
+  }
+
+  .price-list-button {
+    max-width: 180px;
+    margin: auto;
+    margin-top: 28px;
+  }
+
   @media only screen and (max-width: 1100px) {
     .bottom-container {
       .pricing-container {
@@ -200,11 +213,18 @@ export const PriceListComponent = styled.div`
     .counter-container {
       margin-top: -10%;
     }
+
+    .price-list-button {
+      margin-top: 10%;
+    }
   }
 
   @media only screen and (max-width: 700px) {
     .counter-container {
       margin-top: -54px;
+    }
+    .price-list-button {
+      margin-top: 23px;
     }
   }
 `

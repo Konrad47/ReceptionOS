@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { PriceListComponent } from "./styled.components"
-import { RoundedInfoTile } from "../../../../styled.components"
+import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
+import { BorderContainerTopRowsBottom } from "../../../../components/BorderContainer/BorderContainerTopRowsBottom"
 
 const PriceList = ({ t }) => {
 
@@ -92,6 +93,9 @@ const PriceList = ({ t }) => {
               ))
               }
             </div>
+            <BorderContainerTopRowsBottom className="bottom-border-container">
+              <RoundedButtonOrange className="price-list-button">{t('home.PriceList.button')}</RoundedButtonOrange>
+            </BorderContainerTopRowsBottom>
           </div>
         </PriceListComponent>
       </div>
