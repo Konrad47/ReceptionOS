@@ -2,13 +2,14 @@ import React from "react"
 import { AboutUsComponent } from "./styled.components"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { Trans } from "react-i18next"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutUs = ({ t }) => {
 
   return (
     <>
-      <div className="container">
-        <AboutUsComponent>
+      <AboutUsComponent>
+        <div className="container">
           <div className="about-us-top">
             <RoundedInfoTile>
               <p>{t('home.AboutUs.about-us')}</p>
@@ -23,8 +24,22 @@ const AboutUs = ({ t }) => {
               />
             </p>
           </div>
-        </AboutUsComponent>
-      </div>
+          <StaticImage
+            className="about-us-image desktop"
+            src="../../../../images/aboutus/about-us-background.webp"
+            alt="about-us-image"
+            placeholder="about-us-image"
+            loading="lazy"
+          />
+          <StaticImage
+            className="about-us-image mobile"
+            src="../../../../images/aboutus/about-us-background_mobile.webp"
+            alt="about-us-image"
+            placeholder="about-us-image"
+            loading="lazy"
+          />
+        </div>
+      </AboutUsComponent>
     </>
   )
 }
