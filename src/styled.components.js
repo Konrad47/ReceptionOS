@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const TileComponent = styled.div`
   display: flex;
@@ -382,4 +382,20 @@ export const RoundedInfoTile = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  ${props =>
+    props.disabled &&
+    css`
+      background: linear-gradient(
+          90deg,
+          rgba(255, 173, 156, 0.07) 0.01%,
+          rgba(255, 156, 156, 0.07) 50.01%,
+          rgba(255, 169, 156, 0.07) 100%
+        ),
+        rgba(15, 12, 10, 0.2) !important;
+
+      p {
+        opacity: 0.5;
+      }
+    `}
 `

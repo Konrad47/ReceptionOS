@@ -13,4 +13,34 @@ export const PriceListComponent = styled.div`
     align-items: center;
     gap: 16px;
   }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 16px; */
+
+    .pricing-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .price-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      align-self: stretch;
+      gap: 56px;
+      flex: 1 0 0;
+      padding: 24px;
+
+      .price-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+      }
+    }
+  }
 `

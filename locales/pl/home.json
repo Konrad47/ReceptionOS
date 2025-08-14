@@ -79,6 +79,17 @@
   "home.FindOut.apolonia-points": "<p>+28% dochód po 6 miesiącach</p> <p>+1 etat na recepcji mnie</p> <p>+115 nowych opinii 5☆ na Google w 4 dni</p>",
   "home.FindOut.button-raport": "Zobacz raport",
 
+  "home.PriceList.price-list": "Cennik",
+  "home.PriceList.title": "Porównaj pakiety",
+  "home.PriceList.Starter-info1": "Starter",
+  "home.PriceList.Starter-info2": "Wkrótce Dostępne",
+
+  "home.PriceList.Optimum-info1": "Optimum",
+  "home.PriceList.Optimum-info2": "Wkrótce Dostępne",
+
+  "home.PriceList.Elite-info1": "Elite",
+  "home.PriceList.Elite-info2": "Zapisy na Waitlist",
+
   "home.WriteUs.title": "Dołączasz do top 1%?",
   "home.WriteUs.description": "Napisz do nas. Odpowiemy od razu.",
   "home.WriteUs.button": "Zamów Analizę",
