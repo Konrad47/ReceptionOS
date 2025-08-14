@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 export const BaseModalContainer = styled.div`
-  display: flex;
+  /* display: flex;
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 16px; */
 `
 
 export const BaseModalHeader = styled.div`

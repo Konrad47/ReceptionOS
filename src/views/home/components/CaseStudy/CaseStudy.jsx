@@ -1,15 +1,66 @@
-import React from "react"
-import { CaseStudyComponent } from "./styled.components"
+import React, { useState } from "react"
+import { CaseStudyComponent, CsModalContainer } from "./styled.components"
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
+import BaseModal from "../../../../components/BaseModal/BaseModal"
+import { Trans } from "react-i18next"
 
 const CaseStudy = ({ t }) => {
+  const [isModal, setIsModal] = useState(false);
 
+  const openModal = () => {
+    setIsModal(true);
+  }
+
+  const Children = () => (
+    <div className="container">
+      <CsModalContainer>
+        <BorderContainer4Rows className="cs-modal cs-modal-1">
+          <StaticImage
+            className="apolonia-cs"
+            src="../../../../images/case-study/apolonia-logo.webp"
+            alt="apolonia"
+            placeholder="apolonia"
+            loading="lazy"
+          />
+          <h3>{t('home.CaseStudy.modal.title')}</h3>
+          <p className="p-new-model-16">
+            <Trans
+              i18nKey="home.CaseStudy.modal.description"
+              components={{
+                span: <span></span>
+              }}
+            />
+          </p>
+        </BorderContainer4Rows>
+        <BorderContainer4Rows className="cs-modal cs-modal-2">
+          {['1', '2', '3'].map(key => (
+            <div key={key} className="tile-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 7.72594C16.2866 4.7221 15.2162 3.13469 13.8569 2.59099C12.6649 2.1142 11.3352 2.1142 10.1431 2.59099C8.50144 3.24765 7.28112 5.42679 4.84049 9.78506C2.49449 13.9743 1.3215 16.069 1.59194 17.7805C1.78851 19.0246 2.44733 20.1486 3.4367 20.9279C4.79789 22.0001 7.19861 22.0001 12 22.0001C16.8015 22.0001 19.2022 22.0001 20.5634 20.9279C21.5528 20.1486 22.2116 19.0246 22.4081 17.7805C22.6261 16.4012 21.9065 14.773 20.391 12.0001M12 13V9M12.5 16.5C12.5 16.7761 12.2761 17 12 17C11.7239 17 11.5 16.7761 11.5 16.5M12.5 16.5C12.5 16.2239 12.2761 16 12 16C11.7239 16 11.5 16.2239 11.5 16.5M12.5 16.5H11.5" stroke="#FF8637" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div className="text-con">
+                <p className="p-new-model-16">{t(`home.CaseStudy.modal.title -warning${key}`)}</p>
+                <p className="p-new-model-16">{t(`home.CaseStudy.modal.description-warning${key}`)}</p>
+              </div>
+            </div>
+          ))}
+        </BorderContainer4Rows>
+      </CsModalContainer>
+    </div>
+  );
+
+  const props = {
+    children: Children(),
+  }
   return (
     <>
+      <BaseModal
+        isModal={isModal}
+        props={props}
+      />
       <CaseStudyComponent>
-
         <div className="container">
           <StaticImage
             className="background-cs mobile"
@@ -50,7 +101,7 @@ const CaseStudy = ({ t }) => {
               loading="lazy"
             />
           </BorderContainer4Rows>
-          <RoundedButtonOrange>
+          <RoundedButtonOrange onClick={openModal}>
             {t('home.CaseStudy.button')}
           </RoundedButtonOrange>
         </div>

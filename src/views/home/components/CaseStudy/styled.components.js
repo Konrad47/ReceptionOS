@@ -90,3 +90,66 @@ export const CaseStudyComponent = styled.div`
     }
   }
 `
+
+export const CsModalContainer = styled.div`
+  margin: 40px 0;
+  /* border: 1px solid #302c29; */
+  background: rgba(10, 10, 10, 0.88);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .cs-modal {
+    border-bottom: none;
+  }
+
+  .cs-modal-1 {
+    display: flex;
+    /* width: 520px; */
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .apolonia-cs {
+      width: 114px;
+      img {
+        width: 114px;
+      }
+    }
+  }
+
+  .cs-modal-2 {
+    display: flex;
+    align-items: flex-start;
+
+    .tile-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      gap: 16px;
+      flex: 1 0 0;
+      padding: 24px 24px 32px 24px;
+
+      svg {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 500px;
+        border: 1px solid #302c29;
+      }
+
+      .text-con {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        align-self: stretch;
+      }
+    }
+  }
+`
