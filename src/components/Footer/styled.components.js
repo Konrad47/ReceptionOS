@@ -52,6 +52,14 @@ export const FooterComponent = styled.div`
       align-items: center;
       width: 314px;
     }
+
+    p {
+      color: #ffe8d9;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
   }
 
   a {

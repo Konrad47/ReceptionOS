@@ -40,7 +40,6 @@ const Footer = ({ t }) => {
           <BorderContainer4Rows className="footer-container footer-3">
             <div>
               <p
-                className="p-new-model-18"
                 onCopy={(e) => {
                   e.preventDefault();
                   e.clipboardData.setData("text/plain", "contact@receptionos.com");
