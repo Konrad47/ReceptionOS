@@ -104,10 +104,11 @@ export const CsModalContainer = styled.div`
   }
 
   .cs-modal-1 {
+    padding: 24px 0;
     display: flex;
-    /* width: 520px; */
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 16px;
 
     .apolonia-cs {
@@ -115,6 +116,14 @@ export const CsModalContainer = styled.div`
       img {
         width: 114px;
       }
+    }
+
+    p {
+      max-width: 520px;
+    }
+
+    span {
+      color: #f8efea;
     }
   }
 
