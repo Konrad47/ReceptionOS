@@ -17,9 +17,24 @@ const PriceList = ({ t }) => {
           </div>
           <div className="bottom">
             <div className="pricing-container">
-              {[{ name: 'Starter', disable: true },
-              { name: 'Optimum', disable: true },
-              { name: 'Elite', disable: false }
+              {[{
+                name: 'Starter',
+                disable: true,
+                listText: false,
+                list: ['1', '2', '3', '4']
+              },
+              {
+                name: 'Optimum',
+                disable: true,
+                listText: true,
+                list: ['1', '2', '3', '4']
+              },
+              {
+                name: 'Elite',
+                disable: false,
+                listText: true,
+                list: ['1', '2', '3', '4']
+              }
               ].map((item, index) => (
                 <BorderContainer4Rows key={index} className="price-tile">
                   <div className="price-top">
@@ -29,6 +44,22 @@ const PriceList = ({ t }) => {
                     <RoundedInfoTile disabled={item.disable}>
                       <p>{t(`home.PriceList.${item.name}-info2`)}</p>
                     </RoundedInfoTile>
+                  </div>
+                  <div className="price-bottom">
+                    <h3>{parseInt(t(`home.PriceList.${item.name}-pricing`))} PLN <span>/ msc</span></h3>
+                    {item.listText && (
+                      <p className="list-text">{t(`home.PriceList.${item.name}-list-text`)}</p>
+                    )}
+                    {item.list.
+                      map(key => (
+                        <div key={key} className="price-li">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3.33325 10.8333L7.49992 15L16.6666 5" stroke="#FFE8D9" stroke-linejoin="round" />
+                          </svg>
+                          <p className="p-new-model-16 ">{t(`home.PriceList.${item.name}-li${key}`)}</p>
+                        </div>
+                      ))
+                    }
                   </div>
                 </BorderContainer4Rows>
               ))

@@ -15,12 +15,16 @@ export const PriceListComponent = styled.div`
   }
 
   .bottom {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* gap: 16px; */
 
     .pricing-container {
+      width: 100%;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
     }
@@ -40,6 +44,40 @@ export const PriceListComponent = styled.div`
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
+      }
+
+      .price-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+
+        span {
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+
+      .list-text {
+        color: #a3948b;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+
+      .price-li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+
+        svg {
+          flex-shrink: 0;
+        }
       }
     }
   }

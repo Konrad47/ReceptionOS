@@ -58,6 +58,22 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    180deg,
+    #fff8f3 0%,
+    rgba(255, 232, 217, 0.7) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .p-body-large {
   font-size: 24px;
   font-style: normal;
