@@ -8,6 +8,7 @@ export const CaseStudyComponent = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    position: relative;
   }
 
   .case-study-top {
@@ -28,5 +29,13 @@ export const CaseStudyComponent = styled.div`
     img {
       width: 118px;
     }
+  }
+
+  .background-cs {
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    z-index: -1;
   }
 `

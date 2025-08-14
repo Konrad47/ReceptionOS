@@ -25,6 +25,20 @@ const CaseStudy = ({ t }) => {
             placeholder="apolonia"
             loading="lazy"
           />
+          <StaticImage
+            className="background-cs desktop"
+            src="../../../../images/case-study/case-study-background.webp"
+            alt="apolonia"
+            placeholder="apolonia"
+            loading="lazy"
+          />
+          <StaticImage
+            className="background-cs mobile"
+            src="../../../../images/case-study/case-study-background_mobile.webp"
+            alt="apolonia"
+            placeholder="apolonia"
+            loading="lazy"
+          />
         </div>
       </CaseStudyComponent>
     </>
