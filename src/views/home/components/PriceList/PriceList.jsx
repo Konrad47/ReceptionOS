@@ -1,21 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import { PriceListComponent } from "./styled.components"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
+import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
 
 const PriceList = ({ t }) => {
+
+  const [counter, setCounter] = useState(1);
+  const incrementCounter = () => {
+    setCounter(prev => (prev < 99 ? prev + 1 : 99));
+    console.log(counter)
+  };
+  const decrementCounter = () => {
+    setCounter(prev => (prev > 1 ? prev - 1 : 1));
+  }
 
   return (
     <>
       <div className="container">
         <PriceListComponent>
-          <div className="top">
+          <div className="top-container">
             <RoundedInfoTile>
               <p>{t('home.PriceList.price-list')}</p>
             </RoundedInfoTile>
             <h2>{t('home.PriceList.title')}</h2>
           </div>
-          <div className="bottom">
+          <div className="bottom-container">
+            <BorderContainerBottomRowsTop className="top-border-container">
+              <div className="counter-container">
+                <div onClick={decrementCounter} className="counter-sides counter-left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4.16675 10H10.0001H15.8334" stroke="#FFE8D9" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div className="counter-middle">
+                  {counter}
+                </div>
+                <div onClick={incrementCounter} className="counter-sides counter-right">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4.16675 10.0003H10.0001M15.8334 10.0003H10.0001M10.0001 10.0003V4.16699M10.0001 10.0003V15.8337" stroke="#FFE8D9" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </BorderContainerBottomRowsTop>
             <div className="pricing-container">
               {[{
                 name: 'Starter',
@@ -46,7 +73,7 @@ const PriceList = ({ t }) => {
                     </RoundedInfoTile>
                   </div>
                   <div className="price-bottom">
-                    <h3>{parseInt(t(`home.PriceList.${item.name}-pricing`))} PLN <span>/ msc</span></h3>
+                    <h3>{parseInt(t(`home.PriceList.${item.name}-pricing`)) + (parseInt(t(`home.PriceList.increment-value`)) * counter)} PLN <span>/ msc</span></h3>
                     {item.listText && (
                       <p className="list-text">{t(`home.PriceList.${item.name}-list-text`)}</p>
                     )}
