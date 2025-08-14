@@ -29,10 +29,6 @@
   "home.AIWave.tile-title-4": "Maksymalizacja zysku",
   "home.AIWave.tile-description-4": "Wypełniamy grafik, redukujemy no-shows o 69%, zatrzymujemy u Ciebie pacjenta.",
 
-  "home.ClinicsProblems.subtitle": "Jesteś w dobrych rękach",
-  "home.ClinicsProblems.title": "Znamy problemy klinik – to nasza codzienność",
-  "home.ClinicsProblems.description": "Pasja do stomatologii płynie w naszej krwi – wywodzimy się z rodzinnej kliniki stomatologicznej <b>z ponad 35 letnim doświadczeniem w implantologii.</b> Rozwiązaliśmy prawdziwe problemy, które znamy od podszewki. Pozwól nam pomóc także Tobie.",
-
   "home.StepByStep.subtitle": "Jak to działa",
   "home.StepByStep.title": "Krok po kroku",
   "home.StepByStep.tile-title-1": "Podłączenie systemów",
@@ -41,32 +37,6 @@
   "home.StepByStep.tile-description-2": "ReceptionOS uczy się stylu Twojej kliniki i potrzeb pacjentów – rezerwacje, anulacje i częste pytania.",
   "home.StepByStep.tile-title-3": "Start i optymalizacja",
   "home.StepByStep.tile-description-3": "ReceptionOS odbiera połączenia, umawia wizyty i pomaga recepcji 24/7. Sprawdzaj wyniki, ulepszaj obsługę i zwiększaj swój dochód.",
-
-  "home.Solution.subtitle": "Partnerzy o nas",
-  "home.Solution.title": "Rozwiązanie, które faktycznie działa",
-
-  "home.ReadyFor.title-1": "Gotowy na receptionOS?",
-  "home.ReadyFor.description-1": "Sprawdź nasze ceny",
-  "home.ReadyFor.title-2": "Dołącz do klinik przyszłości",
-  "home.ReadyFor.description-2": "Dowiedz się gdzie Twoja klinika traci",
-
-  "home.Problems.subtitle": "Problemy, które rozwiązujemy",
-  "home.Problems.title": "Chaos na recepcji i niedokładna obsługa – brzmi znajomo?",
-  "home.Problems.description": "Zobacz, jak ReceptionOS rozwiązuje codzienne problemy klinik stomatologicznych",
-  "home.Problems.tile-title-1": "Chaos",
-  "home.Problems.tile-description-1": "na recepcji i nieoptymalny kalendarz",
-  "home.Problems.tile-title-2": "Nieobecni pacjenci",
-  "home.Problems.tile-description-2": "na umówionych wizytach blokujący grafik",
-  "home.Problems.tile-title-3": "Zajęta linia",
-  "home.Problems.tile-description-3": "i za późno oddzwonione telefony",
-
-  "home.Progress.title": "Prawdziwy postęp z ReceptionOS",
-  "home.Progress.with-rOS": "z rOS",
-  "home.Progress.without-rOS": "bez rOS",
-  "home.Progress.with-rOS-title": "69% mniej opuszczonych wizyt",
-  "home.Progress.with-rOS-description": "maksymalizuj zyski dzięki automatycznym depozytom i sprawnym uzupełnianiu luk w grafiku",
-  "home.Progress.without-rOS-title": "1 z 3 utraconych spotkań",
-  "home.Progress.without-rOS-description": "pacjenci zapominający o odwołaniu wizyt kosztują Twoją klinikę czas i pieniądze – ale nie powinno to być Twoim problemem",
 
   "home.FindOut.subtitle": "Zamów badanie",
   "home.FindOut.title": "Dowiedz się gdzie Twoja klinika traci pacjentów",
@@ -79,6 +49,7 @@
   "home.FindOut.apolonia-points": "<p>+28% dochód po 6 miesiącach</p> <p>+1 etat na recepcji mnie</p> <p>+115 nowych opinii 5☆ na Google w 4 dni</p>",
   "home.FindOut.button-raport": "Zobacz raport",
 
+  //-----
   "home.AboutUs.about-us": "O Nas",
   "home.AboutUs.title": "Znamy problemy klinik – to nasza codzienność",
   "home.AboutUs.description": "Pasja do stomatologii płynie w naszej krwi – wywodzimy się z rodzinnej kliniki stomatologicznej <span>z ponad 35 letnim doświadczeniem</span> w implantologii. Rozwiązaliśmy prawdziwe problemy, które znamy od podszewki. Pozwól nam pomóc także Tobie.",

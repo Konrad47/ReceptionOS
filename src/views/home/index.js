@@ -6,15 +6,12 @@ import Autopilot from "./components/Autopilot/Autopilot"
 import AIWave from "./components/AIWave/AIWave"
 import ClinicsProblems from "./components/ClinicsProblems/ClinicsProblems"
 import StepByStep from "./components/StepByStep/StepByStep"
-import Solution from "./components/Solution/Solution"
-import ReadyFor from "./components/ReadyFor/ReadyFor"
-import Problems from "./components/Problems/Problems"
-import Progress from "./components/Progress/Progress"
 import FindOut from "./components/FindOut/FindOut"
 import WriteUs from "./components/WriteUs/WriteUs"
 import Footer from "../../components/Footer/Footer"
 import PriceList from "./components/PriceList/PriceList"
 import AboutUs from "./components/AboutUs/AboutUs"
+import CaseStudy from "./components/CaseStudy/CaseStudy"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -28,12 +25,9 @@ const Home = () => {
       <AIWave t={t} />
       <ClinicsProblems t={t} />
       <StepByStep t={t} />
-      <Solution t={t} />
-      <ReadyFor t={t} />
-      <Problems t={t} />
-      <Progress t={t} />
       <FindOut t={t} />
 
+      <CaseStudy t={t} />
       <AboutUs t={t} />
       <PriceList t={t} />
       <WriteUs t={t} />
