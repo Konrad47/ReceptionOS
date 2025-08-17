@@ -93,8 +93,6 @@ export const CaseStudyComponent = styled.div`
 
 export const CsModalContainer = styled.div`
   margin-top: 52px;
-  /* border: 1px solid #302c29; */
-  background: rgba(10, 10, 10, 0.88);
   display: flex;
   flex-direction: column;
   width: 100%;

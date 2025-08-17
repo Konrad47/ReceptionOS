@@ -22,7 +22,8 @@ const BaseModal = ({
             boxSizing: 'border-box',
             border: "1px solid #302C29",
             borderRadius: '0px',
-            background: "#0a0a0a"
+            background: "rgba(10, 10, 10, 1)",
+            backdropFilter: 'blur(40px)',
         }
     });
 

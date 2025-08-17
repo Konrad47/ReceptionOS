@@ -61,6 +61,12 @@
   "home.CaseStudy.modal.description-warning1": "tyle pacjenci średnio czekali na linii w celu umówienia wizyty stomatologicznej",
   "home.CaseStudy.modal.description-warning2": "pacjent nie był przekonany do rezerwacji wizyty, co powodowało dodatkowe „puste” telefony",
   "home.CaseStudy.modal.description-warning3": "średnio 2 lekarzy miało wolne terminy w ciągu dnia z powodu niepojawienia się pacjentów",
+  "home.CaseStudy.modal.solution-title": "Wszystkie te problemy mogłyby zostać rozwiązane dzięki receptionOS:",
+  "home.CaseStudy.modal.title-solution1": "Całodobowa obsługa telefoniczna",
+  "home.CaseStudy.modal.title-solution2": "brak czasu oczekiwania, brak pytań bez odpowiedzi",
+  "home.CaseStudy.modal.description-solution1": "Dodatkowe potwierdzenia wizyt przez pacjentów",
+  "home.CaseStudy.modal.description-solution2": "mniej nieobecności",
+  "home.CaseStudy.modal.button": "Zamów Analizę",
 
   "home.AboutUs.about-us": "O Nas",
   "home.AboutUs.title": "Znamy problemy klinik – to nasza codzienność",
