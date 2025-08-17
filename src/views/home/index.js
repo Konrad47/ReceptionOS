@@ -12,6 +12,7 @@ import Footer from "../../components/Footer/Footer"
 import PriceList from "./components/PriceList/PriceList"
 import AboutUs from "./components/AboutUs/AboutUs"
 import CaseStudy from "./components/CaseStudy/CaseStudy"
+import Analysis from "./components/Analysis/Analysis"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -27,6 +28,7 @@ const Home = () => {
       <StepByStep t={t} />
       <FindOut t={t} />
 
+      <Analysis t={t} />
       <CaseStudy t={t} />
       <AboutUs t={t} />
       <PriceList t={t} />
