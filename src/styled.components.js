@@ -275,6 +275,18 @@ export const RoundedButtonSvg = styled.button`
   }
 `
 
+export const RoundedButtonSvgDark = styled(RoundedButtonSvg)`
+  border: 1px solid #302c29;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 173, 156, 0.07) 0.01%,
+      rgba(255, 156, 156, 0.07) 50.01%,
+      rgba(255, 169, 156, 0.07) 100%
+    ),
+    linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.3) 100%),
+    #0f0c0a;
+`
+
 export const RoundedButtonOrange = styled.button`
   display: inline-flex;
   height: 56px;

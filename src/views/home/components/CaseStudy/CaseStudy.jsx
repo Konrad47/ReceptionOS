@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { CaseStudyComponent, CsModalContainer } from "./styled.components"
-import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components"
+import { RoundedButtonOrange, RoundedButtonSvgDark, RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import BaseModal from "../../../../components/BaseModal/BaseModal"
@@ -16,7 +16,15 @@ const CaseStudy = ({ t }) => {
   const Children = () => (
     <div className="container">
       <CsModalContainer>
-        <BorderContainer4Rows className="cs-modal cs-modal-1">
+        <BorderContainer4Rows className="cs-modal cs-modal-1 cs-modal-first">
+          <RoundedButtonSvgDark className="close-button" onClick={() => setIsModal(false)}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 18L18 6M6 6L18 18" stroke="#FFE8D9" stroke-linejoin="round" />
+            </svg>
+          </RoundedButtonSvgDark>
+          <RoundedInfoTile style={{ marginTop: '-40px' }}>
+            <p>{t('home.CaseStudy.case-study')}</p>
+          </RoundedInfoTile>
           <StaticImage
             className="apolonia-cs"
             src="../../../../images/case-study/apolonia-logo.webp"

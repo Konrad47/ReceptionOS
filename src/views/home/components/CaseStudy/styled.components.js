@@ -92,16 +92,30 @@ export const CaseStudyComponent = styled.div`
 `
 
 export const CsModalContainer = styled.div`
-  margin-top: 40px;
+  margin-top: 52px;
   /* border: 1px solid #302c29; */
   background: rgba(10, 10, 10, 0.88);
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 42px);
+  height: calc(100vh - 55px);
 
   .cs-modal {
     border-bottom: none;
+  }
+
+  .cs-modal-first {
+    position: relative;
+    .right-top,
+    .left-top {
+      display: none;
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: -24px;
+    right: -24px;
   }
 
   .cs-modal-1 {
@@ -114,6 +128,7 @@ export const CsModalContainer = styled.div`
 
     .apolonia-cs {
       width: 114px;
+      margin-top: 16px;
       img {
         width: 114px;
       }
