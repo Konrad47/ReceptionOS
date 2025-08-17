@@ -92,12 +92,13 @@ export const CaseStudyComponent = styled.div`
 `
 
 export const CsModalContainer = styled.div`
-  margin: 40px 0;
+  margin-top: 40px;
   /* border: 1px solid #302c29; */
   background: rgba(10, 10, 10, 0.88);
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: calc(100vh - 42px);
 
   .cs-modal {
     border-bottom: none;
@@ -159,6 +160,24 @@ export const CsModalContainer = styled.div`
         gap: 4px;
         align-self: stretch;
       }
+    }
+  }
+
+  .cs-modal-3 {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cs-modal-last {
+    padding: 44px 0;
+    height: 100%;
+    box-sizing: border-box;
+    .right-bottom,
+    .left-bottom {
+      display: none;
     }
   }
 `
