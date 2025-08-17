@@ -1,5 +1,6 @@
 import React from "react"
 import { AnalysisComponent } from "./styled.components";
+import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
 
 const Analysis = ({ t }) => {
 
@@ -7,7 +8,9 @@ const Analysis = ({ t }) => {
     <>
       <div className="container">
         <AnalysisComponent>
+          <BorderContainerTopRowsSides className="analysis-container">
 
+          </BorderContainerTopRowsSides>
         </AnalysisComponent>
       </div>
     </>
