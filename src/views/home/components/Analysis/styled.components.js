@@ -6,6 +6,17 @@ export const AnalysisComponent = styled.div`
     box-sizing: border-box;
     margin: auto;
     padding: 40px 0;
+    text-align: center;
+    position: relative;
+
+    .background-a {
+      position: absolute;
+      width: 150%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -60px;
+      z-index: -1;
+    }
 
     .top-title {
       display: flex;
@@ -35,6 +46,20 @@ export const AnalysisComponent = styled.div`
         gap: 24px;
         align-self: stretch;
         padding-bottom: 32px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .analysis-container {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .analysis-container {
+      .background-a {
+        top: 50px;
       }
     }
   }

@@ -11,6 +11,13 @@ const Analysis = ({ t }) => {
       <div className="container">
         <AnalysisComponent>
           <BorderContainerTopRowsSides className="analysis-container">
+            <StaticImage
+              className="background-a"
+              src="../../../../images/analysis/analysis-background.webp"
+              alt="background"
+              placeholder="background"
+              loading="lazy"
+            />
             <div className="top-title">
               <RoundedInfoTile>
                 <p>{t('home.Analysis.case-study')}</p>
