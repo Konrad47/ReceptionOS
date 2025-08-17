@@ -117,7 +117,7 @@ export const CsModalContainer = styled.div`
   }
 
   .cs-modal-1 {
-    padding: 24px 0;
+    padding: 24px 24px 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +177,7 @@ export const CsModalContainer = styled.div`
   }
 
   .cs-modal-3 {
-    padding: 24px 0;
+    padding: 24px 24px 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,6 +191,15 @@ export const CsModalContainer = styled.div`
     .right-bottom,
     .left-bottom {
       display: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .close-button {
+      right: 0;
+    }
+    .cs-modal-2 {
+      flex-direction: column;
     }
   }
 `
