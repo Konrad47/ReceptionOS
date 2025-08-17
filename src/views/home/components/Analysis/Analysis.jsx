@@ -1,6 +1,8 @@
 import React from "react"
 import { AnalysisComponent } from "./styled.components";
 import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
+import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Analysis = ({ t }) => {
 
@@ -9,10 +11,38 @@ const Analysis = ({ t }) => {
       <div className="container">
         <AnalysisComponent>
           <BorderContainerTopRowsSides className="analysis-container">
-
+            <div className="top-title">
+              <RoundedInfoTile>
+                <p>{t('home.Analysis.case-study')}</p>
+              </RoundedInfoTile>
+              <h4>{t('home.Analysis.title')}</h4>
+            </div>
+            <div className="middle-text">
+              <h1>{t('home.Analysis-price')} PLN</h1>
+              <p className="p-new-model-14">{t('home.Analysis.in-it')}</p>
+              <div className="inner-text">
+                <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
+                  <path d="M0.5 1H24.5" stroke="#EB670F" stroke-opacity="0.3" />
+                </svg>
+                <p className="p-new-model-16">{t('home.Analysis.inner-text2')}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
+                  <path d="M0.5 1H24.5" stroke="#EB670F" stroke-opacity="0.3" />
+                </svg>
+                <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
+              </div>
+              <RoundedButtonOrange>{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
+            </div>
           </BorderContainerTopRowsSides>
         </AnalysisComponent>
       </div>
+      <StaticImage
+        className="analysis-image"
+        src="../../../../images/analysis/analysis-image.webp"
+        alt="analysis-image"
+        placeholder="analysis-image"
+        loading="lazy"
+      />
     </>
   )
 }
