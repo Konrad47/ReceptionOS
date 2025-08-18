@@ -13,6 +13,7 @@ import PriceList from "./components/PriceList/PriceList"
 import AboutUs from "./components/AboutUs/AboutUs"
 import CaseStudy from "./components/CaseStudy/CaseStudy"
 import Analysis from "./components/Analysis/Analysis"
+import PartnersAboutUs from "./components/PartnersAboutUs/PartnersAboutUs"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -28,6 +29,7 @@ const Home = () => {
       <StepByStep t={t} />
       <FindOut t={t} />
 
+      <PartnersAboutUs t={t} />
       <Analysis t={t} />
       <CaseStudy t={t} />
       <AboutUs t={t} />
