@@ -13,7 +13,7 @@ export const PartnersAboutUsComponent = styled.div`
     .top-title {
       display: flex;
       max-width: 378px;
-      margin: 0 auto auto auto;
+      margin: 0 auto 40px auto;
       flex-direction: column;
       justify-content: center;
       align-items: center;
