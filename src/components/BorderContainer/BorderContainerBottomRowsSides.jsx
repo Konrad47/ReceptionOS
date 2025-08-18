@@ -1,9 +1,9 @@
 import React from "react"
 
-export const BorderContainerTopRowsSides = ({ children, className }) => {
+export const BorderContainerBottomRowsSides = ({ children, className }) => {
     return (
         <>
-            <div className={`border-container-top-rows-sides ${className}`}>
+            <div className={`border-container-bottom-rows-sides ${className}`}>
                 <svg
                     className="left-top"
                     xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +13,16 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     fill="none"
                 >
                     <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                </svg>
+                <svg
+                    className="left-bottom"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M7 7L1 7L1 1" stroke="#877B72" stroke-linecap="round" />
                 </svg>
                 <svg
                     className="right-top"
@@ -25,42 +35,39 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
                 </svg>
                 <svg
+                    className="right-bottom"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M1 7L7 7L7 1" stroke="#877B72" stroke-linecap="round" />
+                </svg>
+                <svg
                     className="left desktop"
                     xmlns="http://www.w3.org/2000/svg"
                     width="34"
-                    height="833"
-                    viewBox="0 0 34 833"
+                    height="458"
+                    viewBox="0 0 34 458"
                     fill="none"
                 >
                     <path
-                        d="M33 0.5L33 105.5L27 136.5L33 136.5L1 245.75L1 832.5"
-                        stroke="url(#paint0_linear_206_3252)"
+                        d="M33 457L32.9998 330.5L26.9998 299.5L32.9998 299.5L0.999737 190.25L0.999738 0.999999"
+                        stroke="#302C29"
                         stroke-linecap="round"
                     />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_206_3252"
-                            x1="17"
-                            y1="358"
-                            x2="17"
-                            y2="833"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stop-color="#302C29" />
-                            <stop offset="1" stop-color="#302C29" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
                 </svg>
                 <svg
                     className="left mobile"
                     xmlns="http://www.w3.org/2000/svg"
                     width="34"
-                    height="431"
-                    viewBox="0 0 34 431"
+                    height="436"
+                    viewBox="0 0 34 436"
                     fill="none"
                 >
                     <path
-                        d="M33 -4L33 101L27 132L33 132L1 241.25L1 430.5"
+                        d="M33 435L33 330L27 299L33 299L1 189.75L1 0.499999"
                         stroke="#302C29"
                         stroke-linecap="round"
                     />
@@ -69,47 +76,34 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     className="right desktop"
                     xmlns="http://www.w3.org/2000/svg"
                     width="34"
-                    height="792"
-                    viewBox="0 0 34 792"
+                    height="458"
+                    viewBox="0 0 34 458"
                     fill="none"
                 >
                     <path
-                        d="M1 0.5L0.999997 105.5L7 136.5L0.999995 136.5L33 245.75L33 791"
-                        stroke="url(#paint0_linear_206_3251)"
+                        d="M1 457L1.00024 330.5L7.00024 299.5L1.00024 299.5L33.0002 190.25L33.0002 0.999999"
+                        stroke="#302C29"
                         stroke-linecap="round"
                     />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_206_3251"
-                            x1="17"
-                            y1="440.5"
-                            x2="16.9994"
-                            y2="820"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stop-color="#302C29" />
-                            <stop offset="1" stop-color="#302C29" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
                 </svg>
                 <svg
                     className="right mobile"
                     xmlns="http://www.w3.org/2000/svg"
                     width="34"
-                    height="431"
-                    viewBox="0 0 34 431"
+                    height="436"
+                    viewBox="0 0 34 436"
                     fill="none"
                 >
                     <path
-                        d="M1 -4L0.999997 101L7 132L0.999995 132L33 241.25L33 430.5"
+                        d="M1 435L0.999997 330L7 299L0.999995 299L33 189.75L33 0.499999"
                         stroke="#302C29"
                         stroke-linecap="round"
                     />
                 </svg>
                 {children}
                 <style jsx>{`
-          .border-container-top-rows-sides {
-            border-top: 1px solid #302c29;
+          .border-container-bottom-rows-sides {
+            /* border-top: 1px solid #302c29; */
             display: flex;
             flex-direction: column;
             position: relative;
@@ -128,11 +122,21 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
             .left-top {
               position: absolute;
               top: -1px;
+              left: -34px;
+            }
+            .left-bottom {
+              position: absolute;
+              bottom: -1px;
               left: -1px;
             }
             .right-top {
               position: absolute;
               top: -1px;
+              right: -34px;
+            }
+            .right-bottom {
+              position: absolute;
+              bottom: -1px;
               right: -1px;
             }
           }
