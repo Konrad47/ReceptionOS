@@ -36,12 +36,62 @@ const PartnersAboutUs = ({ t }) => {
           loading="lazy"
         />
       ),
-      name: 'Kacper Raciborski',
+      name: 'Apolonia Dental',
       position: [
-        t('home.PartnersAboutUs.partner2-position1'),
-        t('home.PartnersAboutUs.partner2-position2'),
       ],
       company: t('home.PartnersAboutUs.partner2-company')
+    },
+    {
+      desc: t('home.PartnersAboutUs.partner3-desc'),
+      img: (
+        <StaticImage
+          className="slider-image"
+          src="../../../../images/partners-aboutus/3.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      ),
+      name: 'Kacper Raciborski',
+      position: [
+        t('home.PartnersAboutUs.partner3-position1'),
+        t('home.PartnersAboutUs.partner3-position2'),
+      ],
+      company: t('home.PartnersAboutUs.partner3-company')
+    },
+    {
+      desc: t('home.PartnersAboutUs.partner4-desc'),
+      img: (
+        <StaticImage
+          className="slider-image"
+          src="../../../../images/partners-aboutus/4.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      ),
+      name: 'Adam Wojsa',
+      position: [
+        t('home.PartnersAboutUs.partner4-position1'),
+      ],
+      company: t('home.PartnersAboutUs.partner4-company')
+    },
+    {
+      desc: t('home.PartnersAboutUs.partner5-desc'),
+      img: (
+        <StaticImage
+          className="slider-image"
+          src="../../../../images/partners-aboutus/5.webp"
+          alt="image"
+          placeholder="none"
+          loading="lazy"
+        />
+      ),
+      name: 'Kamil Kuczewski',
+      position: [
+        t('home.PartnersAboutUs.partner5-position1'),
+      ],
+      company: t('home.PartnersAboutUs.partner5-company')
     },
   ]
 

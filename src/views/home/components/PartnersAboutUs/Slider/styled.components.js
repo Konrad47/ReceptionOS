@@ -62,6 +62,9 @@ export const SliderContainer = styled.div`
         justify-content: flex-end;
         align-items: center;
         border-radius: 800px;
+        height: 96px;
+        width: 77px;
+        box-sizing: border-box;
         border: 1.6px solid #302c29;
         background: linear-gradient(
           180deg,
@@ -69,8 +72,13 @@ export const SliderContainer = styled.div`
           #171717 100%
         );
 
+        /* position: relative; */
+
         img {
           /* width: 100%; */
+          /* position: absolute; */
+          scale: 2.5;
+          top: 55px;
         }
       }
 
