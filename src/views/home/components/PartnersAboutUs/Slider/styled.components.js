@@ -71,15 +71,6 @@ export const SliderContainer = styled.div`
           rgba(23, 23, 23, 0) 0%,
           #171717 100%
         );
-
-        /* position: relative; */
-
-        img {
-          /* width: 100%; */
-          /* position: absolute; */
-          scale: 2.5;
-          top: 55px;
-        }
       }
 
       .slider-person-data {

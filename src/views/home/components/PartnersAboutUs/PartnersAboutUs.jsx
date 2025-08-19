@@ -12,6 +12,7 @@ const PartnersAboutUs = ({ t }) => {
       desc: t('home.PartnersAboutUs.partner1-desc'),
       img: (
         <StaticImage
+          imgStyle={{ transform: 'scale(2.5)', top: '55px' }}
           className="slider-image"
           src="../../../../images/partners-aboutus/1.webp"
           alt="image"
@@ -29,6 +30,7 @@ const PartnersAboutUs = ({ t }) => {
       desc: t('home.PartnersAboutUs.partner2-desc'),
       img: (
         <StaticImage
+          imgStyle={{ transform: 'scale(2)', top: '55px' }}
           className="slider-image"
           src="../../../../images/partners-aboutus/2.webp"
           alt="image"
@@ -45,6 +47,7 @@ const PartnersAboutUs = ({ t }) => {
       desc: t('home.PartnersAboutUs.partner3-desc'),
       img: (
         <StaticImage
+          imgStyle={{ transform: 'scale(2.5)', top: '66px', left: '15px' }}
           className="slider-image"
           src="../../../../images/partners-aboutus/3.webp"
           alt="image"
@@ -63,6 +66,7 @@ const PartnersAboutUs = ({ t }) => {
       desc: t('home.PartnersAboutUs.partner4-desc'),
       img: (
         <StaticImage
+          imgStyle={{ transform: 'scale(2.1)', top: '50px' }}
           className="slider-image"
           src="../../../../images/partners-aboutus/4.webp"
           alt="image"
@@ -80,6 +84,7 @@ const PartnersAboutUs = ({ t }) => {
       desc: t('home.PartnersAboutUs.partner5-desc'),
       img: (
         <StaticImage
+          imgStyle={{ transform: 'scale(3.5)', top: '90px' }}
           className="slider-image"
           src="../../../../images/partners-aboutus/5.webp"
           alt="image"
