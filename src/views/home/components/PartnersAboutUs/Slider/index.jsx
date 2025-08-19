@@ -6,13 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const SliderComponent = ({ items }) => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 3500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 3500,
     arrows: false
   };
 
