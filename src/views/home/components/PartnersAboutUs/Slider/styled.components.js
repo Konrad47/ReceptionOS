@@ -139,15 +139,15 @@ export const SliderContainer = styled.div`
       0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
   }
 
-  @media (max-width: 976px) {
-    a {
-      padding: 0 1.6rem;
+  @media only screen and (max-width: 1020px) {
+    .slick-dots {
+      bottom: -38px;
     }
   }
 
-  @media (max-width: 568px) {
-    a {
-      padding: 0 2rem 0 0;
+  @media only screen and (max-width: 450px) {
+    .slider-tile {
+      width: 275px !important;
     }
   }
 `

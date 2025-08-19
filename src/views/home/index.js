@@ -25,9 +25,9 @@ const Home = () => {
       <Menu t={t} />
       <Autopilot t={t} />
       <AIWave t={t} />
-      <ClinicsProblems t={t} />
-      <StepByStep t={t} />
-      <FindOut t={t} />
+      {/* <ClinicsProblems t={t} /> */}
+      {/* <StepByStep t={t} /> */}
+      {/* <FindOut t={t} /> */}
 
       <PartnersAboutUs t={t} />
       <Analysis t={t} />

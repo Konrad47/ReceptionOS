@@ -20,4 +20,11 @@ export const PartnersAboutUsComponent = styled.div`
       gap: 16px;
     }
   }
+
+  @media only screen and (max-width: 1020px) {
+    .pau-container {
+      width: 80%;
+      height: 440px;
+    }
+  }
 `
