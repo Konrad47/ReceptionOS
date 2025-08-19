@@ -44,8 +44,15 @@ const Analysis = ({ t }) => {
         </AnalysisComponent>
       </div>
       <StaticImage
-        className="analysis-image"
+        className="analysis-image desktop"
         src="../../../../images/analysis/analysis-image.webp"
+        alt="analysis-image"
+        placeholder="analysis-image"
+        loading="lazy"
+      />
+      <StaticImage
+        className="analysis-image mobile"
+        src="../../../../images/analysis/analysis-image_mobile.webp"
         alt="analysis-image"
         placeholder="analysis-image"
         loading="lazy"
