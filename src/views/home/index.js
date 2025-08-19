@@ -14,6 +14,7 @@ import AboutUs from "./components/AboutUs/AboutUs"
 import CaseStudy from "./components/CaseStudy/CaseStudy"
 import Analysis from "./components/Analysis/Analysis"
 import PartnersAboutUs from "./components/PartnersAboutUs/PartnersAboutUs"
+import Compare from "./components/Compare/Compare"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -29,6 +30,7 @@ const Home = () => {
       {/* <StepByStep t={t} /> */}
       {/* <FindOut t={t} /> */}
 
+      <Compare t={t} />
       <PartnersAboutUs t={t} />
       <Analysis t={t} />
       <CaseStudy t={t} />
