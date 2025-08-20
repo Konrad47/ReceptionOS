@@ -4,7 +4,7 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
     return (
         <>
             <svg
-                className="top desktop"
+                className="no-rows-top-top desktop"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 962 32"
                 fill="none"
@@ -16,7 +16,7 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
                 />
             </svg>
             <svg
-                className="top mobile"
+                className="no-rows-top-top mobile"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 376 32"
                 fill="none"
@@ -36,7 +36,7 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
             display: flex;
             flex-direction: column;
           }
-          .top {
+          .no-rows-top-top {
             margin-bottom: -1px;
             margin-left: -1px;
             width: calc(100% + 2px);

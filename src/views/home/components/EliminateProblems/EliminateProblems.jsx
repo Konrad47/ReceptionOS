@@ -2,6 +2,7 @@ import React from "react"
 import { EliminateProblemsComponent } from "./styled.components"
 import { RoundedButtonSvg, RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
+import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
 
 const EliminateProblems = ({ t }) => {
   return (
@@ -15,6 +16,7 @@ const EliminateProblems = ({ t }) => {
             <h3>{t('home.EliminateProblems.title')}</h3>
             <p className="p-new-model-18">{t('home.EliminateProblems.description')}</p>
           </div>
+          <BorderContainerBottomRowsTop />
           <div className="tiles-container">
             {['1', '2', '3']
               .map(key => (

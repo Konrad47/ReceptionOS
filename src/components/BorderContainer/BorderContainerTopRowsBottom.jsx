@@ -33,7 +33,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
             flex-direction: column;
             position: relative;
           }
-          .bottom {
+          .top-rows-bottom-bottom {
             margin-bottom: -1px;
             margin-left: -1px;
             width: calc(100% + 2px);
@@ -51,7 +51,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
         `}</style>
             </div>
             <svg
-                className="bottom desktop"
+                className="top-rows-bottom-bottom desktop"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 963 111"
                 fill="none"
@@ -63,7 +63,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
                 />
             </svg>
             <svg
-                className="bottom mobile"
+                className="top-rows-bottom-bottom mobile"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 360 103"
                 fill="none"
