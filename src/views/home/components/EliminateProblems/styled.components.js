@@ -54,4 +54,15 @@ export const EliminateProblemsComponent = styled.div`
       align-self: stretch;
     }
   }
+
+  @media only screen and (max-width: 1020px) {
+    padding: 30px 0;
+
+    .tiles-container {
+      flex-direction: column;
+    }
+    .top-title {
+      margin-bottom: 30px;
+    }
+  }
 `
