@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { EliminateProblemsComponent } from "./styled.components"
+import { EliminateProblemsComponent, EPModalContainer } from "./styled.components"
 import { RoundedButtonSvg, RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
@@ -15,8 +15,16 @@ const EliminateProblems = ({ t }) => {
     setIsModal(true);
   }
 
+  const Children = () => (
+    <EPModalContainer>
+      <div className="video-container">
+        {childrenContent}
+      </div>
+    </EPModalContainer>
+  )
+
   const props = {
-    children: childrenContent
+    children: Children()
   }
 
   const modalStyles = {

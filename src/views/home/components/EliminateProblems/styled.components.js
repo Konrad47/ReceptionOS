@@ -66,3 +66,19 @@ export const EliminateProblemsComponent = styled.div`
     }
   }
 `
+
+export const EPModalContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .video-container {
+    display: flex;
+    width: 960px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    margin: auto;
+    background: white;
+  }
+`
