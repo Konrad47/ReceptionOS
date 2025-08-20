@@ -2,6 +2,12 @@ import styled from "styled-components"
 
 export const EliminateProblemsComponent = styled.div`
   padding: 60px 0;
+
+  .bottom-rows-top-top {
+    margin-bottom: 0;
+    margin-left: -1px;
+    width: calc(100% + 2px);
+  }
   .top-title {
     display: flex;
     margin: auto;

@@ -3,6 +3,7 @@ import { EliminateProblemsComponent } from "./styled.components"
 import { RoundedButtonSvg, RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
+import { BorderContainerTopRowsBottom2 } from "../../../../components/BorderContainer/BorderContainerTopRowsBottom2"
 
 const EliminateProblems = ({ t }) => {
   return (
@@ -36,6 +37,7 @@ const EliminateProblems = ({ t }) => {
               ))
             }
           </div>
+          <BorderContainerTopRowsBottom2 />
         </EliminateProblemsComponent>
       </div>
     </>
