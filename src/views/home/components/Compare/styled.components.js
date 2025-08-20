@@ -18,4 +18,21 @@ export const CompareComponent = styled.div`
     pointer-events: auto;
     opacity: 1;
   }
+
+  .fade-1,
+  .fade-2 {
+    width: calc(50% + 68px);
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+  }
+
+  .fade-1 {
+    height: 260px;
+    border-bottom: none;
+  }
+
+  .fade-2 {
+    height: 226px;
+  }
 `

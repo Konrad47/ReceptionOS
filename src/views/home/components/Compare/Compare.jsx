@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CompareComponent } from "./styled.components";
 import Button from 'react-bootstrap/Button';
 import Fade from 'react-bootstrap/Fade';
+import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 
 const Compare = () => {
   const [open, setOpen] = useState(false);
@@ -14,20 +15,35 @@ const Compare = () => {
         </Button>
 
         <div className="fade-wrap">
-          <Fade in={open} >
-            <div id="with" aria-hidden={!open}>
-              <p>with</p>
-            </div>
-          </Fade>
 
-          <Fade in={!open} >
-            <div id="without" aria-hidden={open}>
-              <p>without</p>
-            </div>
-          </Fade>
+          <BorderContainer4Rows className="fade-1">
+            <Fade in={open} >
+              <div id="with" aria-hidden={!open}>
+                <p>with</p>
+              </div>
+            </Fade>
+            <Fade in={!open} >
+              <div id="without" aria-hidden={open}>
+                <p>without</p>
+              </div>
+            </Fade>
+          </BorderContainer4Rows>
+
+          <BorderContainer4Rows className="fade-2">
+            <Fade in={open} >
+              <div id="with" aria-hidden={!open}>
+                <p>with</p>
+              </div>
+            </Fade>
+            <Fade in={!open} >
+              <div id="without" aria-hidden={open}>
+                <p>without</p>
+              </div>
+            </Fade>
+          </BorderContainer4Rows>
         </div>
       </CompareComponent>
-    </div>
+    </div >
   );
 };
 export default Compare;
