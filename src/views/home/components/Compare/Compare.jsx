@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Fade from 'react-bootstrap/Fade';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { StaticImage } from "gatsby-plugin-image";
+import { RoundedInfoTile } from "../../../../styled.components";
 
 const Compare = ({ t }) => {
   const [open, setOpen] = useState(true);
@@ -11,6 +12,12 @@ const Compare = ({ t }) => {
   return (
     <div className="container">
       <CompareComponent>
+        <div className="top-title">
+          <RoundedInfoTile>
+            <p>{t('home.Compare.compare')}</p>
+          </RoundedInfoTile>
+          <h3>{t('home.Compare.title')}</h3>
+        </div>
         <div className="compare-buttons-container">
           <div onClick={() => setOpen(true)} className={open ? "compare-sides compare-left" : "compare-sides compare-left compare-inactive"}>
             {t('home.Compare.button-with')}

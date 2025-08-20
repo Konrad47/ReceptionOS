@@ -5,6 +5,18 @@ import BackgroundImageFade2 from "../../../../images/compare/fade2-background.we
 export const CompareComponent = styled.div`
   display: flex;
   flex-direction: column;
+
+  .top-title {
+    display: flex;
+    max-width: 960px;
+    margin: auto auto 60px auto;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
   .compare-buttons-container {
     display: inline-flex;
     padding: 2px;
