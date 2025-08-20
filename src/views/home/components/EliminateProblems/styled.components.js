@@ -11,6 +11,7 @@ export const EliminateProblemsComponent = styled.div`
   .top-title {
     display: flex;
     margin: auto;
+    margin-bottom: 80px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
