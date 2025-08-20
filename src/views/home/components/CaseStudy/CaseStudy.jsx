@@ -87,17 +87,29 @@ const CaseStudy = ({ t }) => {
     children: Children(),
   }
 
-  const content = {
-    margin: 'auto',
-    padding: '0',
-    inset: '0',
-    width: '100%',
-    height: '100%',
-    boxSizing: 'border-box',
-    border: "1px solid #302C29",
-    borderRadius: '0px',
-    background: "rgba(10, 10, 10, 1)",
-    backdropFilter: 'blur(40px)',
+  const modalStyles = {
+    overlay: {
+      zIndex: 103,
+      background: 'rgba(10,10,10,0.9)',
+      backdropFilter: 'blur(40px)',
+      WebkitBackdropFilter: 'blur(40px)',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+    },
+    content: {
+      margin: 'auto',
+      padding: '0',
+      inset: '0',
+      width: '100%',
+      height: '100%',
+      boxSizing: 'border-box',
+      border: "1px solid #302C29",
+      borderRadius: '0px',
+      background: 'transparent',
+    }
   }
 
   return (
@@ -105,7 +117,7 @@ const CaseStudy = ({ t }) => {
       <BaseModal
         isModal={isModal}
         props={props}
-        content={content}
+        modalStyles={modalStyles}
       />
       <CaseStudyComponent>
         <div className="container">

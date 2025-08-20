@@ -7,15 +7,10 @@ const BaseModal = ({
     isModal,
     // setIsModal,
     props,
-    content
+    modalStyles
 }) => {
 
-    const [boxStyles, setBoxStyles] = useState({
-        overlay: {
-            zIndex: 103
-        },
-        content: content
-    });
+    const [boxStyles, setBoxStyles] = useState(modalStyles);
 
     return (
         <>
