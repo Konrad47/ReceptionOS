@@ -4,7 +4,6 @@ import { RoundedButtonSvg, RoundedInfoTile } from "../../../../styled.components
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 
 const EliminateProblems = ({ t }) => {
-
   return (
     <>
       <div className="container">
@@ -21,7 +20,7 @@ const EliminateProblems = ({ t }) => {
               .map(key => (
                 <BorderContainer4Rows key={key} className="tile-container">
                   <div className="tile-left">
-                    <p className="p-new-model-18">{t(`home.EliminateProblems.tile${key}-title`)}</p>
+                    <p style={{ color: '#FFE8D9' }} className="p-new-model-18">{t(`home.EliminateProblems.tile${key}-title`)}</p>
                     <p className="p-new-model-16">{t(`home.EliminateProblems.tile${key}-description`)}</p>
                   </div>
                   <div className="tile-right">

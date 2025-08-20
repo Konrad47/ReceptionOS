@@ -52,6 +52,12 @@
   "home.EliminateProblems.eliminate-problems": "Wyeliminuj Problemy",
   "home.EliminateProblems.title": "Chaos na recepcji i niedokładna obsługa – brzmi znajomo?",
   "home.EliminateProblems.description": "Zobacz, jak ReceptionOS rozwiązuje codzienne problemy klinik stomatologicznych",
+  "home.EliminateProblems.tile1-title": "Chaos",
+  "home.EliminateProblems.tile1-description": "na recepcji i nieoptymalny kalendarz",
+  "home.EliminateProblems.tile2-title": "Nieobecni pacjenci",
+  "home.EliminateProblems.tile2-description": "na umówionych wizytach blokujący grafik",
+  "home.EliminateProblems.tile3-title": "Zajęta linia",
+  "home.EliminateProblems.tile3-description": "i za późno oddzwonione telefony",
 
   "home.Compare.compare": "Porównanie",
   "home.Compare.title": "Prawdziwy postęp z receptionOS",
