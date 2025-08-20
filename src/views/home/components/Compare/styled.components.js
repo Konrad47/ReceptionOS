@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import BackgroundImageFade1 from "../../../../images/compare/fade1-background.webp"
+import BackgroundImageFade2 from "../../../../images/compare/fade2-background.webp"
 
 export const CompareComponent = styled.div`
   display: flex;
@@ -115,11 +117,18 @@ export const CompareComponent = styled.div`
     box-sizing: border-box;
     margin: auto;
     text-align: center;
+    background-color: var(--Black);
+    background-size: cover !important;
+    display: block;
+    background-attachment: scroll;
+    justify-content: center;
   }
 
   .fade-1 {
     height: 260px;
     border-bottom: none;
+    background-position: bottom;
+    background-image: url(${BackgroundImageFade1});
 
     > div {
       margin-top: 79px;
@@ -129,7 +138,8 @@ export const CompareComponent = styled.div`
   .fade-2 {
     height: 226px;
     z-index: 2;
-    background-color: var(--Black);
+    background-position: top;
+    background-image: url(${BackgroundImageFade2});
 
     h4 {
       margin: 40px auto 16px auto;
@@ -148,6 +158,13 @@ export const CompareComponent = styled.div`
 
     img {
       width: 248px;
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .fade-1,
+    .fade-2 {
+      width: calc(80% + 68px);
     }
   }
 `
