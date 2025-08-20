@@ -42,8 +42,13 @@ export const CompareComponent = styled.div`
     background-color: var(--Black);
 
     h4 {
-      margin-top: 40px;
-      margin-bottom: 16px;
+      margin: 40px auto 16px auto;
+      max-width: 284px;
+    }
+
+    p {
+      max-width: 340px;
+      margin: 0 auto;
     }
   }
 
