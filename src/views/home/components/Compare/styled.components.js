@@ -30,9 +30,29 @@ export const CompareComponent = styled.div`
   .fade-1 {
     height: 260px;
     border-bottom: none;
+
+    > div {
+      margin-top: 79px;
+    }
   }
 
   .fade-2 {
     height: 226px;
+    z-index: 2;
+    background-color: var(--Black);
+
+    h4 {
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .calendar {
+    width: 248px;
+    z-index: 1;
+
+    img {
+      width: 248px;
+    }
   }
 `

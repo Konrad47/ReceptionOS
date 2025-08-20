@@ -3,8 +3,9 @@ import { CompareComponent } from "./styled.components";
 import Button from 'react-bootstrap/Button';
 import Fade from 'react-bootstrap/Fade';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
+import { StaticImage } from "gatsby-plugin-image";
 
-const Compare = () => {
+const Compare = ({ t }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -19,12 +20,24 @@ const Compare = () => {
           <BorderContainer4Rows className="fade-1">
             <Fade in={open} >
               <div id="with" aria-hidden={!open}>
-                <p>with</p>
+                <StaticImage
+                  className="calendar"
+                  src="../../../../images/compare/calendar-with.webp"
+                  alt="calendar"
+                  placeholder="calendar"
+                  loading="lazy"
+                />
               </div>
             </Fade>
             <Fade in={!open} >
               <div id="without" aria-hidden={open}>
-                <p>without</p>
+                <StaticImage
+                  className="calendar"
+                  src="../../../../images/compare/calendar-without.webp"
+                  alt="calendar"
+                  placeholder="calendar"
+                  loading="lazy"
+                />
               </div>
             </Fade>
           </BorderContainer4Rows>
@@ -32,12 +45,14 @@ const Compare = () => {
           <BorderContainer4Rows className="fade-2">
             <Fade in={open} >
               <div id="with" aria-hidden={!open}>
-                <p>with</p>
+                <h4>{t('home.Compare.title-with')}</h4>
+                <p className="p-new-model-16">{t('home.Compare.description-with')}</p>
               </div>
             </Fade>
             <Fade in={!open} >
               <div id="without" aria-hidden={open}>
-                <p>without</p>
+                <h4>{t('home.Compare.title-without')}</h4>
+                <p className="p-new-model-16">{t('home.Compare.description-without')}</p>
               </div>
             </Fade>
           </BorderContainer4Rows>
