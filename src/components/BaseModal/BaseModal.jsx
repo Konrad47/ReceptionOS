@@ -6,25 +6,15 @@ const BaseModal = ({
     // t,
     isModal,
     // setIsModal,
-    props
+    props,
+    content
 }) => {
 
     const [boxStyles, setBoxStyles] = useState({
         overlay: {
             zIndex: 103
         },
-        content: {
-            margin: 'auto',
-            padding: '0',
-            inset: '0',
-            width: '100%',
-            height: '100%',
-            boxSizing: 'border-box',
-            border: "1px solid #302C29",
-            borderRadius: '0px',
-            background: "rgba(10, 10, 10, 1)",
-            backdropFilter: 'blur(40px)',
-        }
+        content: content
     });
 
     return (
