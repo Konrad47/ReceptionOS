@@ -123,21 +123,25 @@ export const BorderContainerBottomRowsSides = ({ children, className }) => {
               position: absolute;
               top: -1px;
               left: -34px;
+              z-index: 2;
             }
             .left-bottom {
               position: absolute;
               bottom: -1px;
               left: -1px;
+              z-index: 2;
             }
             .right-top {
               position: absolute;
               top: -1px;
               right: -34px;
+              z-index: 2;
             }
             .right-bottom {
               position: absolute;
               bottom: -1px;
               right: -1px;
+              z-index: 2;
             }
           }
         `}</style>
