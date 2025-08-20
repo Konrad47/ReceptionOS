@@ -6,14 +6,19 @@ import { BorderContainer4Rows } from "../../../../components/BorderContainer/Bor
 import { StaticImage } from "gatsby-plugin-image";
 
 const Compare = ({ t }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className="container">
       <CompareComponent>
-        <Button onClick={() => setOpen(!open)} aria-expanded={open}>
-          Toggle text
-        </Button>
+        <div className="compare-buttons-container">
+          <div onClick={() => setOpen(true)} className={open ? "compare-sides compare-left" : "compare-sides compare-left compare-inactive"}>
+            {t('home.Compare.button-with')}
+          </div>
+          <div onClick={() => setOpen(false)} className={!open ? "compare-sides compare-right" : "compare-sides compare-right compare-inactive"}>
+            {t('home.Compare.button-without')}
+          </div>
+        </div>
 
         <div className="fade-wrap">
 
