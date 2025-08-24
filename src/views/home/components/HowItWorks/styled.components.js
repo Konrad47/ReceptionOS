@@ -10,5 +10,15 @@ export const HowItWorksComponent = styled.div`
   display: block;
   background-attachment: scroll;
   justify-content: center;
-  height: 300px;
+  height: 246px;
+
+  .top-tile {
+    display: flex;
+    margin: 70px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
 `
