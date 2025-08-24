@@ -75,6 +75,7 @@ export const EPModalContainer = styled.div`
   .video-container {
     display: flex;
     width: 960px;
+    padding: 0 16px;
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
