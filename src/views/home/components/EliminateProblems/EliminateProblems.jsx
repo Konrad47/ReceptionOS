@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { EliminateProblemsComponent, EPModalContainer } from "./styled.components"
-import { RoundedButtonSvg, RoundedInfoTile } from "../../../../styled.components"
+import { RoundedButtonSvg, RoundedButtonSvgDark, RoundedInfoTile } from "../../../../styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { BorderContainerBottomRowsTop } from "../../../../components/BorderContainer/BorderContainerBottomRowsTop"
 import { BorderContainerTopRowsBottom2 } from "../../../../components/BorderContainer/BorderContainerTopRowsBottom2"
@@ -19,6 +19,11 @@ const EliminateProblems = ({ t }) => {
   const Children = () => (
     <EPModalContainer>
       <div className="video-container">
+        <RoundedButtonSvgDark className="close-button" onClick={() => setIsModal(false)}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 18L18 6M6 6L18 18" stroke="#FFE8D9" stroke-linejoin="round" />
+          </svg>
+        </RoundedButtonSvgDark>
         <Video src={childrenContent} />
       </div>
     </EPModalContainer>
