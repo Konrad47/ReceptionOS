@@ -79,6 +79,5 @@ export const EPModalContainer = styled.div`
     align-items: flex-end;
     gap: 16px;
     margin: auto;
-    background: var(--Black);
   }
 `
