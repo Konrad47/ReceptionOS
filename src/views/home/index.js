@@ -16,6 +16,7 @@ import Analysis from "./components/Analysis/Analysis"
 import PartnersAboutUs from "./components/PartnersAboutUs/PartnersAboutUs"
 import Compare from "./components/Compare/Compare"
 import EliminateProblems from "./components/EliminateProblems/EliminateProblems"
+import HowItWorks from "./components/HowItWorks/HowItWorks"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -30,6 +31,7 @@ const Home = () => {
       {/* <ClinicsProblems t={t} /> */}
       {/* <StepByStep t={t} /> */}
       {/* <FindOut t={t} /> */}
+      <HowItWorks t={t} />
       <EliminateProblems t={t} />
       <Compare t={t} />
       <PartnersAboutUs t={t} />
