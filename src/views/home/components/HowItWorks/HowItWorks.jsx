@@ -53,9 +53,11 @@ const HowItWorks = ({ t }) => {
           </BorderContainerNoRowsSides>
         </div>
       </HowItWorksComponent>
-      <div className="container">
-        {items && <SliderComponent items={items} />}
-      </div>
+      <HowItWorksSliderComponent>
+        <div className="container">
+          {items && <SliderComponent items={items} />}
+        </div>
+      </HowItWorksSliderComponent>
     </>
   )
 }

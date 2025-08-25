@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import LocalVideo from '../../../../../components/LocalVideo';
 import { BorderContainer4Rows } from '../../../../../components/BorderContainer/BorderContainer4Rows';
 import { BorderContainerNoRowsVerticalSides } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSides';
+import { BorderContainerNoRowsVerticalSidesLong } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSidesLong';
 
 const SliderComponent = ({ items }) => {
   const sliderRef = useRef(null);
@@ -88,7 +89,7 @@ const SliderComponent = ({ items }) => {
 
   const renderItems = items?.map((item, index) => {
     return (
-      <div key={index} className="slider-tile">
+      <BorderContainerNoRowsVerticalSidesLong key={index} className="slider-tile">
         <BorderContainerNoRowsVerticalSides className="text-border" >
           <div className='text-container'>
             <h4>{item.title}</h4>
@@ -98,7 +99,7 @@ const SliderComponent = ({ items }) => {
         <BorderContainer4Rows>
           <LocalVideo src={item.link} />
         </BorderContainer4Rows>
-      </div>
+      </BorderContainerNoRowsVerticalSidesLong>
     );
   });
 

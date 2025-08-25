@@ -32,6 +32,9 @@ export const HowItWorksComponent = styled.div`
 `
 
 export const HowItWorksSliderComponent = styled.div`
-  /* height: 100px; */
-  /* width: 100px; */
+  height: 500px;
+
+  .slick-slider {
+    height: 500px;
+  }
 `
