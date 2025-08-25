@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import { SliderContainer } from './styled.components';
 import "slick-carousel/slick/slick.css";
@@ -7,6 +7,8 @@ import LocalVideo from '../../../../../components/LocalVideo';
 
 const SliderComponent = ({ items }) => {
   const sliderRef = useRef(null);
+  const prevVideoRef = useRef(null);
+  const prevEndedHandlerRef = useRef(null);
 
   const settings = {
     dots: true,
@@ -18,32 +20,65 @@ const SliderComponent = ({ items }) => {
     autoplaySpeed: 3500,
     arrows: false,
     afterChange: () => {
-      handleSlideChange();
+      attachEndedToCurrent();
     },
   };
 
-  const handleSlideChange = () => {
-    const listEl =
-      sliderRef.current?.innerSlider?.list || sliderRef.current?.list || null;
+  const attachEndedToCurrent = useCallback(() => {
+    const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
     if (!listEl) return;
 
-    const allVideos = listEl.querySelectorAll("video");
     const currentVideo = listEl.querySelector(".slick-current video");
+    const allVideos = listEl.querySelectorAll("video");
 
     allVideos.forEach((v) => {
-      if (v === currentVideo) {
-        v.play().catch((err) => {
-          console.error(err)
-        });
-      } else {
-        v.pause();
-        v.currentTime = 0;
+      try {
+        if (v !== currentVideo) {
+          v.pause();
+          v.currentTime = 0;
+        }
+      } catch (e) {
       }
     });
-  };
+
+    if (prevVideoRef.current && prevEndedHandlerRef.current) {
+      try {
+        prevVideoRef.current.removeEventListener("ended", prevEndedHandlerRef.current);
+      } catch (e) { }
+      prevVideoRef.current = null;
+      prevEndedHandlerRef.current = null;
+    }
+
+    if (!currentVideo) return;
+    const onEnded = () => {
+      try {
+        currentVideo.removeEventListener("ended", onEnded);
+      } catch (e) { }
+      prevVideoRef.current = null;
+      prevEndedHandlerRef.current = null;
+      sliderRef.current?.slickNext();
+    };
+
+    prevVideoRef.current = currentVideo;
+    prevEndedHandlerRef.current = onEnded;
+
+    currentVideo.addEventListener("ended", onEnded);
+    currentVideo.play().catch(() => {
+    });
+  }, []);
 
   useEffect(() => {
-    setTimeout(handleSlideChange, 0);
+    const t = setTimeout(() => attachEndedToCurrent(), 50);
+    return () => {
+      clearTimeout(t);
+      if (prevVideoRef.current && prevEndedHandlerRef.current) {
+        try {
+          prevVideoRef.current.removeEventListener("ended", prevEndedHandlerRef.current);
+        } catch (e) { }
+        prevVideoRef.current = null;
+        prevEndedHandlerRef.current = null;
+      }
+    };
   }, []);
 
   const renderItems = items?.map((item, index) => {
