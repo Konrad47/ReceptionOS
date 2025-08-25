@@ -43,6 +43,11 @@ export const HowItWorksGridComponent = styled.div`
   display: flex;
   flex-direction: column;
 
+  .video-container {
+    width: 572px;
+    margin: auto;
+  }
+
   .text-container {
     display: flex;
     flex-direction: column;
@@ -50,6 +55,18 @@ export const HowItWorksGridComponent = styled.div`
     gap: 12px;
     align-self: stretch;
     padding: 32px 55px 32px 24px;
-    margin: auto;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .video-container {
+      width: 352px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .video-container {
+      width: 322px;
+    }
   }
 `

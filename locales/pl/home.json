@@ -51,6 +51,12 @@
 
   "home.HowItWorks.how-it-works": "Krok po kroku",
   "home.HowItWorks.title": "Jak to działa?",
+  "home.HowItWorks.video1-title": "Podłączenie systemów",
+  "home.HowItWorks.video1-description": "Podłączamy ReceptionOS do telefonu i kalendarza kliniki. Ty ustawiasz godziny pracy i oferowane usługi.",
+  "home.HowItWorks.video2-title": "Trenowanie i dostosowanie",
+  "home.HowItWorks.video2-description": "ReceptionOS uczy się stylu Twojej kliniki i potrzeb pacjentów – rezerwacje, anulacje i częste pytania.",
+  "home.HowItWorks.video3-title": "Start i optymalizacja",
+  "home.HowItWorks.video3-description": "ReceptionOS odbiera połączenia, umawia wizyty i pomaga recepcji 24/7. Sprawdzaj wyniki, ulepszaj obsługę i zwiększaj swój dochód.",
 
   "home.EliminateProblems.eliminate-problems": "Wyeliminuj Problemy",
   "home.EliminateProblems.title": "Chaos na recepcji i niedokładna obsługa – brzmi znajomo?",

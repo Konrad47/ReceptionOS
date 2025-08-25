@@ -68,7 +68,7 @@ const HowItWorks = ({ t }) => {
         <div className="container">
 
           {items.map((item, index) => (
-            <div key={index}>
+            <div className="video-container" key={index}>
               <BorderContainer4Rows>
                 <LocalVideo2 src={item.link} />
               </BorderContainer4Rows>
