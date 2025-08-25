@@ -1,6 +1,6 @@
 import React from "react"
 import { AIWaveContainer } from "./styled.components"
-import { TileComponent } from "../../../../styled.components"
+import { RoundedInfoTile, TileComponent } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 
 const AIWave = ({ t }) => {
@@ -10,8 +10,11 @@ const AIWave = ({ t }) => {
       <div className="container">
         <AIWaveContainer>
           <div className="text-container">
+            <RoundedInfoTile>
+              <p>{t('home.AIWave.ai-wave')}</p>
+            </RoundedInfoTile>
             <h2>{t(`home.AIWave.title`)}</h2>
-            <p className="p-body-large">{t(`home.AIWave.description`)}</p>
+            <p className="p-new-model-18 ">{t(`home.AIWave.description`)}</p>
           </div>
           <div className="tile-container">
             <TileComponent gap="24px" className="ai-wave-tile">

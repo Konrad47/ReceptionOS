@@ -27,10 +27,10 @@ const Home = () => {
       {/* <div className="container"> */}
       <Menu t={t} />
       <Autopilot t={t} />
-      <AIWave t={t} />
       {/* <ClinicsProblems t={t} /> */}
       {/* <StepByStep t={t} /> */}
       {/* <FindOut t={t} /> */}
+      <AIWave t={t} />
       <HowItWorks t={t} />
       <EliminateProblems t={t} />
       <Compare t={t} />

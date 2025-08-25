@@ -4,17 +4,18 @@ export const AIWaveContainer = styled.div`
   padding: 80px 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
 
   .text-container {
     display: flex;
+    margin: 60px auto;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 16px;
-    align-self: stretch;
-    width: 652px;
-    box-sizing: border-box;
+    max-width: 553px;
   }
 
   .tile-container {
