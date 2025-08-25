@@ -4,6 +4,8 @@ import { SliderContainer } from './styled.components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LocalVideo from '../../../../../components/LocalVideo';
+import { BorderContainer4Rows } from '../../../../../components/BorderContainer/BorderContainer4Rows';
+import { BorderContainerNoRowsVerticalSides } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSides';
 
 const SliderComponent = ({ items }) => {
   const sliderRef = useRef(null);
@@ -11,13 +13,15 @@ const SliderComponent = ({ items }) => {
   const prevEndedHandlerRef = useRef(null);
 
   const settings = {
+    className: "center",
+    centerMode: true,
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 3500,
+    // autoplaySpeed: 3500,
     arrows: false,
     afterChange: () => {
       attachEndedToCurrent();
@@ -85,11 +89,15 @@ const SliderComponent = ({ items }) => {
   const renderItems = items?.map((item, index) => {
     return (
       <div key={index} className="slider-tile">
-        <div className='text-container'>
-          <h4>{item.title}</h4>
-          <p className='p-new-model-16'>{item.description}</p>
-        </div>
-        <LocalVideo src={item.link} />
+        <BorderContainerNoRowsVerticalSides className="text-border" >
+          <div className='text-container'>
+            <h4>{item.title}</h4>
+            <p className='p-new-model-16'>{item.description}</p>
+          </div>
+        </BorderContainerNoRowsVerticalSides>
+        <BorderContainer4Rows>
+          <LocalVideo src={item.link} />
+        </BorderContainer4Rows>
       </div>
     );
   });

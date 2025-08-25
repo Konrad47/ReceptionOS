@@ -29,7 +29,11 @@ export const SliderContainer = styled.div`
     gap: 24px !important;
     margin: auto;
     /* width: 570px; */
-    height: 338px;
+    height: calc(358px + 128px);
+
+    .text-border {
+      height: 340px;
+    }
 
     .text-container {
       display: flex;
