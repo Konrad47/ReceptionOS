@@ -38,3 +38,18 @@ export const HowItWorksSliderComponent = styled.div`
     height: 500px;
   }
 `
+
+export const HowItWorksGridComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    padding: 32px 55px 32px 24px;
+    margin: auto;
+  }
+`
