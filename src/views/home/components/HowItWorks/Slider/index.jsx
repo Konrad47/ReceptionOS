@@ -16,7 +16,7 @@ const SliderComponent = ({ items }) => {
   const settings = {
     className: "center",
     centerMode: true,
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
