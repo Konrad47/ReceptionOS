@@ -15,7 +15,10 @@ export const AIWaveContainer = styled.div`
     align-items: center;
     text-align: center;
     gap: 16px;
-    max-width: 553px;
+
+    p {
+      max-width: 553px;
+    }
   }
 
   .tile-container {
@@ -29,21 +32,24 @@ export const AIWaveContainer = styled.div`
     }
   }
 
+  .ai-wave-tile {
+    display: flex;
+    padding: 32px 48px auto 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 1 0;
+
+    .p-new-model-18 {
+      color: #ffe8d9;
+    }
+  }
+
   .text-tile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
-
-    .p-body-large {
-      font-weight: 600;
-      line-height: 120%;
-    }
-  }
-
-  .p-body-medium {
-    font-size: 18px;
+    gap: 12px;
   }
 
   @media only screen and (max-width: 1020px) {
