@@ -53,21 +53,25 @@ export const BorderContainer4Rows = ({ children, className }) => {
             position: absolute;
             top: -1px;
             left: -1px;
+            z-index: 3;
           }
           .left-bottom {
             position: absolute;
             bottom: -1px;
             left: -1px;
+            z-index: 3;
           }
           .right-top {
             position: absolute;
             top: -1px;
             right: -1px;
+            z-index: 3;
           }
           .right-bottom {
             position: absolute;
             bottom: -1px;
             right: -1px;
+            z-index: 3;
           }
         }
       `}</style>

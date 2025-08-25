@@ -26,7 +26,7 @@ export const SliderContainer = styled.div`
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 24px !important;
+    gap: 30px !important;
     margin: auto;
     /* width: 570px; */
     height: calc(358px + 128px);

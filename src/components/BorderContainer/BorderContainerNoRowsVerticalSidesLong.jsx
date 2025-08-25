@@ -35,6 +35,46 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                         stroke-linecap="round"
                     />
                 </svg>
+                <svg
+                    className="left-top"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                </svg>
+                <svg
+                    className="left-bottom"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M7 7L1 7L1 1" stroke="#877B72" stroke-linecap="round" />
+                </svg>
+                <svg
+                    className="right-top"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
+                </svg>
+                <svg
+                    className="right-bottom"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                >
+                    <path d="M1 7L7 7L7 1" stroke="#877B72" stroke-linecap="round" />
+                </svg>
                 {children}
                 <style jsx>{`
           .border-container-no-rows-vertical-sides-long {
@@ -52,7 +92,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
             }
             .long-bottom {
               position: absolute;
-              bottom: -6px;
+              bottom: -8px;
               z-index: 10
             }
           }
