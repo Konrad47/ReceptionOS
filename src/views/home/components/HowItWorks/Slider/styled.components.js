@@ -21,17 +21,11 @@ export const SliderContainer = styled.div`
   .slick-slider .slick-slide div {
     padding: 0;
     width: 570px;
-    height: 300px;
-  }
-
-  .gatsby-image-wrapper {
-    /* height: 120px; */
+    height: 338px;
   }
 
   .slider-tile {
     display: flex !important;
-    /* width: 570px !important; */
-    /* height: 300px; */
     flex-direction: column !important;
     align-items: center !important;
     gap: 24px !important;
@@ -39,7 +33,7 @@ export const SliderContainer = styled.div`
 
     video {
       width: 570px;
-      height: 300px;
+      height: 338px;
     }
   }
 
