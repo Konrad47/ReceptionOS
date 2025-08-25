@@ -13,18 +13,28 @@ const HowItWorks = ({ t }) => {
 
   const items = [
     {
+      title: t('home.HowItWorks.video1-title'),
+      description: t('home.HowItWorks.video1-description'),
       link: Video1
     },
     {
+      title: t('home.HowItWorks.video2-title'),
+      description: t('home.HowItWorks.video2-description'),
       link: Video2
     },
     {
+      title: t('home.HowItWorks.video3-title'),
+      description: t('home.HowItWorks.video3-description'),
       link: Video3
     },
     {
+      title: t('home.HowItWorks.video4-title'),
+      description: t('home.HowItWorks.video4-description'),
       link: Video4
     },
     {
+      title: t('home.HowItWorks.video5-title'),
+      description: t('home.HowItWorks.video5-description'),
       link: Video5
     },
   ]
@@ -43,9 +53,9 @@ const HowItWorks = ({ t }) => {
           </BorderContainerNoRowsSides>
         </div>
       </HowItWorksComponent>
-      <HowItWorksSliderComponent>
+      <div className="container">
         {items && <SliderComponent items={items} />}
-      </HowItWorksSliderComponent>
+      </div>
     </>
   )
 }

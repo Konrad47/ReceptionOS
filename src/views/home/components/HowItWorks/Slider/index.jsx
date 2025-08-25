@@ -22,6 +22,7 @@ const SliderComponent = ({ items }) => {
     afterChange: () => {
       attachEndedToCurrent();
     },
+    fade: true,
   };
 
   const attachEndedToCurrent = useCallback(() => {
@@ -84,6 +85,10 @@ const SliderComponent = ({ items }) => {
   const renderItems = items?.map((item, index) => {
     return (
       <div key={index} className="slider-tile">
+        <div className='text-container'>
+          <h4>{item.title}</h4>
+          <p className='p-new-model-16'>{item.description}</p>
+        </div>
         <LocalVideo src={item.link} />
       </div>
     );

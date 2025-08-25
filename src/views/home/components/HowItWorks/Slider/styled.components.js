@@ -20,20 +20,26 @@ export const SliderContainer = styled.div`
 
   .slick-slider .slick-slide div {
     padding: 0;
-    width: 570px;
-    height: 338px;
   }
 
   .slider-tile {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
     gap: 24px !important;
     margin: auto;
+    /* width: 570px; */
+    height: 338px;
 
-    video {
-      width: 570px;
-      height: 338px;
+    .text-container {
+      display: flex;
+      /* width: 278px; */
+      flex-direction: column;
+      align-items: flex-start;
+      vertical-align: middle;
+      gap: 18px;
+      padding: 0 32px !important;
+      margin: auto;
     }
   }
 
