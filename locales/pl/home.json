@@ -18,8 +18,8 @@
 
   "home.OurPartners.title": "Nasi partnerzy",
 
-  "home.AIWave.title": "ReceptionOS - nie przegap fali innowacji AI",
-  "home.AIWave.description": "Automatyzujemy rutynowe zadania, byś mógł podnieść jakość opieki nad pacjentami",
+  "home.AIWave.title": "Nie przegap fali innowacji AI",
+  "home.AIWave.description": "Automatyzujemy rutynowe zadania i podnosimy jakość opieki nad pacjentami",
   "home.AIWave.tile-title-1": "Autopilot 24/7",
   "home.AIWave.tile-description-1": "Pacjent dodzwoni się zawsze – system umawia wizyty, nawet gdy recepcja śpi.",
   "home.AIWave.tile-title-2": "Audyt jakości recepcji",
@@ -28,26 +28,6 @@
   "home.AIWave.tile-description-3": "Zapytania od pacjentów w jednym miejscu, obsługujemy automatycznie lub przekazujemy do recepcji.",
   "home.AIWave.tile-title-4": "Maksymalizacja zysku",
   "home.AIWave.tile-description-4": "Wypełniamy grafik, redukujemy no-shows o 69%, zatrzymujemy u Ciebie pacjenta.",
-
-  "home.StepByStep.subtitle": "Jak to działa",
-  "home.StepByStep.title": "Krok po kroku",
-  "home.StepByStep.tile-title-1": "Podłączenie systemów",
-  "home.StepByStep.tile-description-1": "Podłączamy ReceptionOS do telefonu i kalendarza kliniki. Ty ustawiasz godziny pracy i oferowane usługi.",
-  "home.StepByStep.tile-title-2": "Trenowanie i dostosowanie",
-  "home.StepByStep.tile-description-2": "ReceptionOS uczy się stylu Twojej kliniki i potrzeb pacjentów – rezerwacje, anulacje i częste pytania.",
-  "home.StepByStep.tile-title-3": "Start i optymalizacja",
-  "home.StepByStep.tile-description-3": "ReceptionOS odbiera połączenia, umawia wizyty i pomaga recepcji 24/7. Sprawdzaj wyniki, ulepszaj obsługę i zwiększaj swój dochód.",
-
-  "home.FindOut.subtitle": "Zamów badanie",
-  "home.FindOut.title": "Dowiedz się gdzie Twoja klinika traci pacjentów",
-  "home.FindOut.point1": "Audyt tajemniczego pacjenta: ocena umawiania wizyt w Twojej klinice",
-  "home.FindOut.point2": "Przetestujemy Twoją recepcję realnymi scenariuszami rozmów.",
-  "home.FindOut.point3": "Pełny raport potencjalnych usprawnień i problemów.",
-  "home.FindOut.button-order": "Zamów Badanie",
-  "home.FindOut.button-price": "TYLKO 69 PLN",
-  "home.FindOut.apolonia-title": "Case study <b>Apolonii Dental</b>",
-  "home.FindOut.apolonia-points": "<p>+28% dochód po 6 miesiącach</p> <p>+1 etat na recepcji mnie</p> <p>+115 nowych opinii 5☆ na Google w 4 dni</p>",
-  "home.FindOut.button-raport": "Zobacz raport",
 
   "home.HowItWorks.how-it-works": "Krok po kroku",
   "home.HowItWorks.title": "Jak to działa?",
