@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { FooterComponent } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../BorderContainer/BorderContainer4Rows"
@@ -6,9 +6,39 @@ import { BorderContainerNoRowsTop } from "../BorderContainer/BorderContainerNoRo
 import { RoundedButtonSvg } from "../../styled.components"
 import Dropdown from "react-bootstrap/Dropdown"
 import { useI18next, Link } from "gatsby-plugin-react-i18next"
+import { navigate } from "gatsby"
 
 const Footer = ({ t }) => {
-  const { language, languages, originalPath } = useI18next();
+  const { language, languages, originalPath, changeLanguage } = useI18next();
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (localStorage.getItem("user-chose-language")) return;
+
+    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+    const preferred = nav.split("-")[0];
+
+    const target = preferred === "pl"
+      ? (languages.includes("pl") ? "pl" : languages[0])
+      : (languages.includes("en") ? "en" : languages[0]);
+
+    if (language !== target) {
+      changeLanguage(target);
+      navigate(originalPath, { replace: true });
+    }
+  }, []);
+
+  const handleUserLanguagePick = (lang) => {
+    try {
+      localStorage.setItem("user-chose-language", "1");
+    } catch (e) {
+    }
+    if (language !== lang) {
+      changeLanguage(lang);
+      navigate(originalPath);
+    }
+  };
   return (
     <>
       <div className="container">
@@ -79,16 +109,12 @@ const Footer = ({ t }) => {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   {languages.map(lang => (
-                    <div key={lang}>
-                      <Dropdown.Item
-                        key={lang}
-                        as={Link}
-                        to={originalPath}
-                        language={lang}
-                      >
-                        {lang.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
-                      </Dropdown.Item>
-                    </div>
+                    <Dropdown.Item
+                      key={lang}
+                      onClick={() => handleUserLanguagePick(lang)}
+                    >
+                      {lang.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
+                    </Dropdown.Item>
                   ))}
                 </Dropdown.Menu>
               </Dropdown>

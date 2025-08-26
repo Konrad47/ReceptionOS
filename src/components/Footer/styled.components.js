@@ -55,15 +55,18 @@ export const FooterComponent = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 22px;
+
+      svg {
+        margin: auto;
+      }
     }
 
     .dropdown-menu {
-      display: none !important;
       opacity: 0;
-      visibility: hidden;
+      display: flex;
+      flex-direction: column;
     }
     .dropdown-menu.show {
-      display: block !important;
       opacity: 1;
       visibility: visible;
     }
