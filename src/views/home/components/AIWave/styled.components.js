@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import BackgroundImage from "../../../../images/aiwave/empty.webp"
 
 export const AIWaveContainer = styled.div`
   padding: 80px 0;
@@ -22,13 +23,52 @@ export const AIWaveContainer = styled.div`
   }
 
   .tile-container {
-    display: flex;
-    gap: 16px;
-    /* align-self: stretch; */
-    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 301px);
+    row-gap: 31px;
+    position: relative;
 
     .image {
       flex-shrink: 0;
+    }
+  }
+
+  .empty {
+    position: absolute;
+    top: 229px;
+    height: 31px;
+    width: 299px;
+    border: 2px solid #302c29;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .left-empty {
+    left: 0;
+  }
+
+  .middle-empty {
+    left: 301px;
+    border-left: none;
+  }
+
+  .right-empty {
+    left: calc(301px * 2);
+    border-left: none;
+  }
+
+  .ai-wave-empty {
+    background-size: cover !important;
+    width: 100%;
+    background-image: url(${BackgroundImage});
+    background-attachment: scroll;
+  }
+
+  .no-left {
+    border-left: none;
+
+    .left-middle {
+      display: none;
     }
   }
 
@@ -58,17 +98,17 @@ export const AIWaveContainer = styled.div`
   }
 
   @media only screen and (max-width: 1020px) {
-    .tile-container {
+    /* .tile-container {
       flex-direction: column;
     }
 
     .text-container {
       width: 100%;
-    }
+    } */
   }
 
   @media only screen and (max-width: 1020px) {
-    padding: 40px 0;
+    /* padding: 40px 0;
 
     .text-container {
       .p-body-large {
@@ -100,6 +140,6 @@ export const AIWaveContainer = styled.div`
           height: 32px;
         }
       }
-    }
+    } */
   }
 `

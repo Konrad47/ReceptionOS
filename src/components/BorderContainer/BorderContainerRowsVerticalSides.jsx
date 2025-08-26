@@ -45,7 +45,47 @@ export const BorderContainerRowsVerticalSides = ({ children, className }) => {
                     <path d="M1 7L7 7L7 1" stroke="#877B72" stroke-linecap="round" />
                 </svg>
                 <svg
-                    className="top desktop"
+                    className="left-middle"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="230"
+                    viewBox="0 0 2 230"
+                    fill="none"
+                >
+                    <path
+                        opacity="0.3"
+                        d="M1 1L1.00001 229"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        d="M0.999756 95L0.999757 115"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                    className="right-middle"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="230"
+                    viewBox="0 0 2 230"
+                    fill="none"
+                >
+                    <path
+                        opacity="0.3"
+                        d="M1 1L1.00001 229"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        d="M0.999756 95L0.999757 115"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                    className="top-1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 303 8"
                     fill="none"
@@ -58,7 +98,37 @@ export const BorderContainerRowsVerticalSides = ({ children, className }) => {
                     />
                 </svg>
                 <svg
-                    className="bottom desktop"
+                    className="top-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="54"
+                    height="2"
+                    viewBox="0 0 54 2"
+                    fill="none"
+                >
+                    <path
+                        opacity="0.3"
+                        d="M53 0.999995L1 1"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                    className="top-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="186"
+                    height="2"
+                    viewBox="0 0 186 2"
+                    fill="none"
+                >
+                    <path
+                        opacity="0.3"
+                        d="M203 1.00002L1 1"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                    className="bottom"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 303 8"
                     fill="none"
@@ -80,10 +150,22 @@ export const BorderContainerRowsVerticalSides = ({ children, className }) => {
             border-top: none;
             border-bottom: none;
 
-            .top {
+            .top-1 {
               position: absolute;
               top: -1px;
             }
+            .top-2 {
+              position: absolute;
+              top: 2px;
+              left: 6px;
+            }
+
+            .top-3 {
+              position: absolute;
+              top: 2px;
+              right: 8px;
+            }
+
             .bottom {
               position: absolute;
               bottom: -8px;
@@ -110,6 +192,16 @@ export const BorderContainerRowsVerticalSides = ({ children, className }) => {
             .right-bottom {
               position: absolute;
               bottom: -1px;
+              right: -1px;
+              z-index: 3;
+            }
+            .left-middle {
+              position: absolute;
+              left: -1px;
+              z-index: 3;
+            }
+            .right-middle {
+              position: absolute;
               right: -1px;
               z-index: 3;
             }

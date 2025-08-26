@@ -3,7 +3,7 @@ import { AIWaveContainer } from "./styled.components"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
-
+import '../../../../images/aiwave/middle-empty.webp'
 const AIWave = ({ t }) => {
 
   return (
@@ -18,6 +18,27 @@ const AIWave = ({ t }) => {
             <p className="p-new-model-18 ">{t(`home.AIWave.description`)}</p>
           </div>
           <div className="tile-container">
+            <StaticImage
+              className="empty left-empty"
+              src="../../../../images/aiwave/middle-empty.webp"
+              alt="middle-empty"
+              placeholder="middle-empty"
+              loading="lazy"
+            />
+            <StaticImage
+              className="empty middle-empty"
+              src="../../../../images/aiwave/middle-empty.webp"
+              alt="middle-empty"
+              placeholder="middle-empty"
+              loading="lazy"
+            />
+            <StaticImage
+              className="empty right-empty"
+              src="../../../../images/aiwave/middle-empty.webp"
+              alt="middle-empty"
+              placeholder="middle-empty"
+              loading="lazy"
+            />
             <BorderContainerRowsVerticalSides className="ai-wave-tile">
               <div className="tile-content">
                 <StaticImage
@@ -33,45 +54,53 @@ const AIWave = ({ t }) => {
                 </div>
               </div>
             </BorderContainerRowsVerticalSides>
-            <div gap="24px" className="ai-wave-tile">
-              <StaticImage
-                className="image"
-                src="../../../../images/aiwave/book.svg"
-                alt="image"
-                placeholder="image"
-                loading="lazy"
-              />
-              <div className="text-tile">
-                <p className="p-new-model-18">{t(`home.AIWave.tile-title-2`)}</p>
-                <p className="p-new-model-16">{t(`home.AIWave.tile-description-2`)}</p>
+            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
+              <div className="tile-content">
+                <StaticImage
+                  className="image"
+                  src="../../../../images/aiwave/book.svg"
+                  alt="image"
+                  placeholder="image"
+                  loading="lazy"
+                />
+                <div className="text-tile">
+                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-2`)}</p>
+                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-2`)}</p>
+                </div>
               </div>
-            </div>
-            <div gap="24px" className="ai-wave-tile">
-              <StaticImage
-                className="image"
-                src="../../../../images/aiwave/message.svg"
-                alt="image"
-                placeholder="image"
-                loading="lazy"
-              />
-              <div className="text-tile">
-                <p className="p-new-model-18">{t(`home.AIWave.tile-title-3`)}</p>
-                <p className="p-new-model-16">{t(`home.AIWave.tile-description-3`)}</p>
+            </BorderContainerRowsVerticalSides>
+            <BorderContainerRowsVerticalSides className="ai-wave-tile ai-wave-empty no-left" />
+            <BorderContainerRowsVerticalSides className="ai-wave-tile ai-wave-empty" />
+            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
+              <div className="tile-content">
+                <StaticImage
+                  className="image"
+                  src="../../../../images/aiwave/message.svg"
+                  alt="image"
+                  placeholder="image"
+                  loading="lazy"
+                />
+                <div className="text-tile">
+                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-3`)}</p>
+                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-3`)}</p>
+                </div>
               </div>
-            </div>
-            <div gap="24px" className="ai-wave-tile">
-              <StaticImage
-                className="image"
-                src="../../../../images/aiwave/chart.svg"
-                alt="image"
-                placeholder="image"
-                loading="lazy"
-              />
-              <div className="text-tile">
-                <p className="p-new-model-18">{t(`home.AIWave.tile-title-4`)}</p>
-                <p className="p-new-model-16">{t(`home.AIWave.tile-description-4`)}</p>
+            </BorderContainerRowsVerticalSides>
+            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
+              <div className="tile-content">
+                <StaticImage
+                  className="image"
+                  src="../../../../images/aiwave/chart.svg"
+                  alt="image"
+                  placeholder="image"
+                  loading="lazy"
+                />
+                <div className="text-tile">
+                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-4`)}</p>
+                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-4`)}</p>
+                </div>
               </div>
-            </div>
+            </BorderContainerRowsVerticalSides>
           </div>
         </AIWaveContainer>
       </div>
