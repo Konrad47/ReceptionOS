@@ -68,11 +68,26 @@ const TrustUsSection = ({ t }) => {
     },
   ];
 
+  const renderItems = items?.map((item, index) => {
+    return (
+      <div key={index} className="we-work-with-a-wrapper">
+        <a href={item.link} target="_blank" rel="noreferrer nofollow">
+          {item.img}
+        </a>
+      </div>
+    );
+  });
+
   return (
     <>
       <OurPartnersContainer>
         <div className='container'>
-          {items && <SliderComponent items={items} />}
+          <div className='container-desktop desktop'>
+            {renderItems}
+          </div>
+          <div className='mobile'>
+            {items && <SliderComponent renderItems={renderItems} />}
+          </div>
         </div>
       </OurPartnersContainer>
     </>

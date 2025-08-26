@@ -4,7 +4,7 @@ import { SliderContainer } from './styled.components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SliderComponent = ({ items }) => {
+const SliderComponent = ({ renderItems }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -19,16 +19,6 @@ const SliderComponent = ({ items }) => {
     centerPadding: "55px",
     variableWidth: true,
   };
-
-  const renderItems = items?.map((item, index) => {
-    return (
-      <div key={index} className="we-work-with-a-wrapper">
-        <a href={item.link} target="_blank" rel="noreferrer nofollow">
-          {item.img}
-        </a>
-      </div>
-    );
-  });
 
   return (
     <section>
