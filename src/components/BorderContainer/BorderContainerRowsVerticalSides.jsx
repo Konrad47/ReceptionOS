@@ -205,6 +205,27 @@ export const BorderContainerRowsVerticalSides = ({ children, className }) => {
               right: -1px;
               z-index: 3;
             }
+
+            @media only screen and (max-width: 452px) {
+              .top-1 {
+                top: 0px;
+              }
+
+              .top-2 {
+                top: 3px;
+              }
+
+              .top-3 {
+                position: absolute;
+                top: 3px;
+              }
+              .right-top {
+                top: 0px;
+              }
+              .left-top {
+                top: 0px;
+              }
+            }
           }
         `}</style>
             </div>

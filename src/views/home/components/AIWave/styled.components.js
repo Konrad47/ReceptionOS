@@ -84,7 +84,7 @@ export const AIWaveContainer = styled.div`
 
   .tile-content {
     display: flex;
-    padding: 32px 48px 0 24px;
+    padding: 32px 48px 0 24px !important;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -98,48 +98,7 @@ export const AIWaveContainer = styled.div`
   }
 
   @media only screen and (max-width: 1020px) {
-    /* .tile-container {
-      flex-direction: column;
-    }
-
-    .text-container {
-      width: 100%;
-    } */
-  }
-
-  @media only screen and (max-width: 1020px) {
-    /* padding: 40px 0;
-
-    .text-container {
-      .p-body-large {
-        font-size: 16px;
-      }
-    }
-
-    .text-tile {
-      .p-body-large {
-        font-size: 18px;
-      }
-      .p-body-medium {
-        font-size: 16px;
-      }
-    }
-
-    .ai-wave-tile {
-      flex-direction: row;
-      gap: 16px !important;
-    }
-
-    .tile-container {
-      gap: 8px;
-      .image {
-        width: 32px;
-        height: 32px;
-        img {
-          width: 32px;
-          height: 32px;
-        }
-      }
-    } */
+    padding: 40px 0 40px 0;
+    gap: 0;
   }
 `

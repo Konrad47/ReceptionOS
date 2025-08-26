@@ -4,6 +4,7 @@ import { RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 import '../../../../images/aiwave/middle-empty.webp'
+import SliderComponent from "./Slider"
 const AIWave = ({ t }) => {
 
   return (
@@ -101,6 +102,9 @@ const AIWave = ({ t }) => {
                 </div>
               </div>
             </BorderContainerRowsVerticalSides>
+          </div>
+          <div className="mobile">
+            <SliderComponent t={t} />
           </div>
         </AIWaveContainer>
       </div>
