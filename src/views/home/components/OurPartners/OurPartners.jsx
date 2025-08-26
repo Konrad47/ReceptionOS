@@ -3,7 +3,7 @@ import { OurPartnersContainer } from './styled.components';
 import { StaticImage } from 'gatsby-plugin-image';
 import SliderComponent from './Slider';
 
-const TrustUsSection = ({ t }) => {
+const OurPartners = ({ t }) => {
 
   const items = [
     {
@@ -94,4 +94,4 @@ const TrustUsSection = ({ t }) => {
   );
 };
 
-export default TrustUsSection;
+export default OurPartners;

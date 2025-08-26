@@ -10,7 +10,7 @@ export const AIWaveContainer = styled.div`
 
   .text-container {
     display: flex;
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
