@@ -19,7 +19,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                         opacity="0.3"
                         d="M1 1H58.5L89.5 7V1H961"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -32,7 +32,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                         opacity="0.3"
                         d="M961 1H229L198 7V1H1"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -43,7 +43,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M7 1L1 1L1 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="left-bottom"
@@ -53,7 +53,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M7 7L1 7L1 1" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M7 7L1 7L1 1" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="right-top"
@@ -63,7 +63,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M1 1L7 1L7 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="right-bottom"
@@ -73,10 +73,10 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M1 7L7 7L7 1" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M1 7L7 7L7 1" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-no-rows-vertical-sides-long {
             display: flex;
             flex-direction: column;

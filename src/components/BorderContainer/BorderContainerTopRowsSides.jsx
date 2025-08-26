@@ -12,7 +12,7 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M7 1L1 1L1 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="right-top"
@@ -22,7 +22,7 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M1 1L7 1L7 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="left desktop"
@@ -35,7 +35,7 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     <path
                         d="M33 0.5L33 105.5L27 136.5L33 136.5L1 245.75L1 832.5"
                         stroke="url(#paint0_linear_206_3252)"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                     <defs>
                         <linearGradient
@@ -46,8 +46,8 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                             y2="833"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop stop-color="#302C29" />
-                            <stop offset="1" stop-color="#302C29" stop-opacity="0" />
+                            <stop stopColor="#302C29" />
+                            <stop offset="1" stopColor="#302C29" stopOpacity="0" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -62,7 +62,7 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     <path
                         d="M33 -4L33 101L27 132L33 132L1 241.25L1 430.5"
                         stroke="#302C29"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -76,7 +76,7 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     <path
                         d="M1 0.5L0.999997 105.5L7 136.5L0.999995 136.5L33 245.75L33 791"
                         stroke="url(#paint0_linear_206_3251)"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                     <defs>
                         <linearGradient
@@ -87,8 +87,8 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                             y2="820"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop stop-color="#302C29" />
-                            <stop offset="1" stop-color="#302C29" stop-opacity="0" />
+                            <stop stopColor="#302C29" />
+                            <stop offset="1" stopColor="#302C29" stopOpacity="0" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -103,11 +103,11 @@ export const BorderContainerTopRowsSides = ({ children, className }) => {
                     <path
                         d="M1 -4L0.999997 101L7 132L0.999995 132L33 241.25L33 430.5"
                         stroke="#302C29"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-top-rows-sides {
             border-top: 1px solid #302c29;
             display: flex;

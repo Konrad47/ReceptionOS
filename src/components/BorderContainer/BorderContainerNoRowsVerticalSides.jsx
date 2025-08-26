@@ -14,7 +14,7 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
                         opacity="0.3"
                         d="M1 1.00244H58.5L89.5 7.00244V1.00244H341.985"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -27,11 +27,11 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
                         opacity="0.3"
                         d="M1 0.536865H58.5L89.5 6.53687V0.536865H341.985"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-no-rows-vertical-sides {
             display: flex;
             flex-direction: column;
@@ -50,7 +50,7 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
             }
           }
         `}</style>
-            </div>
+            </div >
         </>
     )
 }

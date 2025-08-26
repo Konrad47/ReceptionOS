@@ -12,7 +12,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M7 1L1 1L1 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="right-top"
@@ -22,10 +22,10 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M1 1L7 1L7 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-top-rows-bottom {
             border: 1px solid #302c29;
             border-bottom: none;
@@ -59,7 +59,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
                 <path
                     d="M962 0.5V94L933 104H875.5L844.5 110V104L30 104.134L1 94.134V0.5"
                     stroke="#302C29"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                 />
             </svg>
             <svg
@@ -71,7 +71,7 @@ export const BorderContainerTopRowsBottom = ({ children, className }) => {
                 <path
                     d="M359 1L359 86L331 95.9999H273.5L242.5 102V95.9999H30L0.999969 86V1"
                     stroke="#302C29"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                 />
             </svg>
         </>

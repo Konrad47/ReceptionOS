@@ -30,11 +30,11 @@ const Analysis = ({ t }) => {
               <div className="inner-text">
                 <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
-                  <path d="M0.5 1H24.5" stroke="#EB670F" stroke-opacity="0.3" />
+                  <path d="M0.5 1H24.5" stroke="#EB670F" strokeOpacity="0.3" />
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text2')}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
-                  <path d="M0.5 1H24.5" stroke="#EB670F" stroke-opacity="0.3" />
+                  <path d="M0.5 1H24.5" stroke="#EB670F" strokeOpacity="0.3" />
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
               </div>

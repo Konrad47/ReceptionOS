@@ -12,7 +12,7 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
                 <path
                     d="M1 31V17L29 7.00006H86.5L117.5 1.00006V7.00006L932 7.00006L961 17V31"
                     stroke="#302C29"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                 />
             </svg>
             <svg
@@ -24,12 +24,12 @@ export const BorderContainerNoRowsTop = ({ children, className }) => {
                 <path
                     d="M1 31V17L29 7.00006H89.5L120.5 1.00006V7.00006H346L375 17V31"
                     stroke="#302C29"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                 />
             </svg>
             <div className={`border-container-no-rows-top ${className}`}>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-no-rows-top {
             border: 1px solid #302c29;
             border-top: none;

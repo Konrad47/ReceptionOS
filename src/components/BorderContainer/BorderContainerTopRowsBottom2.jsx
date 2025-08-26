@@ -12,7 +12,7 @@ export const BorderContainerTopRowsBottom2 = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M7 1L1 1L1 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M7 1L1 1L1 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
                     className="right-top"
@@ -22,10 +22,10 @@ export const BorderContainerTopRowsBottom2 = ({ children, className }) => {
                     viewBox="0 0 8 8"
                     fill="none"
                 >
-                    <path d="M1 1L7 1L7 7" stroke="#877B72" stroke-linecap="round" />
+                    <path d="M1 1L7 1L7 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-top-rows-bottom2 {
             border: 1px solid #302c29;
             border-bottom: none;
@@ -59,14 +59,14 @@ export const BorderContainerTopRowsBottom2 = ({ children, className }) => {
                 <path
                     d="M962 0.5V94L933 104H875.5L844.5 110V104L30 104.134L1 94.134V0.5"
                     stroke="#302C29"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                 />
             </svg> */}
             <svg className="top-rows-bottom2-bottom desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 32" fill="none">
-                <path opacity="0.3" d="M961 1V15L933 24.9999H875.5L844.5 30.9999V24.9999L30 25.1339L1 15.134V1.13397" stroke="#877B72" stroke-linecap="round" />
+                <path opacity="0.3" d="M961 1V15L933 24.9999H875.5L844.5 30.9999V24.9999L30 25.1339L1 15.134V1.13397" stroke="#877B72" strokeLinecap="round" />
             </svg>
             <svg className="top-rows-bottom2-bottom mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 32" fill="none">
-                <path opacity="0.3" d="M359 1V15L331 24.9999H273.5L242.5 30.9999V24.9999H30L1 15V1" stroke="#877B72" stroke-linecap="round" />
+                <path opacity="0.3" d="M359 1V15L331 24.9999H273.5L242.5 30.9999V24.9999H30L1 15V1" stroke="#877B72" strokeLinecap="round" />
             </svg>
         </>
     )

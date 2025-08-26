@@ -25,7 +25,7 @@ const SliderComponent = ({ items }) => {
           <div className='slider-person-data'>
             <p style={{ fontWeight: 500 }} className='p-new-model-16'>{item.name}</p>
             {item.position.map((position, index) => (
-              <p className='p-new-model-14'>{position}</p>
+              <p key={index} className='p-new-model-14'>{position}</p>
             ))}
             <p className='p-new-model-14'>{item.company}</p>
 

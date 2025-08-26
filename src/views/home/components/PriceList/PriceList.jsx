@@ -31,7 +31,7 @@ const PriceList = ({ t }) => {
               <div className="counter-container">
                 <div onClick={decrementCounter} className="counter-sides counter-left">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M4.16675 10H10.0001H15.8334" stroke="#FFE8D9" stroke-linejoin="round" />
+                    <path d="M4.16675 10H10.0001H15.8334" stroke="#FFE8D9" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <div className="counter-middle">
@@ -39,7 +39,7 @@ const PriceList = ({ t }) => {
                 </div>
                 <div onClick={incrementCounter} className="counter-sides counter-right">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M4.16675 10.0003H10.0001M15.8334 10.0003H10.0001M10.0001 10.0003V4.16699M10.0001 10.0003V15.8337" stroke="#FFE8D9" stroke-linejoin="round" />
+                    <path d="M4.16675 10.0003H10.0001M15.8334 10.0003H10.0001M10.0001 10.0003V4.16699M10.0001 10.0003V15.8337" stroke="#FFE8D9" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const PriceList = ({ t }) => {
                       map(key => (
                         <div key={key} className="price-li">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M3.33325 10.8333L7.49992 15L16.6666 5" stroke="#FFE8D9" stroke-linejoin="round" />
+                            <path d="M3.33325 10.8333L7.49992 15L16.6666 5" stroke="#FFE8D9" strokeLinejoin="round" />
                           </svg>
                           <p className="p-new-model-16 ">{t(`home.PriceList.${item.name}-li${key}`)}</p>
                         </div>

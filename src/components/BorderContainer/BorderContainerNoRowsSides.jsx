@@ -15,7 +15,7 @@ export const BorderContainerNoRowsSides = ({ children, className }) => {
                     <path
                         d="M30 1L29.9998 56L23.9998 87L29.9998 87L0.999999 196.25L0.999999 247"
                         stroke="#302C29"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -29,11 +29,11 @@ export const BorderContainerNoRowsSides = ({ children, className }) => {
                     <path
                         d="M1 1L1.00024 56L7.00024 87L1.00024 87L30 196.25L30 247"
                         stroke="#302C29"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 {children}
-                <style jsx>{`
+                <style jsx="true">{`
           .border-container-no-rows-sides {
             display: flex;
             flex-direction: column;

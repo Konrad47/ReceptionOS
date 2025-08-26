@@ -21,7 +21,7 @@ const EliminateProblems = ({ t }) => {
       <div className="video-container">
         <RoundedButtonSvgDark className="close-button" onClick={() => setIsModal(false)}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M6 18L18 6M6 6L18 18" stroke="#FFE8D9" stroke-linejoin="round" />
+            <path d="M6 18L18 6M6 6L18 18" stroke="#FFE8D9" strokeLinejoin="round" />
           </svg>
         </RoundedButtonSvgDark>
         <Video src={childrenContent} />
@@ -99,7 +99,7 @@ const EliminateProblems = ({ t }) => {
                   <div className="tile-right">
                     <RoundedButtonSvg onClick={() => openModal(item.link)}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M2.92871 9.99995H17.0716M17.0716 9.99995L11.5716 4.5M17.0716 9.99995L11.5716 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+                        <path d="M2.92871 9.99995H17.0716M17.0716 9.99995L11.5716 4.5M17.0716 9.99995L11.5716 15.4999" stroke="#FFE8D9" strokeLinejoin="round" />
                       </svg>
                     </RoundedButtonSvg>
                   </div>
