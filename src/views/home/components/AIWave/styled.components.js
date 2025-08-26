@@ -33,16 +33,21 @@ export const AIWaveContainer = styled.div`
   }
 
   .ai-wave-tile {
-    display: flex;
-    padding: 32px 48px auto 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
     flex: 1 1 0;
+    height: 228px;
+    box-sizing: border-box;
 
     .p-new-model-18 {
       color: #ffe8d9;
     }
+  }
+
+  .tile-content {
+    display: flex;
+    padding: 32px 48px 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .text-tile {

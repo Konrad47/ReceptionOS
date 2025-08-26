@@ -2,6 +2,7 @@ import React from "react"
 import { AIWaveContainer } from "./styled.components"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
+import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 
 const AIWave = ({ t }) => {
 
@@ -17,19 +18,21 @@ const AIWave = ({ t }) => {
             <p className="p-new-model-18 ">{t(`home.AIWave.description`)}</p>
           </div>
           <div className="tile-container">
-            <div gap="24px" className="ai-wave-tile">
-              <StaticImage
-                className="image"
-                src="../../../../images/aiwave/time.svg"
-                alt="image"
-                placeholder="image"
-                loading="lazy"
-              />
-              <div className="text-tile">
-                <p className="p-new-model-18">{t(`home.AIWave.tile-title-1`)}</p>
-                <p className="p-new-model-16">{t(`home.AIWave.tile-description-1`)}</p>
+            <BorderContainerRowsVerticalSides className="ai-wave-tile">
+              <div className="tile-content">
+                <StaticImage
+                  className="image"
+                  src="../../../../images/aiwave/time.svg"
+                  alt="image"
+                  placeholder="image"
+                  loading="lazy"
+                />
+                <div className="text-tile">
+                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-1`)}</p>
+                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-1`)}</p>
+                </div>
               </div>
-            </div>
+            </BorderContainerRowsVerticalSides>
             <div gap="24px" className="ai-wave-tile">
               <StaticImage
                 className="image"
@@ -43,8 +46,6 @@ const AIWave = ({ t }) => {
                 <p className="p-new-model-16">{t(`home.AIWave.tile-description-2`)}</p>
               </div>
             </div>
-          </div>
-          <div className="tile-container">
             <div gap="24px" className="ai-wave-tile">
               <StaticImage
                 className="image"
