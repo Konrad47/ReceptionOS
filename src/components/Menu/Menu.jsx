@@ -2,7 +2,7 @@ import React from "react"
 import { MenuComponent } from "./styled.components"
 import "../../images/menu/ros-image.webp"
 import { StaticImage } from "gatsby-plugin-image"
-import { SmallSquareTile } from "../../styled.components"
+import { RoundedButtonOrange, SmallSquareTile } from "../../styled.components"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 const Menu = ({ t }) => {
   const { language, originalPath } = useI18next()
@@ -19,29 +19,13 @@ const Menu = ({ t }) => {
             placeholder="ros-image"
             loading="lazy"
           />
-          <StaticImage
-            className="ros-image-small"
-            src="../../images/menu/ros-image-small.webp"
-            alt="ros-image"
-            placeholder="ros-image"
-            loading="lazy"
-          />
-          <div className="links">
-            {['solution', 'story-behind', 'problem', 'testimonials', 'contact'].map(key => (
-              <div key={key} className="link">
-                <a href={`#${key}`}>{t(`home.Menu.${key}`)}</a>
-              </div>
-            ))}
-          </div>
           <div className="buttons">
             <SmallSquareTile as={Link} to={originalPath} language={alternateLanguage}>
               <p>
                 {language.toUpperCase()}
               </p>
             </SmallSquareTile>
-            <div className="order-button">
-              <p>{t(`home.Menu.order-button`)}</p>
-            </div>
+            <RoundedButtonOrange className="order-button">{t(`home.Menu.order-button`)}</RoundedButtonOrange>
           </div>
         </div>
       </MenuComponent>
