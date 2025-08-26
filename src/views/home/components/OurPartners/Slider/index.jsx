@@ -8,35 +8,16 @@ const SliderComponent = ({ items }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
-    slidesToShow: 5,
+    speed: 1000,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
+    autoplaySpeed: 3500,
     arrows: false,
-    responsive: [
-      {
-        breakpoint: 974,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 568,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    className: "center",
+    centerMode: true,
+    centerPadding: "55px",
+    variableWidth: true,
   };
 
   const renderItems = items?.map((item, index) => {

@@ -7,11 +7,11 @@ const TrustUsSection = ({ t }) => {
 
   const items = [
     {
-      link: '#',
+      link: 'https://nowipacjenci.pl/home',
       img: (
         <StaticImage
           className="image"
-          src="../../../../images/autopilot/phone_circle.webp"
+          src="../../../../images/our-partners/1.webp"
           alt="image"
           placeholder="none"
           loading="lazy"
@@ -19,11 +19,11 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: '#',
+      link: 'https://dentalway.pl/',
       img: (
         <StaticImage
           className="image"
-          src="../../../../images/autopilot/phone_circle.webp"
+          src="../../../../images/our-partners/2.webp"
           alt="image"
           placeholder="none"
           loading="lazy"
@@ -31,11 +31,11 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: '#',
+      link: 'https://numlabs.com/',
       img: (
         <StaticImage
           className="image"
-          src="../../../../images/autopilot/phone_circle.webp"
+          src="../../../../images/our-partners/3.webp"
           alt="image"
           placeholder="none"
           loading="lazy"
@@ -43,11 +43,11 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: '#',
+      link: 'https://www.apoloniadental.pl/',
       img: (
         <StaticImage
           className="image"
-          src="../../../../images/autopilot/phone_circle.webp"
+          src="../../../../images/our-partners/4.webp"
           alt="image"
           placeholder="none"
           loading="lazy"
@@ -55,11 +55,11 @@ const TrustUsSection = ({ t }) => {
       )
     },
     {
-      link: '#',
+      link: 'https://www.innovationshub.pl/',
       img: (
         <StaticImage
           className="image"
-          src="../../../../images/autopilot/phone_circle.webp"
+          src="../../../../images/our-partners/5.webp"
           alt="image"
           placeholder="none"
           loading="lazy"
@@ -71,8 +71,9 @@ const TrustUsSection = ({ t }) => {
   return (
     <>
       <OurPartnersContainer>
-        <p>{t`home.OurPartners.title`}</p>
-        {items && <SliderComponent items={items} />}
+        <div className='container'>
+          {items && <SliderComponent items={items} />}
+        </div>
       </OurPartnersContainer>
     </>
   );

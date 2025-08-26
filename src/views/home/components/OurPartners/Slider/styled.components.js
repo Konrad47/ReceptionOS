@@ -17,17 +17,18 @@ export const SliderContainer = styled.div`
   a img {
     margin: auto;
     width: 100% !important;
-    height: 80px;
+    height: 32px;
   }
 
   img {
-    max-height: 80px;
+    max-height: 32px;
     width: 100%;
     object-fit: contain !important;
   }
 
   a:hover {
-    background-color: rgba(255, 255, 255, 0.02);
+    /* transition: all 0.3s ease-in !important; */
+    /* background-color: rgba(255, 255, 255, 0.02); */
   }
 
   .slick-slider {
@@ -38,28 +39,15 @@ export const SliderContainer = styled.div`
     padding: 0;
   }
 
-  .gatsby-image-wrapper {
-    height: 120px;
-  }
   .we-work-with-a-wrapper {
     display: flex !important;
     justify-items: center;
     align-items: center;
+    height: 44px;
+    padding: 6px 22px !important;
   }
   .we-work-with-a-wrapper a {
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-
-  @media (max-width: 976px) {
-    a {
-      padding: 0 1.6rem;
-    }
-  }
-
-  @media (max-width: 568px) {
-    a {
-      padding: 0 2rem 0 0;
-    }
+    /* margin-right: auto !important; */
+    /* margin-left: auto !important; */
   }
 `
