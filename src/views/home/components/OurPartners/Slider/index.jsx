@@ -11,7 +11,7 @@ const SliderComponent = ({ items }) => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3500,
     arrows: false,
     className: "center",
