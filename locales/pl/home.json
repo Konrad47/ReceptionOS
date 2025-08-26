@@ -140,5 +140,8 @@
   "home.Footer.resources": "zasoby",
   "home.Footer.policy": "Polityka Prywatności",
   "home.Footer.terms": "Warunki",
-  "home.Footer.place": "receptionOS © 2025"
+  "home.Footer.place": "receptionOS © 2025",
+  "home.Footer.change-language": "Zmień język",
+  "home.Footer.polish": "Polski",
+  "home.Footer.english": "Angielski"
 }

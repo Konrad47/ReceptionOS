@@ -6,7 +6,7 @@ import { RoundedButtonOrange, SmallSquareTile } from "../../styled.components"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 const Menu = ({ t }) => {
   const { language, originalPath } = useI18next()
-  const alternateLanguage = language === 'pl' ? 'en' : 'pl'
+  // const alternateLanguage = language === 'pl' ? 'en' : 'pl'
 
   return (
     <>
@@ -20,11 +20,11 @@ const Menu = ({ t }) => {
             loading="lazy"
           />
           <div className="buttons">
-            <SmallSquareTile as={Link} to={originalPath} language={alternateLanguage}>
+            {/* <SmallSquareTile as={Link} to={originalPath} language={alternateLanguage}>
               <p>
                 {language.toUpperCase()}
               </p>
-            </SmallSquareTile>
+            </SmallSquareTile> */}
             <RoundedButtonOrange className="order-button">{t(`home.Menu.order-button`)}</RoundedButtonOrange>
           </div>
         </div>

@@ -34,11 +34,48 @@ export const FooterComponent = styled.div`
     padding: 32px 0;
     border-top: none;
 
-    div {
+    .info {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 314px;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      background-color: var(--Black) !important;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      color: rgba(255, 232, 217, 0.64);
+      font-family: "Inter Tight";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .dropdown-menu {
+      display: none !important;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .dropdown-menu.show {
+      display: block !important;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    a {
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+      color: #a3948b;
+
+      &:hover {
+        color: #ffe8d9;
+      }
     }
   }
 
