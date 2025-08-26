@@ -17,7 +17,7 @@ const AIWave = ({ t }) => {
             <h2>{t(`home.AIWave.title`)}</h2>
             <p className="p-new-model-18 ">{t(`home.AIWave.description`)}</p>
           </div>
-          <div className="tile-container">
+          <div className="tile-container desktop">
             <StaticImage
               className="empty left-empty"
               src="../../../../images/aiwave/middle-empty.webp"
