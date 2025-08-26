@@ -43,7 +43,7 @@ const AIWave = ({ t }) => {
               <div className="tile-content">
                 <StaticImage
                   className="image"
-                  src="../../../../images/aiwave/time.svg"
+                  src="../../../../images/aiwave/1.svg"
                   alt="image"
                   placeholder="image"
                   loading="lazy"
@@ -58,7 +58,7 @@ const AIWave = ({ t }) => {
               <div className="tile-content">
                 <StaticImage
                   className="image"
-                  src="../../../../images/aiwave/book.svg"
+                  src="../../../../images/aiwave/2.svg"
                   alt="image"
                   placeholder="image"
                   loading="lazy"
@@ -75,7 +75,7 @@ const AIWave = ({ t }) => {
               <div className="tile-content">
                 <StaticImage
                   className="image"
-                  src="../../../../images/aiwave/message.svg"
+                  src="../../../../images/aiwave/3.svg"
                   alt="image"
                   placeholder="image"
                   loading="lazy"
@@ -90,7 +90,7 @@ const AIWave = ({ t }) => {
               <div className="tile-content">
                 <StaticImage
                   className="image"
-                  src="../../../../images/aiwave/chart.svg"
+                  src="../../../../images/aiwave/4.svg"
                   alt="image"
                   placeholder="image"
                   loading="lazy"
