@@ -56,6 +56,7 @@ export const CaseStudyComponent = styled.div`
   }
 
   @media only screen and (max-width: 1020px) {
+    padding: 0 0 30px 0;
     .case-study-top {
       max-width: 284px;
       p {

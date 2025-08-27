@@ -31,6 +31,7 @@ export const AboutUsComponent = styled.div`
   @media only screen and (max-width: 1020px) {
     .container {
       margin: 0 !important;
+      gap: 20px;
     }
     .about-us-top {
       max-width: 300px;
