@@ -4,9 +4,6 @@ import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
 import Autopilot from "./components/Autopilot/Autopilot"
 import AIWave from "./components/AIWave/AIWave"
-import ClinicsProblems from "./components/ClinicsProblems/ClinicsProblems"
-import StepByStep from "./components/StepByStep/StepByStep"
-import FindOut from "./components/FindOut/FindOut"
 import WriteUs from "./components/WriteUs/WriteUs"
 import Footer from "../../components/Footer/Footer"
 import PriceList from "./components/PriceList/PriceList"
@@ -25,12 +22,8 @@ const Home = () => {
   return (
     <>
       <Seo title={t`home.seo.title`} description={t`home.seo.description`} />
-      {/* <div className="container"> */}
       <Menu t={t} />
       <Autopilot t={t} />
-      {/* <ClinicsProblems t={t} /> */}
-      {/* <StepByStep t={t} /> */}
-      {/* <FindOut t={t} /> */}
       <OurPartners t={t} />
       <AIWave t={t} />
       <HowItWorks t={t} />
@@ -43,7 +36,6 @@ const Home = () => {
       <PriceList t={t} />
       <WriteUs t={t} />
       <Footer t={t} />
-      {/* </div> */}
     </>
   )
 }
