@@ -5,18 +5,22 @@ main {
 body {
   margin: 0;
   /* font-family: "Red Hat Display"; */
-  font-family: "Montserrat";
+  font-family: "Inter Tight";
   background-color: var(--Black);
 }
 
 :root {
   --Orange: #eb670f;
-  --Black: #050403;
+  --Black: #0a0a0a;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 h1,
@@ -27,57 +31,105 @@ h5,
 h6,
 p {
   margin: 0;
-  color: #fff;
+  color: #f5f5f5;
 }
 
-.h1-style {
-  font-size: 84px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: linear-gradient(
+    180deg,
+    #fff8f3 0%,
+    rgba(255, 232, 217, 0.7) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 64px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.72px;
 }
 
-.h2-style {
-  font-size: 40px;
+h2 {
+  font-size: 56px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -0.72px;
 }
 
-.h3-style {
+h3 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+
+h4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 32px;
+  letter-spacing: -0.36px;
 }
 
-.h4-style {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.h5-style {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.p-style {
-  font-size: 16px;
+.p-body-small {
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.p-new-model-16 {
+  /* color: rgba(255, 232, 217, 0.64); */
+  color: #a3948b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.p-new-model-18 {
+  color: #a3948b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.p-new-model-14 {
+  color: #a3948b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.p-new-model-15 {
+  color: #a3948b;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 568px) {
   .container {
     margin: 0 1rem;
     width: unset;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
   }
 }
 @media only screen and (max-width: 951px) {
@@ -94,7 +146,6 @@ p {
 @media only screen and (min-width: 568px) and (max-width: 1123px) {
   .container {
     margin: 0 5%;
-    max-width: 100%;
   }
 }
 
@@ -113,5 +164,38 @@ p {
 @media only screen and (min-width: 1824px) {
   .container {
     max-width: 1180px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.36px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: flex !important;
   }
 }
