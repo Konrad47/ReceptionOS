@@ -51,7 +51,7 @@ export const BorderContainer4Rows2Sides = ({ children, className }) => {
         viewBox="0 0 2 22"
         fill="none"
       >
-        <path d="M1 1L1 21" stroke="#877B72" stroke-linecap="round" />
+        <path d="M1 1L1 21" stroke="#877B72" strokeLinecap="round" />
       </svg>
       <svg
         className="right-side"
@@ -61,7 +61,7 @@ export const BorderContainer4Rows2Sides = ({ children, className }) => {
         viewBox="0 0 2 22"
         fill="none"
       >
-        <path d="M1 1L1 21" stroke="#877B72" stroke-linecap="round" />
+        <path d="M1 1L1 21" stroke="#877B72" strokeLinecap="round" />
       </svg>
       {children}
       <style jsx="true">{`
