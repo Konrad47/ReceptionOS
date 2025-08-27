@@ -21,6 +21,7 @@ export const HowItWorksComponent = styled.div`
     align-items: center;
     text-align: center;
     gap: 16px;
+    max-width: 650px;
   }
 
   @media only screen and (max-width: 1020px) {
