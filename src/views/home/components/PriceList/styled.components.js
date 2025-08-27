@@ -7,6 +7,14 @@ export const PriceListComponent = styled.div`
   align-items: center;
   gap: 40px;
 
+  /* .border-container-bottom-rows-top {
+    border-bottom: none;
+  }
+
+  .border-container-top-rows-bottom {
+    border-top: none;
+  } */
+
   .top-border-container {
     width: 100%;
     box-sizing: border-box;
@@ -142,6 +150,8 @@ export const PriceListComponent = styled.div`
       gap: 56px;
       flex: 1 0 0;
       padding: 24px;
+      border-top: none;
+      border-bottom: none;
 
       .price-top {
         display: flex;
@@ -214,7 +224,10 @@ export const PriceListComponent = styled.div`
     .bottom-container {
       .pricing-container {
         flex-direction: column;
-        /* align-items: center; */
+
+        .price-tile {
+          border-bottom: 1px solid #302c29;
+        }
       }
     }
   }
@@ -229,12 +242,30 @@ export const PriceListComponent = styled.div`
     }
   }
 
+  @media only screen and (max-width: 900px) {
+    .bottom-rows-top-top {
+      margin-left: 0px;
+    }
+    .top-rows-bottom-bottom {
+      margin-left: 0px;
+    }
+  }
+
   @media only screen and (max-width: 700px) {
     .counter-container {
       margin-top: -54px;
     }
     .price-list-button {
       margin-top: 23px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .bottom-rows-top-top {
+      width: calc(100% + 1px);
+    }
+    .top-rows-bottom-bottom {
+      width: calc(100% + 1px);
     }
   }
 `

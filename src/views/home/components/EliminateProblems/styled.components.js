@@ -36,6 +36,8 @@ export const EliminateProblemsComponent = styled.div`
     padding: 24px;
     height: 255px;
     box-sizing: border-box;
+    border-top: none;
+    border-bottom: none;
 
     .tile-left {
       display: flex;
@@ -57,10 +59,17 @@ export const EliminateProblemsComponent = styled.div`
 
   @media only screen and (max-width: 1020px) {
     padding: 30px 0;
-
+    .border-container-top-rows-bottom2 {
+      border-top: none;
+    }
     .tiles-container {
       flex-direction: column;
+
+      .tile-container {
+        border-bottom: 1px solid #302c29;
+      }
     }
+
     .top-title {
       margin-bottom: 30px;
     }
