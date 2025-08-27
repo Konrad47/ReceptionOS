@@ -80,8 +80,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Warsaw Passive Investment Conference`,
-        short_name: `WPIC`,
+        name: `ReceptionOS`,
+        short_name: `ReceptionOS`,
         start_url: `/`,
         background_color: `#faf0f9`,
         display: `standalone`,

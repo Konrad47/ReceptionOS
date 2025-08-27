@@ -31,7 +31,3 @@ import "@fontsource/inter-tight/500.css"
 import "@fontsource/inter-tight/600.css"
 import "@fontsource/inter-tight/700.css"
 import "@fontsource/inter-tight/800.css"
-
-if (typeof document !== "undefined") {
-  document.documentElement.classList.remove("no-js")
-}
