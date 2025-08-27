@@ -1,11 +1,13 @@
 import styled from "styled-components"
 import AutopilotImage from "../../../../images/autopilot/autopilot-background.webp"
+import AutopilotImageMobile from "../../../../images/autopilot/autopilot-background_mobile.webp"
 
 export const AutopilotComponent = styled.div`
   padding-bottom: 40px;
   overflow: hidden;
   background-size: cover !important;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   background-image: url(${AutopilotImage});
   display: block;
@@ -70,9 +72,10 @@ export const AutopilotComponent = styled.div`
 
   @media only screen and (max-width: 1020px) {
     .text-container {
-      padding: 60px 16px 90px 16px;
+      padding: 60px 0 24px 0;
       h1 {
         width: 100%;
+        max-width: 302px;
         box-sizing: border-box;
       }
 
@@ -82,15 +85,29 @@ export const AutopilotComponent = styled.div`
 
       p {
         width: 100%;
+        max-width: 288px;
         box-sizing: border-box;
       }
     }
 
-    .phone-circle {
-      width: 200px;
-      img {
-        width: 200px;
+    .gif-section {
+      width: 192px;
+      height: 187px;
+      margin: auto;
+      position: relative;
+      margin-bottom: 16px;
+
+      video {
+        width: 192px;
+        height: 187px;
       }
     }
+
+    .data-info {
+      margin-top: 16px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    background-image: url(${AutopilotImageMobile});
   }
 `
