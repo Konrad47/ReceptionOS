@@ -46,6 +46,18 @@ export const AutopilotComponent = styled.div`
     }
   }
 
+  .gif-section {
+    width: 268px;
+    height: 260px;
+    margin: auto;
+    position: relative;
+
+    video {
+      width: 268px;
+      height: 260px;
+    }
+  }
+
   .data-info {
     display: flex;
     justify-content: center;
@@ -71,11 +83,6 @@ export const AutopilotComponent = styled.div`
         width: 100%;
         box-sizing: border-box;
       }
-    }
-
-    .tooltip {
-      top: -45px;
-      opacity: 1;
     }
 
     .phone-circle {

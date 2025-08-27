@@ -230,7 +230,7 @@ export const RoundedButtonSvg = styled.button`
   box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-out;
   cursor: pointer;
 
   &:hover {
@@ -313,9 +313,8 @@ export const RoundedButtonOrange = styled.button`
   box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-out;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 
   color: #ffe8d9;
   font-size: 18px;
