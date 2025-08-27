@@ -45,7 +45,7 @@ module.exports = {
         localeJsonSourceName: `locales`,
         languages: [`pl`, `en`],
         defaultLanguage: `pl`,
-        siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+        siteUrl: `http://ReceptionOS.pl`,
         redirect: false,
         pages: [
           {
@@ -85,7 +85,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#faf0f9`,
         display: `standalone`,
-        icon: `src/images/gpw-icon.png`,
+        icon: `src/images/ros-icon.png`,
       },
     },
   ],
