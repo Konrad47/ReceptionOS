@@ -34,7 +34,7 @@ const Home = () => {
       <Autopilot t={t} />
       <OurPartners t={t} />
       <AIWave t={t} />
-      {/* <HowItWorks t={t} /> */}
+      <HowItWorks t={t} />
       <EliminateProblems t={t} />
       <Compare t={t} />
       <PartnersAboutUs t={t} />
