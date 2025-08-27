@@ -25,4 +25,10 @@ export const SliderContainer = styled.div`
       display: none;
     }
   }
+
+  @media only screen and (max-width: 700px) {
+    .slick-slider {
+      height: 240px;
+    }
+  }
 `

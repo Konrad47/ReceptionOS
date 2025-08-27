@@ -97,6 +97,6 @@ export const AIWaveContainer = styled.div`
   }
 
   @media only screen and (max-width: 1020px) {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 0 0;
   }
 `

@@ -12,8 +12,15 @@ const Analysis = ({ t }) => {
         <AnalysisComponent>
           <BorderContainerTopRowsSides className="analysis-container">
             <StaticImage
-              className="background-a"
+              className="background-a desktop"
               src="../../../../images/analysis/analysis-background.webp"
+              alt="background"
+              placeholder="background"
+              loading="lazy"
+            />
+            <StaticImage
+              className="background-a mobile"
+              src="../../../../images/analysis/analysis-background_mobile.webp"
               alt="background"
               placeholder="background"
               loading="lazy"
@@ -29,12 +36,18 @@ const Analysis = ({ t }) => {
               <p className="p-new-model-14">{t('home.Analysis.in-it')}</p>
               <div className="inner-text">
                 <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
+                <svg className="desktop" xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
                   <path d="M0.5 1H24.5" stroke="#EB670F" strokeOpacity="0.3" />
                 </svg>
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="81" height="2" viewBox="0 0 81 2" fill="none">
+                  <path d="M0 1H81" stroke="#302C29" />
+                </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text2')}</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
+                <svg className="desktop" xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
                   <path d="M0.5 1H24.5" stroke="#EB670F" strokeOpacity="0.3" />
+                </svg>
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="81" height="2" viewBox="0 0 81 2" fill="none">
+                  <path d="M0 1H81" stroke="#302C29" />
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
               </div>

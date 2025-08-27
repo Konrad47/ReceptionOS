@@ -28,6 +28,7 @@ export const HowItWorksComponent = styled.div`
     background-image: url(${BackgroundImageMobile});
     .top-tile {
       margin: 44px auto;
+      max-width: 240px;
     }
   }
 `

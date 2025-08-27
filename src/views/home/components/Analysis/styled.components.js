@@ -5,7 +5,7 @@ export const AnalysisComponent = styled.div`
     width: 50%;
     box-sizing: border-box;
     margin: auto;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
     position: relative;
 
@@ -46,6 +46,10 @@ export const AnalysisComponent = styled.div`
         gap: 24px;
         align-self: stretch;
         padding-bottom: 32px;
+
+        p {
+          color: #ffe8d9;
+        }
       }
     }
   }
@@ -53,6 +57,11 @@ export const AnalysisComponent = styled.div`
   @media only screen and (max-width: 1020px) {
     .analysis-container {
       width: 80%;
+
+      .left,
+      .right {
+        z-index: -1;
+      }
     }
   }
 
