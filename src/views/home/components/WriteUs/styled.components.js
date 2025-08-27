@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import BackgroundImage from "../../../../images/writeus/writeus-background.webp"
-import BackgroundImageMobile from "../../../../images/writeus/writeus-background_mobile.webp"
 
 export const WriteUsComponent = styled.div`
   padding: 64px 0;

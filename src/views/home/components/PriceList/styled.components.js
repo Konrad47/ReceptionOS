@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const PriceListComponent = styled.div`
-  padding: 30px 0;
+  padding: 30px 0 24px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,7 +207,7 @@ export const PriceListComponent = styled.div`
   .price-list-button {
     max-width: 180px;
     margin: auto;
-    margin-top: 28px;
+    margin-top: 34px;
   }
 
   @media only screen and (max-width: 1100px) {

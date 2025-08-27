@@ -2,11 +2,10 @@ import styled from "styled-components"
 import BackgroundImage from "../../../../images/aiwave/empty.webp"
 
 export const AIWaveContainer = styled.div`
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
 
   .text-container {
     display: flex;
@@ -99,6 +98,5 @@ export const AIWaveContainer = styled.div`
 
   @media only screen and (max-width: 1020px) {
     padding: 40px 0 40px 0;
-    gap: 0;
   }
 `
