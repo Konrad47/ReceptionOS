@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
@@ -18,27 +18,32 @@ import OurPartners from "./components/OurPartners/OurPartners"
 
 const Home = () => {
   const { t } = useTranslation()
+
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return
+
   return (
     <>
       <Seo title={t`home.seo.title`} description={t`home.seo.description`} />
-      {document && (
-        <>
-          <Menu t={t} />
-          <Autopilot t={t} />
-          <OurPartners t={t} />
-          <AIWave t={t} />
-          {/* <HowItWorks t={t} /> */}
-          <EliminateProblems t={t} />
-          <Compare t={t} />
-          <PartnersAboutUs t={t} />
-          <Analysis t={t} />
-          <CaseStudy t={t} />
-          <AboutUs t={t} />
-          <PriceList t={t} />
-          <WriteUs t={t} />
-          <Footer t={t} />
-        </>
-      )}
+      <Menu t={t} />
+      <Autopilot t={t} />
+      <OurPartners t={t} />
+      <AIWave t={t} />
+      {/* <HowItWorks t={t} /> */}
+      <EliminateProblems t={t} />
+      <Compare t={t} />
+      <PartnersAboutUs t={t} />
+      <Analysis t={t} />
+      <CaseStudy t={t} />
+      <AboutUs t={t} />
+      <PriceList t={t} />
+      <WriteUs t={t} />
+      <Footer t={t} />
     </>
   )
 }
