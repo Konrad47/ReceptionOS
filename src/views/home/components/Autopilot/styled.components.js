@@ -18,7 +18,7 @@ export const AutopilotComponent = styled.div`
 
   .text-container {
     display: flex;
-    padding: 60px 16px 30px 16px;
+    padding: 60px 16px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -51,6 +51,7 @@ export const AutopilotComponent = styled.div`
     height: 260px;
     margin: auto;
     position: relative;
+    margin-bottom: 40px;
 
     video {
       width: 268px;
@@ -64,7 +65,7 @@ export const AutopilotComponent = styled.div`
     align-items: center;
     gap: 4px;
     align-self: stretch;
-    opacity: 0.7;
+    margin-top: 24px;
   }
 
   @media only screen and (max-width: 1020px) {

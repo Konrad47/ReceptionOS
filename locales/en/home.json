@@ -2,17 +2,11 @@
   "home.seo.title": "",
   "home.seo.description": "",
 
-  "home.Menu.solution": "Solution",
-  "home.Menu.story-behind": "Story behind",
-  "home.Menu.problem": "Problem",
-  "home.Menu.testimonials": "Testimonials",
-  "home.Menu.contact": "Contact",
   "home.Menu.order-button": "Order audit",
 
   "home.Autopilot.title": "Get digital support for <span>dental clinics</span>",
   "home.Autopilot.description": "Let us automate your dental clinics processes, so you can handle what’s really important - patients’ health.",
   "home.Autopilot.question": "Have a question? Tap to talk",
-  "home.Autopilot.saved-data": "Your data is safe, we do not record the talks",
   "home.Autopilot.tooltip": "Have a question? Tap to talk",
   "home.Autopilot.data": "Your data is safe, we do not record the talks",
 
