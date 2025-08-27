@@ -30,6 +30,16 @@ export const FooterComponent = styled.div`
     }
   }
 
+  a {
+    text-decoration: none;
+    transition: all 0.15s ease-out;
+    color: #a3948b;
+
+    &:hover {
+      color: #ffe8d9;
+    }
+  }
+
   .footer-2 {
     padding: 32px 0;
     border-top: none;
@@ -70,16 +80,6 @@ export const FooterComponent = styled.div`
       opacity: 1;
       visibility: visible;
     }
-
-    a {
-      text-decoration: none;
-      transition: all 0.15s ease-in-out;
-      color: #a3948b;
-
-      &:hover {
-        color: #ffe8d9;
-      }
-    }
   }
 
   .footer-3 {
@@ -102,15 +102,6 @@ export const FooterComponent = styled.div`
     }
   }
 
-  a {
-    text-decoration: none;
-    transition: all 0.15s ease-in-out;
-
-    &:hover {
-      color: #ffe8d9;
-    }
-  }
-
   .footer-4 {
     display: flex;
     flex-direction: column;
@@ -127,7 +118,7 @@ export const FooterComponent = styled.div`
       svg {
         &:hover {
           path {
-            transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-out;
             fill: #a3948b;
           }
         }

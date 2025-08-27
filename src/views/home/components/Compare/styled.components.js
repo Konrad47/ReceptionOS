@@ -116,7 +116,7 @@ export const CompareComponent = styled.div`
     width: 100%;
     pointer-events: none;
     opacity: 0;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
   }
 
   .fade-wrap .fade.show {

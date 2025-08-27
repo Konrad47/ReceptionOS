@@ -136,7 +136,7 @@ export const PriceListComponent = styled.div`
     .price-tile {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: flex-start;
       align-self: stretch;
       gap: 56px;

@@ -55,7 +55,7 @@ const PriceList = ({ t }) => {
                 name: 'Optimum',
                 disable: true,
                 listText: true,
-                list: ['1', '2', '3', '4']
+                list: ['1', '2', '3', '4', '5', '6']
               },
               {
                 name: 'Elite',
