@@ -12,6 +12,7 @@ import Video5 from '../../../../assets/videos/how/KALENDARZ KASOWANIE_1.webm';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import LocalVideo from "../../../../components/LocalVideo"
 import LocalVideo2 from "../../../../components/LocalVideo/LocalVideo2"
+import { BorderContainer4Rows2Sides } from "../../../../components/BorderContainer/BorderContainer4Rows2Sides"
 const HowItWorks = ({ t }) => {
 
   const items = [
@@ -72,10 +73,10 @@ const HowItWorks = ({ t }) => {
               <BorderContainer4Rows>
                 <LocalVideo2 src={item.link} />
               </BorderContainer4Rows>
-              <BorderContainer4Rows className="text-container">
+              <BorderContainer4Rows2Sides className="text-container">
                 <h4>{item.title}</h4>
                 <p className='p-new-model-16'>{item.description}</p>
-              </BorderContainer4Rows>
+              </BorderContainer4Rows2Sides>
             </div>
           ))}
         </div>
