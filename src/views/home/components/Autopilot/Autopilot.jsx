@@ -29,7 +29,7 @@ const Autopilot = ({ t }) => {
           </div>
           <RoundedButtonOrange>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M7 6.99982L7 16.9998M2 10.9998L2 12.9998M12 2.99982L12 20.9998M17 6.99981L17 16.9998M22 10.9998L22 12.9998" stroke="#FFE8D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 6.99982L7 16.9998M2 10.9998L2 12.9998M12 2.99982L12 20.9998M17 6.99981L17 16.9998M22 10.9998L22 12.9998" stroke="#FFE8D9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <span>{t(`home.Autopilot.button`)}</span>
           </RoundedButtonOrange>
