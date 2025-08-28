@@ -70,7 +70,7 @@ const HowItWorks = ({ t }) => {
 
           {items.map((item, index) => (
             <div className="video-container" key={index}>
-              <BorderContainer4Rows>
+              <BorderContainer4Rows className={`row${index}`}>
                 <LocalVideo2 src={item.link} />
               </BorderContainer4Rows>
               <BorderContainer4Rows2Sides className="text-container">

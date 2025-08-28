@@ -23,7 +23,7 @@ const LocalVideo2 = ({ src, webmSrc, mp4Src, poster, className }) => {
   }, []);
 
   return (
-    <LocalVideoSection ref={ref} className={className || ""} style={{ minHeight: 200 }}>
+    <LocalVideoSection ref={ref} className={className || ""} >
       {load ? (
         <video
           muted

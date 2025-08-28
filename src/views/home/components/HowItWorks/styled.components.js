@@ -49,8 +49,13 @@ export const HowItWorksGridComponent = styled.div`
     width: 572px;
     margin: auto;
 
-    .border-container-4-rows-2-sides {
-      /* border-bottom: none; */
+    .border-container-4-rows {
+      border-bottom: none;
+      border-top: none;
+    }
+
+    .row0 {
+      border-top: 1px solid #302c29;
     }
   }
 
