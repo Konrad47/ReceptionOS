@@ -93,13 +93,13 @@ export const FooterComponent = styled.div`
       width: 314px;
     }
 
-    p {
+    a {
       color: #ffe8d9;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
-      text-decoration: none;
+      text-decoration: none !important;
     }
   }
 

@@ -122,7 +122,8 @@ const Footer = ({ t }) => {
           </BorderContainer4Rows>
           <BorderContainer4Rows className="footer-container footer-3">
             <div>
-              <p
+              <a
+                href="mailto:contact@receptionos.com"
                 onCopy={e => {
                   e.preventDefault()
                   e.clipboardData.setData(
@@ -132,7 +133,7 @@ const Footer = ({ t }) => {
                 }}
               >
                 r@receptionos.com
-              </p>
+              </a>
               <RoundedButtonSvg as="a" href="mailto:contact@receptionos.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

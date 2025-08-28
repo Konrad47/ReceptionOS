@@ -2,7 +2,7 @@ import React from "react"
 
 export const BorderContainer4Rows2Sides = ({ children, className }) => {
   return (
-    <div className={`border-container-4-rows ${className}`}>
+    <div className={`border-container-4-rows-2-sides ${className}`}>
       <svg
         className="left-top"
         xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export const BorderContainer4Rows2Sides = ({ children, className }) => {
       </svg>
       {children}
       <style jsx="true">{`
-        .border-container-4-rows {
+        .border-container-4-rows-2-sides {
           border: 1px solid #302c29;
           position: relative;
 

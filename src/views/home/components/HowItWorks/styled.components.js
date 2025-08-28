@@ -48,6 +48,10 @@ export const HowItWorksGridComponent = styled.div`
   .video-container {
     width: 572px;
     margin: auto;
+
+    .border-container-4-rows-2-sides {
+      /* border-bottom: none; */
+    }
   }
 
   .text-container {
