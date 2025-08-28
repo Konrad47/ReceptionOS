@@ -4,11 +4,11 @@ import { BorderContainerNoRowsSides } from "../../../../components/BorderContain
 import { RoundedInfoTile } from "../../../../styled.components"
 import SliderComponent from "./Slider"
 
-import Video1 from '../../../../assets/videos/how/ANIMACJA_KALENDARZ_ALPHA_1.webm';
-import Video2 from '../../../../assets/videos/how/ANIMACJA_NOSHOW_1_1.webm';
-import Video3 from '../../../../assets/videos/how/ANIMACJA_ROZMOWA_SMS_ALPHA_1_1.webm';
-import Video4 from '../../../../assets/videos/how/ANIMACJA_UMOWIONE_ALPHA_1_1.webm';
-import Video5 from '../../../../assets/videos/how/KALENDARZ KASOWANIE_1.webm';
+import Video1 from '../../../../assets/videos/how/ANIMACJA_KALENDARZ_ALPHA_1.mp4';
+import Video2 from '../../../../assets/videos/how/ANIMACJA_NOSHOW_1_1.mp4';
+import Video3 from '../../../../assets/videos/how/ANIMACJA_ROZMOWA_SMS_ALPHA_1_1.mp4';
+import Video4 from '../../../../assets/videos/how/ANIMACJA_UMOWIONE_ALPHA_1_1.mp4';
+import Video5 from '../../../../assets/videos/how/KALENDARZ KASOWANIE_1.mp4';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import LocalVideo from "../../../../components/LocalVideo"
 import LocalVideo2 from "../../../../components/LocalVideo/LocalVideo2"
