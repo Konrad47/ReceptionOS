@@ -88,6 +88,7 @@ export const EPModalContainer = styled.div`
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
-    margin: auto;
+    margin: auto !important;
+    padding-bottom: 50px !important;
   }
 `
