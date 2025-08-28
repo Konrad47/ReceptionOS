@@ -16,7 +16,7 @@ const LocalVideo2 = ({ src, webmSrc, mp4Src, poster, className }) => {
           }
         });
       },
-      { rootMargin: "200px" }
+      { rootMargin: "50px" }
     );
     io.observe(ref.current);
     return () => io.disconnect();
@@ -30,8 +30,6 @@ const LocalVideo2 = ({ src, webmSrc, mp4Src, poster, className }) => {
           playsInline
           autoPlay
           loop
-          preload="metadata"
-          poster={poster}
           onError={(e) => {
             e.currentTarget.style.display = "none";
           }}

@@ -99,6 +99,7 @@ export const FooterComponent = styled.div`
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
+      text-decoration: none;
     }
   }
 
