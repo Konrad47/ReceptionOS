@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const LocalVideoSection = styled.div`
   width: 572px;
-  height: 340px;
+  height: 338px;
   video {
     object-fit: cover;
     object-position: center;
@@ -11,12 +11,11 @@ export const LocalVideoSection = styled.div`
     min-height: 50px;
     width: 570px;
     height: 338px;
-    top: 1px;
   }
 
   @media only screen and (max-width: 650px) {
     width: 352px;
-    height: 214px;
+    height: 212px;
 
     video {
       width: 350px;
@@ -26,7 +25,7 @@ export const LocalVideoSection = styled.div`
 
   @media only screen and (max-width: 400px) {
     width: 322px;
-    height: 182px;
+    height: 180px;
 
     video {
       width: 320px;

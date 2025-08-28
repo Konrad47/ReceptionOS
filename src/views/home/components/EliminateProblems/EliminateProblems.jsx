@@ -55,6 +55,7 @@ const EliminateProblems = ({ t }) => {
       border: "none",
       borderRadius: '0px',
       background: 'transparent',
+      overflow: 'hidden'
     }
   }
 
