@@ -252,4 +252,16 @@ export const SliderContainer = styled.div`
       }
     }
   }
+
+  .slick-arrow {
+    top: 32px;
+  }
+
+  .slick-prev {
+    left: 400px;
+  }
+
+  .slick-next {
+    left: 435px;
+  }
 `
