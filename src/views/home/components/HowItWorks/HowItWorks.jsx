@@ -48,7 +48,7 @@ const HowItWorks = ({ t }) => {
       <HowItWorksComponent>
         <div className="container">
           {/* 25.08 */}
-          <BorderContainerNoRowsSides>
+          <BorderContainerNoRowsSides className="hiw-text">
             <div className="top-tile">
               <RoundedInfoTile>
                 <p>{t('home.HowItWorks.how-it-works')}</p>

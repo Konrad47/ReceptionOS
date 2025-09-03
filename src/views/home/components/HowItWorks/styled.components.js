@@ -13,9 +13,15 @@ export const HowItWorksComponent = styled.div`
   background-attachment: scroll;
   justify-content: center;
 
+  .hiw-text {
+    max-width: calc(1080px - 66px);
+    height: 245px;
+    margin: auto;
+  }
+
   .top-tile {
     display: flex;
-    margin: 70px auto;
+    margin: 35px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;

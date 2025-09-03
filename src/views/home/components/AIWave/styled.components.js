@@ -23,7 +23,7 @@ export const AIWaveContainer = styled.div`
 
   .tile-container {
     display: grid;
-    grid-template-columns: repeat(3, 301px);
+    grid-template-columns: repeat(3, 341px);
     row-gap: 31px;
     position: relative;
 
@@ -36,7 +36,7 @@ export const AIWaveContainer = styled.div`
     position: absolute;
     top: 229px;
     height: 31px;
-    width: 299px;
+    width: 339px;
     border: 2px solid #302c29;
     border-top: none;
     border-bottom: none;
@@ -47,12 +47,12 @@ export const AIWaveContainer = styled.div`
   }
 
   .middle-empty {
-    left: 301px;
+    left: 341px;
     border-left: none;
   }
 
   .right-empty {
-    left: calc(301px * 2);
+    left: calc(341px * 2);
     border-left: none;
   }
 
