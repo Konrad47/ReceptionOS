@@ -15,6 +15,30 @@ const SliderComponent = ({ items }) => {
 
   const [slideIndex, setSlideIndex] = useState(1);
 
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <svg className={className}
+        style={{ ...style }}
+        onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M2.92822 9.99995H17.0711M17.0711 9.99995L11.5711 4.5M17.0711 9.99995L11.5711 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+      </svg>
+    );
+  }
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+
+      <svg
+        className={className}
+        style={{ ...style }}
+        onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M17.0718 9.99995H2.92892M2.92892 9.99995L8.42892 4.5M2.92892 9.99995L8.42892 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+      </svg>
+    );
+  }
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -23,12 +47,14 @@ const SliderComponent = ({ items }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: false,
+    arrows: true,
     afterChange: () => {
       attachEndedToCurrent();
     },
     beforeChange: (current, next) => setSlideIndex(next),
     fade: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
 
   const attachEndedToCurrent = useCallback(() => {
