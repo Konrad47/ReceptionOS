@@ -1,13 +1,11 @@
 {
-  "home.seo.title": "",
-  "home.seo.description": "",
+  "home.seo.title": "ReceptionOS | Twoja klinika stomatologiczna na autopilocie",
+  "home.seo.description": "Automatyzacja rejestracji, przypomnienia SMS, pobieranie przedpłat - pełna kontrola nad grafikiem i wizytami w swojej klinice. Zyskaj spokój i skup się na pacjentach, nie na telefonach.",
 
   "home.Menu.order-button": "Zamów analizę",
 
   "home.Autopilot.title": "<span>Autopilot</span> dla kliniki przyszłości",
   "home.Autopilot.description": "Zautomatyzuj codzienne zadania, byś mógł skupić się na tym, co najważniejsze – leczeniu pacjentów.",
-  "home.Autopilot.question": "Masz pytanie? Kliknij i mów",
-  "home.Autopilot.tooltip": "Masz pytanie? Kliknij i mów",
   "home.Autopilot.data": "Porozmawiaj z przyszłą asystentką Twojej kliniki",
   "home.Autopilot.button": "Porozmawiaj z AI",
 

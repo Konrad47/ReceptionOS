@@ -1,13 +1,11 @@
 {
-  "home.seo.title": "",
-  "home.seo.description": "",
+  "home.seo.title": "ReceptionOS | Your Dental Clinic on Autopilot",
+  "home.seo.description": "Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations — fewer no-shows and smoother front-desk.",
 
   "home.Menu.order-button": "Order audit",
 
   "home.Autopilot.title": "Get digital support for <span>dental clinics</span>",
   "home.Autopilot.description": "Let us automate your dental clinics processes, so you can handle what’s really important - patients’ health.",
-  "home.Autopilot.question": "Have a question? Tap to talk",
-  "home.Autopilot.tooltip": "Have a question? Tap to talk",
   "home.Autopilot.data": "Your data is safe, we do not record the talks",
 
   "home.OurPartners.title": "Supported by",
