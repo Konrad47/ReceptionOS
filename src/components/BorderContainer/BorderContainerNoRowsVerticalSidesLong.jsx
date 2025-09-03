@@ -89,6 +89,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
             .long-top {
               position: absolute;
               top: 0px;
+              z-index: 10;
             }
             .long-bottom {
               position: absolute;

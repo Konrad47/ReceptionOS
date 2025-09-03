@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import BackgroundImage from "../../../../../images/how-it-works/hiw-background.webp"
 
 export const SliderContainer = styled.div`
   display: flex;
@@ -38,10 +39,7 @@ export const SliderContainer = styled.div`
 
     .slider-tile-left-top {
       height: 64px;
-      /* background-color: white; */
-      /* opacity: 0.3; */
       border-right: 1px solid #302c29;
-      /* border-top: 1px solid #302c29; */
     }
 
     .text-border {
@@ -57,6 +55,38 @@ export const SliderContainer = styled.div`
       gap: 18px;
       padding: 0 32px !important;
       margin: auto;
+    }
+
+    .slider-tile-right {
+      background-size: cover !important;
+      background-position: bottom;
+      background-image: url(${BackgroundImage});
+      background-attachment: scroll;
+      display: flex;
+      flex-direction: row;
+
+      .video-space-side {
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .side-1,
+        .side-3 {
+          height: 64px;
+        }
+
+        .side-2 {
+          height: 339px;
+          border-top: 1px solid #302c29;
+          border-bottom: 1px solid #302c29;
+        }
+      }
+
+      .slider-tile-right-top {
+        height: 64px;
+        border-left: 1px solid #302c29;
+        border-right: 1px solid #302c29;
+      }
     }
   }
 
