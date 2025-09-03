@@ -107,11 +107,11 @@ const SliderComponent = ({ items }) => {
             <div className='side-3'></div>
           </div>
           <div className='video-space-middle'>
-            <div className='slider-tile-right-top'></div>
+            <BorderContainer4Rows className='slider-tile-right-top'></BorderContainer4Rows>
             <BorderContainer4Rows>
-              <LocalVideo src={item.link} />
+              <LocalVideo src={item.link} className="slider-video" />
             </BorderContainer4Rows>
-            <div className='slider-tile-right-top'></div>
+            <BorderContainer4Rows className='slider-tile-right-bottom'></BorderContainer4Rows>
           </div>
           <div className='video-space-side'>
             <div className='side-1'></div>

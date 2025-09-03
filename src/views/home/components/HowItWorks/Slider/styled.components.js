@@ -82,10 +82,35 @@ export const SliderContainer = styled.div`
         }
       }
 
-      .slider-tile-right-top {
+      .slider-tile-right-top,
+      .slider-tile-right-bottom {
         height: 64px;
-        border-left: 1px solid #302c29;
-        border-right: 1px solid #302c29;
+        border-top: none;
+        border-bottom: none;
+      }
+
+      .slider-tile-right-top {
+        .left-top,
+        .right-top {
+          display: none;
+        }
+      }
+
+      .slider-tile-right-bottom {
+        .left-bottom,
+        .right-bottom {
+          display: none;
+        }
+      }
+
+      .video-space-middle {
+        .slider-video {
+          height: 338px;
+
+          video {
+            height: 337px;
+          }
+        }
       }
     }
   }
