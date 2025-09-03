@@ -41,6 +41,11 @@ export const SliderContainer = styled.div`
       height: 64px;
       border-right: 1px solid #302c29;
       display: flex;
+
+      p {
+        color: #ffe8d9;
+        margin: auto 32px;
+      }
       input {
         margin: auto;
         pointer-events: none;

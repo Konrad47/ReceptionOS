@@ -13,8 +13,7 @@ const SliderComponent = ({ items }) => {
   const prevVideoRef = useRef(null);
   const prevEndedHandlerRef = useRef(null);
 
-  const [slideIndex, setSlideIndex] = useState(0);
-  const [updateCount, setUpdateCount] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(1);
 
   const settings = {
     className: "center",
@@ -27,7 +26,6 @@ const SliderComponent = ({ items }) => {
     arrows: false,
     afterChange: () => {
       attachEndedToCurrent();
-      setUpdateCount(updateCount + 1);
     },
     beforeChange: (current, next) => setSlideIndex(next),
     fade: true,
@@ -94,7 +92,9 @@ const SliderComponent = ({ items }) => {
     return (
       <BorderContainerNoRowsVerticalSidesLong key={index} className="slider-tile">
         <div className='slider-tile-left'>
-          <div className='slider-tile-left-top '></div>
+          <div className='slider-tile-left-top '>
+            <p className='p-new-model-18'>0{slideIndex}</p>
+          </div>
           <BorderContainerNoRowsVerticalSides className="text-border" >
             <div className='text-container'>
               <h4>{item.title}</h4>
@@ -106,8 +106,8 @@ const SliderComponent = ({ items }) => {
               onChange={e => sliderRef.current?.slickGoTo?.(Number(e.target.value))}
               value={slideIndex}
               type="range"
-              min={0}
-              max={items.length - 1}
+              min={1}
+              max={items.length}
             />
           </div>
         </div>
