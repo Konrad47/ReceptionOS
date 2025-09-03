@@ -40,6 +40,139 @@ export const SliderContainer = styled.div`
     .slider-tile-left-top {
       height: 64px;
       border-right: 1px solid #302c29;
+      display: flex;
+      input {
+        margin: auto;
+        pointer-events: none;
+      }
+
+      /*********** Baseline, reset styles ***********/
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        width: 270px;
+      }
+
+      /* Removes default focus */
+      input[type="range"]:focus {
+        outline: none;
+      }
+
+      /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+      /* slider track */
+      input[type="range"]::-webkit-slider-runnable-track {
+        background-color: #221e1b;
+        border-radius: 500px;
+        height: 6px;
+      }
+
+      /* slider thumb */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        margin-top: 0px; /* Centers thumb on the track */
+        background: linear-gradient(
+            129deg,
+            rgba(231, 98, 32, 0) 35.85%,
+            rgba(231, 98, 32, 0.2) 72.26%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(230, 105, 40, 0.1) 0%,
+            rgba(230, 105, 40, 0.1) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(13, 7, 2, 0) 0%,
+            rgba(115, 59, 21, 0.2) 100%
+          );
+        background-blend-mode: color-dodge, normal, normal;
+        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+          0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+        border-radius: 500px;
+        height: 6px;
+        width: 90px;
+      }
+
+      input[type="range"]:focus::-webkit-slider-thumb {
+        background: linear-gradient(
+            129deg,
+            rgba(231, 98, 32, 0) 35.85%,
+            rgba(231, 98, 32, 0.2) 72.26%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(230, 105, 40, 0.1) 0%,
+            rgba(230, 105, 40, 0.1) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(13, 7, 2, 0) 0%,
+            rgba(115, 59, 21, 0.2) 100%
+          );
+        background-blend-mode: color-dodge, normal, normal;
+        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+          0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+        outline-offset: 0.125rem;
+      }
+
+      /*********** Firefox styles ***********/
+      /* slider track */
+      input[type="range"]::-moz-range-track {
+        background-color: #221e1b;
+        border-radius: 500px;
+        height: 6px;
+      }
+
+      /* slider thumb */
+      input[type="range"]::-moz-range-thumb {
+        background: linear-gradient(
+            129deg,
+            rgba(231, 98, 32, 0) 35.85%,
+            rgba(231, 98, 32, 0.2) 72.26%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(230, 105, 40, 0.1) 0%,
+            rgba(230, 105, 40, 0.1) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(13, 7, 2, 0) 0%,
+            rgba(115, 59, 21, 0.2) 100%
+          );
+        background-blend-mode: color-dodge, normal, normal;
+        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+          0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+        border: none; /*Removes extra border that FF applies*/
+        border-radius: 500px;
+        height: 6px;
+        width: 90px;
+      }
+
+      input[type="range"]:focus::-moz-range-thumb {
+        background: linear-gradient(
+            129deg,
+            rgba(231, 98, 32, 0) 35.85%,
+            rgba(231, 98, 32, 0.2) 72.26%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(230, 105, 40, 0.1) 0%,
+            rgba(230, 105, 40, 0.1) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(13, 7, 2, 0) 0%,
+            rgba(115, 59, 21, 0.2) 100%
+          );
+        background-blend-mode: color-dodge, normal, normal;
+        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+          0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+        outline-offset: 0.125rem;
+      }
     }
 
     .text-border {

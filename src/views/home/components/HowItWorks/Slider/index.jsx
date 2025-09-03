@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import { SliderContainer } from './styled.components';
 import "slick-carousel/slick/slick.css";
@@ -9,24 +9,27 @@ import { BorderContainerNoRowsVerticalSides } from '../../../../../components/Bo
 import { BorderContainerNoRowsVerticalSidesLong } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSidesLong';
 
 const SliderComponent = ({ items }) => {
-  const sliderRef = useRef(null);
+  let sliderRef = useRef(null);
   const prevVideoRef = useRef(null);
   const prevEndedHandlerRef = useRef(null);
+
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [updateCount, setUpdateCount] = useState(0);
 
   const settings = {
     className: "center",
     centerMode: true,
-    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    // autoplaySpeed: 3500,
     arrows: false,
     afterChange: () => {
       attachEndedToCurrent();
+      setUpdateCount(updateCount + 1);
     },
+    beforeChange: (current, next) => setSlideIndex(next),
     fade: true,
   };
 
@@ -98,7 +101,15 @@ const SliderComponent = ({ items }) => {
               <p className='p-new-model-16'>{item.description}</p>
             </div>
           </BorderContainerNoRowsVerticalSides>
-          <div className='slider-tile-left-top '></div>
+          <div className='slider-tile-left-top '>
+            <input
+              onChange={e => sliderRef.current?.slickGoTo?.(Number(e.target.value))}
+              value={slideIndex}
+              type="range"
+              min={0}
+              max={items.length - 1}
+            />
+          </div>
         </div>
         <div className='slider-tile-right'>
           <div className='video-space-side'>
@@ -126,7 +137,10 @@ const SliderComponent = ({ items }) => {
   return (
     <section>
       <SliderContainer>
-        <Slider ref={sliderRef} {...settings}>{renderItems}</Slider>
+        <Slider
+          ref={sliderRef}
+          {...settings}
+        >{renderItems}</Slider>
       </SliderContainer>
     </section>
   );
