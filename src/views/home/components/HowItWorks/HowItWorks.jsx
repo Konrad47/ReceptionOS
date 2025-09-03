@@ -48,26 +48,25 @@ const HowItWorks = ({ t }) => {
       <HowItWorksComponent>
         <div className="container">
           {/* 25.08 */}
-          {/* <BorderContainerNoRowsSides> */}
-          <div className="top-tile">
-            <RoundedInfoTile>
-              <p>{t('home.HowItWorks.how-it-works')}</p>
-            </RoundedInfoTile>
-            <h3>{t('home.HowItWorks.title')}</h3>
-          </div>
-          {/* </BorderContainerNoRowsSides> */}
+          <BorderContainerNoRowsSides className="hiw-text">
+            <div className="top-tile">
+              <RoundedInfoTile>
+                <p>{t('home.HowItWorks.how-it-works')}</p>
+              </RoundedInfoTile>
+              <h3>{t('home.HowItWorks.title')}</h3>
+            </div>
+          </BorderContainerNoRowsSides>
         </div>
       </HowItWorksComponent>
       {/* 25.08 */}
-      {/* <HowItWorksSliderComponent className="desktop">
+      <HowItWorksSliderComponent className="desktop">
         <div className="container">
           {items && <SliderComponent items={items} />}
         </div>
-      </HowItWorksSliderComponent> */}
+      </HowItWorksSliderComponent>
 
-      <HowItWorksGridComponent>
+      <HowItWorksGridComponent className="mobile">
         <div className="container">
-
           {items.map((item, index) => (
             <div className="video-container" key={index}>
               <BorderContainer4Rows className={`row${index}`}>

@@ -139,7 +139,7 @@ export const SliderContainer = styled.div`
       0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .slick-dots {
       bottom: -38px;
     }

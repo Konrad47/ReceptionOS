@@ -57,7 +57,7 @@ export const EliminateProblemsComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     padding: 30px 0;
     .border-container-top-rows-bottom2 {
       border-top: none;

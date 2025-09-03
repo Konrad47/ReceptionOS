@@ -69,7 +69,7 @@ export const PriceListComponent = styled.div`
         background-color: rgba(230, 105, 40, 0.1);
       }
 
-      @media only screen and (max-width: 1020px) {
+      @media only screen and (max-width: 1130px) {
         &:hover {
           background: linear-gradient(
               129deg,
@@ -177,7 +177,7 @@ export const PriceListComponent = styled.div`
           height: 24px;
           font-weight: 400;
 
-          @media only screen and (max-width: 1020px) {
+          @media only screen and (max-width: 1130px) {
             font-size: 16px;
             line-height: 16px;
             height: 16px;
@@ -232,7 +232,7 @@ export const PriceListComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .counter-container {
       margin-top: -10%;
     }

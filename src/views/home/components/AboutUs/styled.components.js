@@ -28,7 +28,7 @@ export const AboutUsComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .container {
       margin: 0 !important;
       gap: 20px;

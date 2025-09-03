@@ -54,13 +54,25 @@ export const AnalysisComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .analysis-container {
       width: 80%;
+
+      .background-a {
+        width: 100%;
+      }
 
       .left,
       .right {
         z-index: -1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .analysis-container {
+      .background-a {
+        width: 130%;
       }
     }
   }

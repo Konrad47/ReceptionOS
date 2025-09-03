@@ -70,7 +70,7 @@ export const AutopilotComponent = styled.div`
     margin-top: 24px;
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .text-container {
       padding: 60px 0 24px 0;
       h1 {

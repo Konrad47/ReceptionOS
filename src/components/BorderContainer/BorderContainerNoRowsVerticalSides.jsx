@@ -30,6 +30,34 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
                         strokeLinecap="round"
                     />
                 </svg>
+                <svg
+                    className="left-side"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="69"
+                    viewBox="0 0 2 69"
+                    fill="none"
+                >
+                    <path
+                        d="M0.999756 1L0.999757 68"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <svg
+                    className="right-side"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="69"
+                    viewBox="0 0 2 69"
+                    fill="none"
+                >
+                    <path
+                        d="M1.00049 1L1.00049 68"
+                        stroke="#877B72"
+                        stroke-linecap="round"
+                    />
+                </svg>
                 {children}
                 <style jsx="true">{`
           .border-container-no-rows-vertical-sides {
@@ -48,9 +76,22 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
               position: absolute;
               bottom: -10px;
             }
+
+            .left-side {
+              position: absolute;
+              left: -1px;
+              top: 120px;
+              z-index: 3;
+            }
+            .right-side {
+              position: absolute;
+              right: -2px;
+              top: 120px;
+              z-index: 3;
+            }
           }
         `}</style>
-            </div >
+            </div>
         </>
     )
 }

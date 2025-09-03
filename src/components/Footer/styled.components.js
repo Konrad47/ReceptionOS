@@ -126,7 +126,4 @@ export const FooterComponent = styled.div`
       }
     }
   }
-
-  @media only screen and (max-width: 1020px) {
-  }
 `

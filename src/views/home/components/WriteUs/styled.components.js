@@ -25,7 +25,7 @@ export const WriteUsComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     padding: 24px 0 34px 0;
 
     background-image: none;
