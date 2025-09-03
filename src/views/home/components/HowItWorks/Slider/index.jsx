@@ -90,15 +90,21 @@ const SliderComponent = ({ items }) => {
   const renderItems = items?.map((item, index) => {
     return (
       <BorderContainerNoRowsVerticalSidesLong key={index} className="slider-tile">
-        <BorderContainerNoRowsVerticalSides className="text-border" >
-          <div className='text-container'>
-            <h4>{item.title}</h4>
-            <p className='p-new-model-16'>{item.description}</p>
-          </div>
-        </BorderContainerNoRowsVerticalSides>
-        <BorderContainer4Rows>
-          <LocalVideo src={item.link} />
-        </BorderContainer4Rows>
+        <div className='slider-tile-left'>
+          <div className='slider-tile-left-top '></div>
+          <BorderContainerNoRowsVerticalSides className="text-border" >
+            <div className='text-container'>
+              <h4>{item.title}</h4>
+              <p className='p-new-model-16'>{item.description}</p>
+            </div>
+          </BorderContainerNoRowsVerticalSides>
+          <div className='slider-tile-left-top '></div>
+        </div>
+        <div className='slider-tile-right'>
+          <BorderContainer4Rows>
+            <LocalVideo src={item.link} />
+          </BorderContainer4Rows>
+        </div>
       </BorderContainerNoRowsVerticalSidesLong>
     );
   });

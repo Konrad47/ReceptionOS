@@ -36,7 +36,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     />
                 </svg>
                 <svg
-                    className="left-top"
+                    className="long-left-top"
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"
                     height="8"
@@ -46,7 +46,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     <path d="M7 1L1 1L1 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
-                    className="left-bottom"
+                    className="long-left-bottom"
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"
                     height="8"
@@ -56,7 +56,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     <path d="M7 7L1 7L1 1" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
-                    className="right-top"
+                    className="long-right-top"
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"
                     height="8"
@@ -66,7 +66,7 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
                     <path d="M1 1L7 1L7 7" stroke="#877B72" strokeLinecap="round" />
                 </svg>
                 <svg
-                    className="right-bottom"
+                    className="long-right-bottom"
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"
                     height="8"
@@ -84,16 +84,41 @@ export const BorderContainerNoRowsVerticalSidesLong = ({
             border: 1px solid #302c29;
             border-top: none;
             border-bottom: none;
-            overflow: visible; 
+            overflow: visible;
 
             .long-top {
               position: absolute;
-              top: -1px;
+              top: 0px;
             }
             .long-bottom {
               position: absolute;
               bottom: -8px;
-              z-index: 10
+              z-index: 10;
+            }
+
+            .long-left-top {
+              position: absolute;
+              top: 0px;
+              left: -1px;
+              z-index: 3;
+            }
+            .long-left-bottom {
+              position: absolute;
+              bottom: 0px;
+              left: -1px;
+              z-index: 3;
+            }
+            .long-right-top {
+              position: absolute;
+              top: 0px;
+              right: -1px;
+              z-index: 3;
+            }
+            .long-right-bottom {
+              position: absolute;
+              bottom: 0px;
+              right: -1px;
+              z-index: 3;
             }
           }
         `}</style>

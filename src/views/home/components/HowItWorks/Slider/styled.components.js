@@ -26,10 +26,23 @@ export const SliderContainer = styled.div`
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 30px !important;
+    /* gap: 30px !important; */
     margin: auto;
     /* width: 570px; */
-    height: calc(358px + 128px);
+    /* height: calc(358px + 128px); */
+
+    .slider-tile-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slider-tile-left-top {
+      height: 64px;
+      /* background-color: white; */
+      /* opacity: 0.3; */
+      border-right: 1px solid #302c29;
+      /* border-top: 1px solid #302c29; */
+    }
 
     .text-border {
       height: 340px;
