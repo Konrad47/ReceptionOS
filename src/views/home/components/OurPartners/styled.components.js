@@ -48,7 +48,7 @@ export const OurPartnersContainer = styled.div`
     /* margin-left: auto !important; */
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     padding-top: 30px;
   }
 `

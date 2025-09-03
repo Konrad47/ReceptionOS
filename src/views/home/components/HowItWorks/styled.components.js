@@ -30,7 +30,13 @@ export const HowItWorksComponent = styled.div`
     max-width: 650px;
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1324px) {
+    .hiw-text {
+      max-width: calc(964px - 66px);
+    }
+  }
+
+  @media only screen and (max-width: 1130px) {
     background-image: url(${BackgroundImageMobile});
     .top-tile {
       margin: 44px auto;

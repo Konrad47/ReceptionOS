@@ -48,7 +48,7 @@ export const MenuComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     padding: 16px;
   }
 `

@@ -74,7 +74,7 @@ export const CompareComponent = styled.div`
         background-color: rgba(230, 105, 40, 0.1);
       }
 
-      @media only screen and (max-width: 1020px) {
+      @media only screen and (max-width: 1130px) {
         &:hover {
           background: linear-gradient(
               129deg,
@@ -174,7 +174,7 @@ export const CompareComponent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1130px) {
     .fade-1,
     .fade-2 {
       width: calc(80% + 68px);

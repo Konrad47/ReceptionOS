@@ -41,6 +41,7 @@ const SliderComponent = ({ items }) => {
 
   const settings = {
     className: "center",
+    centerPadding: "50px",
     centerMode: true,
     infinite: true,
     speed: 1000,

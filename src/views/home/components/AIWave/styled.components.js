@@ -96,7 +96,25 @@ export const AIWaveContainer = styled.div`
     gap: 12px;
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1324px) {
+    .tile-container {
+      grid-template-columns: repeat(3, 302px);
+    }
+
+    .empty {
+      width: 300px;
+    }
+
+    .middle-empty {
+      left: 302px;
+    }
+
+    .right-empty {
+      left: calc(302px * 2);
+    }
+  }
+
+  @media only screen and (max-width: 1130px) {
     padding: 40px 0 0 0;
   }
 `
