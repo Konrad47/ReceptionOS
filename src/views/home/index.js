@@ -15,6 +15,8 @@ import Compare from "./components/Compare/Compare"
 import EliminateProblems from "./components/EliminateProblems/EliminateProblems"
 import HowItWorks from "./components/HowItWorks/HowItWorks"
 import OurPartners from "./components/OurPartners/OurPartners"
+import ElevenWidget from "../../components/ElevenWidget/ElevenWidget"
+import { agentId } from "../../config/externalResources"
 
 const Home = () => {
   const { t } = useTranslation()
@@ -44,6 +46,7 @@ const Home = () => {
       <PriceList t={t} />
       <WriteUs t={t} />
       <Footer t={t} />
+      <ElevenWidget agentId={agentId} />
     </>
   )
 }
