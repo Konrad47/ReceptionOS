@@ -41,7 +41,7 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
                     <path
                         d="M0.999756 1L0.999757 68"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 <svg
@@ -55,7 +55,7 @@ export const BorderContainerNoRowsVerticalSides = ({ children, className }) => {
                     <path
                         d="M1.00049 1L1.00049 68"
                         stroke="#877B72"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                     />
                 </svg>
                 {children}

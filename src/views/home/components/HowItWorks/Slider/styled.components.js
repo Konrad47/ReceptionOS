@@ -255,6 +255,7 @@ export const SliderContainer = styled.div`
 
   .slick-arrow {
     top: 32px;
+    z-index: 2;
   }
 
   .slick-prev {

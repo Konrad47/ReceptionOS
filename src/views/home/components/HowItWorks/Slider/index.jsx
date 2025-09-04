@@ -21,7 +21,7 @@ const SliderComponent = ({ items }) => {
       <svg className={className}
         style={{ ...style }}
         onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M2.92822 9.99995H17.0711M17.0711 9.99995L11.5711 4.5M17.0711 9.99995L11.5711 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+        <path d="M2.92822 9.99995H17.0711M17.0711 9.99995L11.5711 4.5M17.0711 9.99995L11.5711 15.4999" stroke="#FFE8D9" strokeLinejoin="round" />
       </svg>
     );
   }
@@ -32,9 +32,9 @@ const SliderComponent = ({ items }) => {
 
       <svg
         className={className}
-        style={{ ...style, display: `${slideIndex === 1 ? 'none' : 'block'}` }}
+        style={{ ...style, opacity: `${slideIndex === 1 ? '0' : '1'}` }}
         onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M17.0718 9.99995H2.92892M2.92892 9.99995L8.42892 4.5M2.92892 9.99995L8.42892 15.4999" stroke="#FFE8D9" stroke-linejoin="round" />
+        <path d="M17.0718 9.99995H2.92892M2.92892 9.99995L8.42892 4.5M2.92892 9.99995L8.42892 15.4999" stroke="#FFE8D9" strokeLinejoin="round" />
       </svg>
     );
   }
