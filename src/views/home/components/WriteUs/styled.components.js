@@ -20,7 +20,7 @@ export const WriteUsComponent = styled.div`
     align-self: stretch;
     text-align: center;
 
-    button {
+    a {
       margin-top: 600px;
     }
   }
@@ -31,7 +31,7 @@ export const WriteUsComponent = styled.div`
     background-image: none;
 
     .text-container {
-      button {
+      a {
         margin-top: 20px;
       }
     }

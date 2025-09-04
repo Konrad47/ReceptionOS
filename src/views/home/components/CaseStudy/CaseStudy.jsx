@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import BaseModal from "../../../../components/BaseModal/BaseModal"
 import { Trans } from "react-i18next"
+import { orderAnalysisButton } from "../../../../config/externalResources"
 
 const CaseStudy = ({ t }) => {
   const [isModal, setIsModal] = useState(false);
@@ -77,7 +78,7 @@ const CaseStudy = ({ t }) => {
           ))}
         </BorderContainer4Rows>
         <BorderContainer4Rows className="cs-modal cs-modal-3 cs-modal-last">
-          <RoundedButtonOrange>{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
+          <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer">{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
         </BorderContainer4Rows>
       </CsModalContainer>
     </div>

@@ -118,6 +118,8 @@ export const RoundedButtonOrange = styled.button`
   font-weight: 500;
   line-height: 20px;
 
+  text-decoration: none;
+
   &:hover {
     background-color: rgba(230, 105, 40, 0.1);
     /* background: linear-gradient(

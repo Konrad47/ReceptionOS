@@ -3,6 +3,7 @@ import { MenuComponent } from "./styled.components"
 import "../../images/menu/ros-image.webp"
 import { StaticImage } from "gatsby-plugin-image"
 import { RoundedButtonOrange } from "../../styled.components"
+import { orderAnalysisButton } from "../../config/externalResources"
 const Menu = ({ t }) => {
 
   return (
@@ -17,7 +18,7 @@ const Menu = ({ t }) => {
             loading="lazy"
           />
           <div className="buttons">
-            <RoundedButtonOrange className="order-button">{t(`home.Menu.order-button`)}</RoundedButtonOrange>
+            <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer" className="order-button">{t(`home.Menu.order-button`)}</RoundedButtonOrange>
           </div>
         </div>
       </MenuComponent>

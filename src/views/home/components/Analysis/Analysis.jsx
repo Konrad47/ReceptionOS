@@ -4,6 +4,7 @@ import { BorderContainerTopRowsSides } from "../../../../components/BorderContai
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
 import { StaticImage } from "gatsby-plugin-image";
 import { analysisPrice } from "../../../../config/pricing";
+import { orderAnalysisButton } from "../../../../config/externalResources";
 
 const Analysis = ({ t }) => {
 
@@ -52,7 +53,7 @@ const Analysis = ({ t }) => {
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
               </div>
-              <RoundedButtonOrange>{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
+              <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer" >{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
             </div>
           </BorderContainerTopRowsSides>
         </AnalysisComponent>
