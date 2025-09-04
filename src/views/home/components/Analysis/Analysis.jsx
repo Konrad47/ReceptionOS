@@ -3,6 +3,7 @@ import { AnalysisComponent } from "./styled.components";
 import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
 import { StaticImage } from "gatsby-plugin-image";
+import { analysisPrice } from "../../../../config/pricing";
 
 const Analysis = ({ t }) => {
 
@@ -32,7 +33,7 @@ const Analysis = ({ t }) => {
               <h4>{t('home.Analysis.title')}</h4>
             </div>
             <div className="middle-text">
-              <h1>{t('home.Analysis-price')} PLN</h1>
+              <h1>{analysisPrice} PLN</h1>
               <p className="p-new-model-14">{t('home.Analysis.in-it')}</p>
               <div className="inner-text">
                 <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
