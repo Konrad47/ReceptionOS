@@ -1,10 +1,8 @@
 import React from "react"
 import { AutopilotComponent } from "./styled.components"
 import { Trans } from 'react-i18next';
-import { StaticImage } from "gatsby-plugin-image";
 import '../../../../images/autopilot/phone_circle.webp'
-import GifComponent from "../../../../components/GifComponent";
-import GifAnimation from '../../../../assets/videos/how/Blob_Animation.mp4';
+import BlobAnimation from '../../../../assets/videos/how/Blob_Animation.mp4';
 import { RoundedButtonOrange } from "../../../../styled.components";
 
 const Autopilot = ({ t }) => {
@@ -12,6 +10,17 @@ const Autopilot = ({ t }) => {
   return (
     <>
       <AutopilotComponent>
+        <video
+          className="bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src={BlobAnimation} type="video/mp4" />
+        </video>
         <div className="container">
           <div className="text-container">
             <h1>
@@ -23,9 +32,6 @@ const Autopilot = ({ t }) => {
               />
             </h1>
             <p className="p-new-model-18">{t(`home.Autopilot.description`)}</p>
-          </div>
-          <div className="gif-section">
-            <GifComponent src={GifAnimation} />
           </div>
           <RoundedButtonOrange>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

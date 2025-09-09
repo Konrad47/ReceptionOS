@@ -1,30 +1,36 @@
 import styled from "styled-components"
-import AutopilotImage from "../../../../images/autopilot/autopilot-background.webp"
-import AutopilotImageMobile from "../../../../images/autopilot/autopilot-background_mobile.webp"
 
 export const AutopilotComponent = styled.div`
+  padding-top: 75px;
   padding-bottom: 40px;
-  overflow: hidden;
-  background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-image: url(${AutopilotImage});
-  display: block;
-  background-attachment: scroll;
   justify-content: center;
+  position: relative;
+
+  .bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+  }
 
   .container {
+    position: relative;
+    z-index: 1;
     text-align: center;
   }
 
   .text-container {
     display: flex;
-    padding: 60px 16px;
+    padding: 60px 16px 0 16px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    margin: 75px auto 0 auto;
     text-align: center;
 
     h1 {
@@ -37,6 +43,7 @@ export const AutopilotComponent = styled.div`
 
     p {
       width: 411px;
+      margin-bottom: 400px;
     }
   }
 
@@ -45,19 +52,6 @@ export const AutopilotComponent = styled.div`
     width: 315px;
     img {
       width: 315px;
-    }
-  }
-
-  .gif-section {
-    width: 268px;
-    height: 260px;
-    margin: auto;
-    position: relative;
-    margin-bottom: 40px;
-
-    video {
-      width: 268px;
-      height: 260px;
     }
   }
 
@@ -71,6 +65,10 @@ export const AutopilotComponent = styled.div`
   }
 
   @media only screen and (max-width: 1130px) {
+    .bg-video {
+      max-width: unset;
+    }
+
     .text-container {
       padding: 60px 0 24px 0;
       h1 {
@@ -90,24 +88,15 @@ export const AutopilotComponent = styled.div`
       }
     }
 
-    .gif-section {
-      width: 192px;
-      height: 187px;
-      margin: auto;
-      position: relative;
-      margin-bottom: 16px;
-
-      video {
-        width: 192px;
-        height: 187px;
-      }
-    }
-
     .data-info {
       margin-top: 16px;
     }
   }
   @media only screen and (max-width: 600px) {
-    background-image: url(${AutopilotImageMobile});
+    .text-container {
+      p {
+        margin-bottom: 300px;
+      }
+    }
   }
 `
