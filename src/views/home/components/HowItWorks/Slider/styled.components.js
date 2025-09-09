@@ -265,4 +265,14 @@ export const SliderContainer = styled.div`
   .slick-next {
     left: 435px;
   }
+
+  @media only screen and (max-width: 1324px) {
+    .slick-prev {
+      left: 280px;
+    }
+
+    .slick-next {
+      left: 315px;
+    }
+  }
 `

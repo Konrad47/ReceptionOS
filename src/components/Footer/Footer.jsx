@@ -7,6 +7,7 @@ import { RoundedButtonSvg } from "../../styled.components"
 import Dropdown from "react-bootstrap/Dropdown"
 import { useI18next, Link } from "gatsby-plugin-react-i18next"
 import { navigate } from "gatsby"
+import { facebook, linkedin, privacyPolicy, terms, twitter } from "../../config/externalResources"
 
 const Footer = ({ t }) => {
   const { language, languages, originalPath, changeLanguage } = useI18next();
@@ -153,7 +154,7 @@ const Footer = ({ t }) => {
           </BorderContainer4Rows>
           <div className="footer-4">
             <div className="icons">
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href={facebook} target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -174,7 +175,7 @@ const Footer = ({ t }) => {
                   </defs>
                 </svg>
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href={twitter} target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -188,7 +189,7 @@ const Footer = ({ t }) => {
                   />
                 </svg>
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href={linkedin} target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -211,7 +212,7 @@ const Footer = ({ t }) => {
               </a>
             </div>
             <a
-              href="#"
+              href={privacyPolicy}
               target="_blank"
               rel="noreferrer"
               style={{ marginTop: "20px" }}
@@ -220,7 +221,7 @@ const Footer = ({ t }) => {
               {t(`home.Footer.policy`)}
             </a>
             <a
-              href="#"
+              href={terms}
               target="_blank"
               rel="noreferrer"
               className="p-new-model-16"
