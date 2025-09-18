@@ -22,6 +22,11 @@ const Home = () => {
   const { t } = useTranslation()
 
   const [mounted, setMounted] = useState(false)
+  const [agent, setAgent] = useState()
+
+  const setAgentId = () => {
+    setAgent(agentId)
+  }
 
   useEffect(() => {
     setMounted(true)
@@ -33,7 +38,7 @@ const Home = () => {
     <>
       <Seo title={t`home.seo.title`} description={t`home.seo.description`} />
       <Menu t={t} />
-      <Autopilot t={t} />
+      <Autopilot t={t} handleClick={setAgentId} />
       <OurPartners t={t} />
       <AIWave t={t} />
       <HowItWorks t={t} />
@@ -46,7 +51,7 @@ const Home = () => {
       <PriceList t={t} />
       <WriteUs t={t} />
       <Footer t={t} />
-      <ElevenWidget agentId={agentId} />
+      <ElevenWidget agentId={agent} />
     </>
   )
 }
