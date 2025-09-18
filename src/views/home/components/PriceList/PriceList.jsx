@@ -109,7 +109,7 @@ const PriceList = ({ t }) => {
               })}
             </div>
             <BorderContainerTopRowsBottom className="bottom-border-container">
-              <RoundedButtonOrange className="price-list-button">{t('home.PriceList.button')}</RoundedButtonOrange>
+              <RoundedButtonOrange as="a" href="mailto:contact@receptionos.com" className="price-list-button">{t('home.PriceList.button')}</RoundedButtonOrange>
             </BorderContainerTopRowsBottom>
           </div>
         </PriceListComponent>
