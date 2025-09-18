@@ -10,7 +10,6 @@ export const AutopilotComponent = styled.div`
     position: absolute;
     inset: 0;
     width: 100%;
-    max-width: 1180px;
     margin: auto;
     height: 100%;
     object-fit: cover;
