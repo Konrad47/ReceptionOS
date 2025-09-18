@@ -5,7 +5,7 @@ import '../../../../images/autopilot/phone_circle.webp'
 import BlobAnimation from '../../../../assets/videos/how/Blob_Animation.mp4';
 import { RoundedButtonOrange } from "../../../../styled.components";
 
-const Autopilot = ({ t }) => {
+const Autopilot = ({ t, handleClick }) => {
 
   return (
     <>
@@ -33,7 +33,7 @@ const Autopilot = ({ t }) => {
             </h1>
             <p className="p-new-model-18">{t(`home.Autopilot.description`)}</p>
           </div>
-          <RoundedButtonOrange>
+          <RoundedButtonOrange onClick={handleClick}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M7 6.99982L7 16.9998M2 10.9998L2 12.9998M12 2.99982L12 20.9998M17 6.99981L17 16.9998M22 10.9998L22 12.9998" stroke="#FFE8D9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
