@@ -4,12 +4,10 @@
 
   "home.Menu.order-button": "Zamów Analizę",
 
-  "home.Autopilot.title": "<span>Autopilot</span> dla kliniki przyszłości",
-  "home.Autopilot.description": "Zautomatyzuj codzienne zadania, byś mógł skupić się na tym, co najważniejsze – leczeniu pacjentów.",
-  "home.Autopilot.data": "Porozmawiaj z przyszłą asystentką Twojej kliniki",
+  "home.Autopilot.title": "<span>Twoja klinika.</span> Na autopilocie.",
+  "home.Autopilot.description": "Zautomatyzuj rutynową administrację, wyeliminuj utracone wizyty i utrzymuj pełny grafik — aby Twój zespół mógł skupić się na tym, co naprawdę ważne: opiece nad pacjentem.",
+  "home.Autopilot.data": "Umów bezpłatny audyt – dowiedz się dokładnie, gdzie tracisz pacjentów (i jak temu zapobiec).",
   "home.Autopilot.button": "Porozmawiaj z AI",
-
-  "home.OurPartners.title": "Nasi partnerzy",
 
   "home.AIWave.ai-wave": "receptionOS",
   "home.AIWave.title": "Nie przegap fali innowacji AI",
@@ -24,13 +22,13 @@
   "home.AIWave.tile-description-4": "Wypełniamy grafik, redukujemy no-shows o 69%, zatrzymujemy u Ciebie pacjenta.",
 
   "home.HowItWorks.how-it-works": "Krok po kroku",
-  "home.HowItWorks.title": "3 kroki w stronę kliniki przyszłości",
-  "home.HowItWorks.video1-title": "Podłączenie systemów",
-  "home.HowItWorks.video1-description": "Podłączamy ReceptionOS do telefonu i kalendarza kliniki. Ty ustawiasz godziny pracy i oferowane usługi.",
-  "home.HowItWorks.video2-title": "Trenowanie i dostosowanie",
-  "home.HowItWorks.video2-description": "ReceptionOS uczy się stylu Twojej kliniki i potrzeb pacjentów – rezerwacje, anulacje i częste pytania.",
-  "home.HowItWorks.video3-title": "Start i optymalizacja",
-  "home.HowItWorks.video3-description": "ReceptionOS odbiera połączenia, umawia wizyty i pomaga recepcji 24/7. Sprawdzaj wyniki, ulepszaj obsługę i zwiększaj swój dochód.",
+  "home.HowItWorks.title": "Jak to działa — w 3 prostych krokach",
+  "home.HowItWorks.video1-title": "Audyt Twojej rejestracji",
+  "home.HowItWorks.video1-description": " Wcielamy się w rolę pacjentów, testując rejestrację w realistycznych scenariuszach. Zobaczysz dokładnie, gdzie zapytania „przepadają” i co można poprawić.",
+  "home.HowItWorks.video2-title": "Wyniki i wnioski",
+  "home.HowItWorks.video2-description": "Otrzymasz jasny, praktyczny raport — plus opcjonalną rozmowę, podczas której go omówimy. Jeśli nie znajdziemy znaczących usprawnień, zwracamy pieniądze.",
+  "home.HowItWorks.video3-title": "Indywidualne rozwiązanie",
+  "home.HowItWorks.video3-description": "Jeśli to właściwe rozwiązanie i jesteś gotowy na innowacje, dostaniesz konfigurację ReceptionOS dopasowaną do Twojej kliniki — tak, aby efekty były widoczne od pierwszego dnia.",
 
   "home.EliminateProblems.eliminate-problems": "Wyeliminuj Problemy",
   "home.EliminateProblems.title": "Chaos na recepcji i niedokładna obsługa – brzmi znajomo?",
@@ -70,11 +68,11 @@
   "home.PartnersAboutUs.partner5-company": "Dentalway.pl",
 
   "home.Analysis.case-study": "Zamów Analizę",
-  "home.Analysis.title": "Dowiedz się gdzie Twoja klinika traci pacjentów.",
-  "home.Analysis.in-it": "w tym:",
-  "home.Analysis.inner-text1": "Audyt tajemniczego pacjenta: ocena umawiania wizyt w Twojej klinice",
-  "home.Analysis.inner-text2": "Przetestujemy Twoją recepcję realnymi scenariuszami rozmów",
-  "home.Analysis.inner-text3": "Pełny raport potencjalnych usprawnień i problemów",
+  "home.Analysis.title": "Odkryj dokładnie, gdzie Twoja klinika traci pacjentów.",
+  "home.Analysis.in-it": "W cenie:",
+  "home.Analysis.inner-text1": "Audyt Mystery Patient — testujemy proces rejestracji w realistycznych scenariuszach.",
+  "home.Analysis.inner-text2": "Pełny test obciążeniowy rejestracji — mierzymy szybkość, dokładność i jakość obsługi.",
+  "home.Analysis.inner-text3": "Plan działań — priorytetowe poprawki zwiększające konwersję.",
 
   "home.CaseStudy.case-study": "Case Study",
   "home.CaseStudy.title": "Wzrost o 20% kliniki Apolonii Dental",
@@ -96,8 +94,8 @@
   "home.CaseStudy.modal.button": "Zamów Analizę",
 
   "home.AboutUs.about-us": "O Nas",
-  "home.AboutUs.title": "Znamy problemy klinik – to nasza codzienność",
-  "home.AboutUs.description": "Pasja do stomatologii płynie w naszej krwi – wywodzimy się z rodzinnej kliniki stomatologicznej <span>z ponad 35 letnim doświadczeniem</span> w implantologii. Rozwiązaliśmy prawdziwe problemy, które znamy od podszewki. Pozwól nam pomóc także Tobie.",
+  "home.AboutUs.title": "Dlaczego kliniki ufają ReceptionOS",
+  "home.AboutUs.description": "Znamy te wyzwania z własnego doświadczenia. Stomatologia mamy we krwi — nasza rodzinna klinika ma <span>ponad 35 lat doświadczenia w implantologii.</span> ReceptionOS stworzyliśmy, by rozwiązać problemy, z którymi sami mierzyliśmy się każdego dnia.",
 
   "home.PriceList.price-list": "Cennik",
   "home.PriceList.title": "Porównaj pakiety",
@@ -126,8 +124,8 @@
   "home.PriceList.button": "Skontaktuj się",
   "home.PriceList.chairs": "Liczba foteli w placówce",
 
-  "home.WriteUs.title": "Dołączasz do top 1%?",
-  "home.WriteUs.description": "Napisz do nas. Odpowiemy od razu.",
+  "home.WriteUs.title": "Gotowy dołączyć do top 1% klinik?",
+  "home.WriteUs.description": "Umów audyt już dziś — odezwiemy się natychmiast.",
   "home.WriteUs.button": "Zamów Analizę",
 
   "home.Footer.contact": "Skontaktuj się z nami",
