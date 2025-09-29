@@ -4,11 +4,10 @@
 
   "home.Menu.order-button": "Order audit",
 
-  "home.Autopilot.title": "Get digital support for <span>dental clinics</span>",
-  "home.Autopilot.description": "Let us automate your dental clinics processes, so you can handle what’s really important - patients’ health.",
-  "home.Autopilot.data": "Your data is safe, we do not record the talks",
-
-  "home.OurPartners.title": "Supported by",
+  "home.Autopilot.title": "<span>Your Clinic.</span> On Autopilot.",
+  "home.Autopilot.description": "Automate routine admin, eliminate lost appointments, and keep your chairs full — so your team can focus on what really matters: patient care.",
+  "home.Autopilot.data": "Book a Free Audit – Find out exactly where you’re losing patients (and how to stop it).",
+  "home.Autopilot.button": "Talk to AI",
 
   "home.AIWave.title": "",
   "home.AIWave.description": "",

@@ -37,7 +37,7 @@ export const AutopilotComponent = styled.div`
     }
 
     span {
-      padding: 0 135px;
+      padding: 0 120px;
     }
 
     p {
@@ -60,7 +60,9 @@ export const AutopilotComponent = styled.div`
     align-items: center;
     gap: 4px;
     align-self: stretch;
+    margin: auto;
     margin-top: 24px;
+    max-width: 263px;
   }
 
   @media only screen and (max-width: 1130px) {

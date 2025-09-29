@@ -4,12 +4,10 @@
 
   "home.Menu.order-button": "Zamów Analizę",
 
-  "home.Autopilot.title": "<span>Autopilot</span> dla kliniki przyszłości",
-  "home.Autopilot.description": "Zautomatyzuj codzienne zadania, byś mógł skupić się na tym, co najważniejsze – leczeniu pacjentów.",
-  "home.Autopilot.data": "Porozmawiaj z przyszłą asystentką Twojej kliniki",
+  "home.Autopilot.title": "<span>Twoja klinika.</span> Na autopilocie.",
+  "home.Autopilot.description": "Zautomatyzuj rutynową administrację, wyeliminuj utracone wizyty i utrzymuj pełny grafik — aby Twój zespół mógł skupić się na tym, co naprawdę ważne: opiece nad pacjentem.",
+  "home.Autopilot.data": "Umów bezpłatny audyt – dowiedz się dokładnie, gdzie tracisz pacjentów (i jak temu zapobiec).",
   "home.Autopilot.button": "Porozmawiaj z AI",
-
-  "home.OurPartners.title": "Nasi partnerzy",
 
   "home.AIWave.ai-wave": "receptionOS",
   "home.AIWave.title": "Nie przegap fali innowacji AI",
